@@ -1,0 +1,24 @@
+package com.gang.expengine.core.exception;
+
+public class ExchangeException extends RuntimeException {
+
+    public ExchangeException() {
+        super();
+    }
+
+    public ExchangeException(String message) {
+        super(message);
+    }
+
+    public ExchangeException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public ExchangeException(Throwable cause) {
+        super(cause);
+    }
+
+    protected ExchangeException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+    }
+}

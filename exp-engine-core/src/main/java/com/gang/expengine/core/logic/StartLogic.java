@@ -20,17 +20,17 @@ public class StartLogic implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        logic.init();
-        Template template = logic.getFileTeplate("hellovelocity.vm");
-        VelocityContext ctx = new VelocityContext();
-        ctx.put("name", "Velocity");
-        List list = new ArrayList();
-        list.add("1");
-        list.add("2");
-        ctx.put("list", list);
-        // 输出
-        StringWriter sw = new StringWriter();
-        template.merge(ctx, sw);
-        System.out.println(sw.toString());
+//        logic.init();
+//        Template template = logic.getFileTeplate("hellovelocity.vm");
+//        VelocityContext ctx = new VelocityContext();
+//        ctx.put("name", "Velocity");
+//        List list = new ArrayList();
+//        list.add("1");
+//        list.add("2");
+//        ctx.put("list", list);
+//        // 输出
+//        StringWriter sw = new StringWriter();
+//        template.merge(ctx, sw);
+//        System.out.println(sw.toString());
     }
 }

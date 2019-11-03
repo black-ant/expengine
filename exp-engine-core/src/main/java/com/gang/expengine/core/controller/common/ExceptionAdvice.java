@@ -30,4 +30,5 @@ public class ExceptionAdvice extends AbstarctController {
         logger.error("----> Error Msg is :{}", e.getMessage());
         return createErrorResponse(e.getErrorMsg(), e.getErrorCode());
     }
+
 }

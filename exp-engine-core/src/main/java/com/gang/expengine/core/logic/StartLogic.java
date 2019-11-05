@@ -21,7 +21,7 @@ public class StartLogic implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
 //        logic.init();
-//        Template template = logic.getFileTeplate("hellovelocity.vm");
+        Template template = logic.getFileTeplate("hellovelocity.vm");
 //        VelocityContext ctx = new VelocityContext();
 //        ctx.put("name", "Velocity");
 //        List list = new ArrayList();
@@ -32,5 +32,13 @@ public class StartLogic implements ApplicationRunner {
 //        StringWriter sw = new StringWriter();
 //        template.merge(ctx, sw);
 //        System.out.println(sw.toString());
+
+        toDisk();
     }
+
+    public void toDisk() {
+        Template template = new Template();
+    }
+
+
 }

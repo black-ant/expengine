@@ -30,7 +30,11 @@ public class AbstractLogic {
         return new Template();
     }
 
-    public Template getFileTeplate(String fileName) {
+    public Template getFileTemplate(String fileName) {
         return engine.getTemplate(fileName);
+    }
+
+    public Template getTemplateDate() {
+        return engine.getTemplate();
     }
 }

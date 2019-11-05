@@ -1,9 +1,15 @@
 package com.gang.expengine.core.logic;
 
-
-public class AbsractVelocity {
+/**
+ *
+ */
+public abstract class AbsractVelocity {
 
     public void test() {
 
     }
+
+    abstract void run();
+
+
 }

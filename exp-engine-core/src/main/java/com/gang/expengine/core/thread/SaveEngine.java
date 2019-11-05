@@ -4,10 +4,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Service;
 
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.FutureTask;
+import java.util.concurrent.*;
 
 /**
  * @Classname SaveEngine
@@ -16,25 +13,36 @@ import java.util.concurrent.FutureTask;
  * @Created by ant-black 1016930479@qq.com
  */
 @Service
-public class SaveEngine implements ApplicationRunner, Callable<String> {
+public class SaveEngine {
 
 
-
-    public String run(String path) {
-              FutureTask<String> future = new FutureTask<String>(new SaveEngine("a"));
+    // TODO : NEED ADD SAVE LOGIC
+    public String run(ApplicationArguments args) throws Exception {
+        FutureTask<String> future = new FutureTask<String>(new EngineMain());
         ExecutorService executor = Executors.newFixedThreadPool(1);
+        executor.submit(future);
+        return future.get();
+    }
 
+    class EngineMain implements Callable<String> {
+
+        private String path;
+        private String file;
+
+        public EngineMain() {
+        }
+
+        public EngineMain(String path, String file) {
+            this.path = path;
+            this.file = file;
+        }
+
+        @Override
+        public String call() throws Exception {
+            return null;
+        }
 
     }
 
 
-    @Override
-    public String call() throws Exception {
-        return null;
-    }
-
-    @Override
-    public void run(ApplicationArguments args) throws Exception {
-
-    }
 }

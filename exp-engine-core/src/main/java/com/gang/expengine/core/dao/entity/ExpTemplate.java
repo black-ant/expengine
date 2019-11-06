@@ -1,8 +1,11 @@
 package com.gang.expengine.core.dao.entity;
 
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 import java.util.Date;
 
+@Component
 public class ExpTemplate implements Serializable {
     private Integer id;
 

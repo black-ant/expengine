@@ -1,0 +1,25 @@
+resourcePackages:
+  - com.gang.expengine.core.controller
+prettyPrint: true
+cacheTTL: 0
+openAPI:
+  servers:
+    - url: /engine
+  info:
+    version: '1.0'
+    title: gang expengine rest api
+    description: 定时任务服务
+    termsOfService: http://swagger.io/terms/
+    contact:
+      email: zengzg@paraview.cn
+    license:
+      name: gang expengine
+      url: localhost:8080
+  components:
+    securitySchemes:
+      ApiKeyAuth:        # arbitrary name for the security scheme
+        type: apiKey
+        in: header       # can be "header", "query" or "cookie"
+        name: Authorization  # name of the header, query parameter or cookie
+  security:
+    - ApiKeyAuth: [] 

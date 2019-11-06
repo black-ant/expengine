@@ -7,7 +7,9 @@ import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class AbstractLogic {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -34,7 +36,4 @@ public class AbstractLogic {
         return engine.getTemplate(fileName);
     }
 
-    public Template getTemplateDate() {
-        return engine.getTemplate();
-    }
 }

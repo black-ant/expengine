@@ -14,44 +14,6 @@ public class FileIOLogic extends AbstractLogic {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    /**
-     * 读取文本
-     *
-     * @param filepath
-     */
-    public void readFile(String filepath, int fromLineNum) {
-
-        // TODO : 各种判断略
-
-        File logFile = new File(filepath);
-        StringBuffer logContentBuffer = new StringBuffer();
-        int toLineNum = 0;
-        LineNumberReader reader = null;
-        try {
-            //reader = new LineNumberReader(new FileReader(logFile));
-            reader = new LineNumberReader(new InputStreamReader(new FileInputStream(logFile), "utf-8"));
-            String line = null;
-
-            while ((line = reader.readLine()) != null) {
-                toLineNum = reader.getLineNumber();        // [from, to], start as 1
-                if (toLineNum >= fromLineNum) {
-                    logContentBuffer.append(line).append("\n");
-                }
-            }
-        } catch (IOException e) {
-            logger.error(e.getMessage(), e);
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e) {
-                    logger.error(e.getMessage(), e);
-                }
-            }
-        }
-        logger.info("------> msg is :{} <-------", logContentBuffer.toString());
-
-    }
 
     public void readLine(String path) {
         File logFile = new File(path);
@@ -80,54 +42,11 @@ public class FileIOLogic extends AbstractLogic {
         logger.info("------> msg is :{} <-------", sb.toString());
     }
 
-    /**
-     * 写入文本
-     */
-    public void writeFile(String path) {
+    public void writeFile() {
 
-        File file = new File(path);
-
-        if (!checkFileExists(file)) {
-            Boolean isCreate = createFile(file);
-            logger.info("------> 文件已创建 <-------", isCreate);
-        } else {
-            logger.info("------> 文件无需创建 <-------");
-        }
-
-
-        String logfile = this.logDetail();
-        FileOutputStream fos = null;
-        try {
-            fos = new FileOutputStream(file, true);
-            fos.write(logfile.getBytes("utf-8"));
-            // 换行
-            fos.write(System.getProperty("line.separator").getBytes());
-
-            fos.flush();
-        } catch (Exception e) {
-            logger.error(e.getMessage(), e);
-        } finally {
-            if (fos != null) {
-                try {
-                    fos.close();
-                } catch (IOException e) {
-                    logger.error(e.getMessage(), e);
-                }
-            }
-        }
     }
 
-    /**
-     * 创建 File 文件
-     */
-    public Boolean createFile(File file) {
-        try {
-            return file.createNewFile();
-        } catch (IOException e) {
-            logger.info("------> create error  <-------");
-            return Boolean.FALSE;
-        }
-    }
+
 
     /**
      * 查询文件是否存在 , 仅通过路径

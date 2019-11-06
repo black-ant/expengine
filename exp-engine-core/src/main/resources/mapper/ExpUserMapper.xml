@@ -36,6 +36,7 @@
     from exp_user
     where id = #{id,jdbcType=VARCHAR}
   </select>
+
     <select id="selectAll">
     select id, username, user_power, user_password, user_type
     from exp_user

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/engineop")
-public class EngineOperationRest extends AbstarctController {
+public class EngineOperationController extends AbstarctController {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 

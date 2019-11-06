@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("logs")
-public class TemplateLogRest extends AbstarctController {
+public class TemplateLogController extends AbstarctController {
 
     @GetMapping("get/{key}")
     public List<Object> get(@PathVariable("key") String key) {

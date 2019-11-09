@@ -1,10 +1,7 @@
 package com.gang.expengine.core.dao.entity;
 
-import lombok.Data;
-
 import java.io.Serializable;
 
-@Data
 public class ExpUser implements Serializable {
     private String id;
 

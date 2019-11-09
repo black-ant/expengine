@@ -55,7 +55,7 @@
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
         <!-- 生成mapxml对应client，也就是接口dao -->
-        <javaClientGenerator targetPackage=" com.gang.expengine.core.dao.mapper" targetProject="${project}"
+        <javaClientGenerator targetPackage="com.gang.expengine.core.dao.mapper" targetProject="${project}"
                              type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
@@ -69,5 +69,6 @@
         <table tableName="exp_template" enableCountByExample="true" enableUpdateByExample="true"
                enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">
         </table>
+
     </context>
 </generatorConfiguration>

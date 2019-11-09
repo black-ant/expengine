@@ -44,7 +44,7 @@ public class StartLogic implements ApplicationRunner {
 //        template.merge(ctx, sw);
 //        System.out.println(sw.toString());
 
-        toDisk();
+//        toDisk();
     }
 
     public void toDisk() {

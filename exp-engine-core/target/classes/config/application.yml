@@ -1,9 +1,31 @@
+datebase:
+  url: jdbc:mysql://localhost:3306/expengine?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+  user: root
+  password: 123456
 spring:
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: local
   datasource:
+    type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://localhost:3306/expengine?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    data-username: root
-    data-password: 123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+    continue-on-error: true
+    sql-script-encoding: UTF-8
+    hikari:
+      maximum-pool-size: 15
+      minimum-idle: 5
+      jdbc-url: ${datebase.url}
+      username: ${datebase.user}
+      password: ${datebase.password}
+      allow-pool-suspension: true
+      auto-commit: true
+      idle-timeout: 300000
+      pool-name: DatebookHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 300000
+      connection-test-query: SELECT 1
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .html
@@ -11,4 +33,5 @@ spring:
 mybatis:
   type-aliases-package: com.gang.expengine.core.dao.entity
   mapper-locations: classpath:mapper/*.xml
-
+server:
+  port: 8086

@@ -5,8 +5,8 @@ datebase:
 spring:
   main:
     allow-bean-definition-overriding: true
-  profiles:
-    active: local
+  application:
+    name: engine
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://localhost:3306/expengine?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC

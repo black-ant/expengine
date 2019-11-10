@@ -3,6 +3,7 @@ package com.gang.expengine.core.logic;
 import com.gang.expengine.core.common.model.query.TemplateLogsQuery;
 import com.gang.expengine.core.dao.TemplateDAO;
 import com.gang.expengine.core.dao.entity.ExpTemplate;
+import org.apache.commons.lang3.ObjectUtils;
 import org.apache.velocity.Template;
 import org.apache.velocity.app.Velocity;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +41,7 @@ public class TemplateLogic extends AbstractLogic {
      */
     public String getTemplateFromDatebase(TemplateLogsQuery templateLogsQuery) {
         ExpTemplate template = templateDAO.get(1);
-        String body = template.getTemplateBody();
+        String body = ObjectUtils.isEmpty(template) ? "" : template.getTemplateBody();
         return body;
     }
 

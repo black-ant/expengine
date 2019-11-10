@@ -14,7 +14,7 @@ openAPI:
       email: zengzg@paraview.cn
     license:
       name: gang expengine
-      url: localhost:8080
+      url: localhost:8086
   components:
     securitySchemes:
       ApiKeyAuth:        # arbitrary name for the security scheme

@@ -44,7 +44,7 @@ public class StartLogic implements ApplicationRunner {
 //        template.merge(ctx, sw);
 //        System.out.println(sw.toString());
 
-//        toDisk();
+        toDisk();
     }
 
     public void toDisk() {
@@ -61,6 +61,8 @@ public class StartLogic implements ApplicationRunner {
         Velocity.evaluate(context, stringWriter, "mystring", body);
 
         logger.info("------> :{}  <-------", stringWriter.toString());
+
+
     }
 
 

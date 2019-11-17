@@ -3,14 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>common</module>
+        <module>dao</module>
+        <module>thread</module>
+        <module>core</module>
+        <module>ext</module>
+    </modules>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.gang.expengine</groupId>
-    <artifactId>expengine-core</artifactId>
+    <groupId>com.gang.exp.engine</groupId>
+    <artifactId>exp-engine</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -21,6 +31,8 @@
         <swagger-ui.version>3.19.4</swagger-ui.version>
         <guava.version>20.0</guava.version>
         <jakarta.vsersion>2.1.5</jakarta.vsersion>
+
+        <project.version>1.0.0</project.version>
     </properties>
 
     <dependencies>
@@ -88,11 +100,11 @@
             <artifactId>jakarta.ws.rs-api</artifactId>
             <version>${jakarta.vsersion}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>jakarta.annotation</groupId>-->
-<!--            <artifactId>jakarta.annotation-api</artifactId>-->
-<!--            <version>2.1.5</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>jakarta.annotation</groupId>-->
+        <!--            <artifactId>jakarta.annotation-api</artifactId>-->
+        <!--            <version>2.1.5</version>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-annotations</artifactId>

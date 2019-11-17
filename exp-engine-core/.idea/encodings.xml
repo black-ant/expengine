@@ -2,5 +2,13 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exp-engine-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ext" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ext/velocity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread" charset="UTF-8" />
   </component>
 </project>

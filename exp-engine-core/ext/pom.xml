@@ -10,8 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>com-gang-exp-engine-ext</artifactId>
+    <packaging>pom</packaging>
 
     <modules>
         <module>velocity</module>
+        <module>ext-api</module>
     </modules>
 </project>

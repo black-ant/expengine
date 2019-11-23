@@ -7,22 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rest" />
-        <module name="com-gang-expengine-rest" />
         <module name="dao" />
         <module name="common" />
         <module name="com-gang-exp-engine-ext-api" />
         <module name="core" />
         <module name="velocity" />
+        <module name="com-gang-expengine-rest" />
         <module name="thread" />
         <module name="com-gang-exp-engine-velocity" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="com-gang-expengine-rest" target="1.8" />
       <module name="exp-engine-common" target="1.8" />
       <module name="exp-engine-dao" target="1.8" />
       <module name="rest" target="1.8" />
-      <module name="velocity" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -1,7 +1,6 @@
 package com.gang.exp.engine.rest.common;
 
 import com.gang.exp.engine.common.module.ResponseModel;
-import com.gang.exp.engine.exception.ExchangeException;
 import com.gang.exp.engine.rest.AbstarctController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,10 +24,10 @@ public class ExceptionAdvice extends AbstarctController {
      * @param e
      * @return
      */
-    @ExceptionHandler({ExchangeException.class})
-    public ResponseModel handleMsgServerException(ExchangeException e) {
-        logger.error("----> Error Msg is :{}", e.getMessage());
-        return createErrorResponse(e.getErrorMsg(), e.getErrorCode());
-    }
+//    @ExceptionHandler({ExchangeException.class})
+//    public ResponseModel handleMsgServerException(ExchangeException e) {
+//        logger.error("----> Error Msg is :{}", e.getMessage());
+//        return createErrorResponse(e.getErrorMsg(), e.getErrorCode());
+//    }
 
 }

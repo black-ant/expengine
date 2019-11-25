@@ -11,21 +11,22 @@
         <module>thread</module>
         <module>core</module>
         <module>ext</module>
+        <module>rest</module>
     </modules>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.5.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+<!--    <parent>-->
+<!--        <groupId>org.springframework.boot</groupId>-->
+<!--        <artifactId>spring-boot-starter-parent</artifactId>-->
+<!--        <version>2.1.0.RELEASE</version>-->
+<!--&lt;!&ndash;        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;&ndash;&gt;-->
+<!--    </parent>-->
     <groupId>com.gang.exp.engine</groupId>
-    <artifactId>exp-engine</artifactId>
+    <artifactId>com-gang-exp-engine</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <common.lang>3.9</common.lang>
-        <mybatis.version>2.1.0</mybatis.version>
+        <mybatis.version>2.0.1</mybatis.version>
 
         <swagger-core.version>2.0.8</swagger-core.version>
         <swagger-ui.version>3.19.4</swagger-ui.version>
@@ -34,6 +35,20 @@
 
         <project.version>1.0.0</project.version>
     </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.2.0.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 
     <dependencies>
         <!--        <dependency>

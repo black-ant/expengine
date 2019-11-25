@@ -4,9 +4,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Stream;
 import java.util.Properties;
 import java.util.function.Function;
+import java.util.stream.Stream;
 
 /**
  * @Classname TemplateUtil

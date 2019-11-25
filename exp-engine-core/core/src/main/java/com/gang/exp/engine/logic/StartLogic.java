@@ -1,6 +1,6 @@
 package com.gang.exp.engine.logic;
 
-import com.gang.exp.engine.core.common.model.query.TemplateLogsQuery;
+import com.gang.exp.engine.common.query.TemplateLogsQuery;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.Velocity;
 import org.slf4j.Logger;

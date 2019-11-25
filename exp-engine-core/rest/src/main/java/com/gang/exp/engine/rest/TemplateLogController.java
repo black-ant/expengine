@@ -14,11 +14,11 @@ public class TemplateLogController extends AbstarctController {
 
     @GetMapping("get/{key}")
     public List<Object> get(@PathVariable("key") String key) {
-        return new LinkedList<>();
+        return new LinkedList();
     }
 
     @GetMapping("getAll/{key}")
     public List<Object> getAll(@PathVariable("key") String key) {
-        return new LinkedList<>();
+        return new LinkedList();
     }
 }

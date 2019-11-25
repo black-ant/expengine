@@ -49,15 +49,15 @@ public class TemplateLogic extends AbstractLogic {
      * @param basePath
      * @return
      */
-    public Template loadTemplateFile(String sysRoot, String basePath) {
-        return engine.getTemplate(sysRoot + basePath, "UTF-8");
-    }
+//    public Template loadTemplateFile(String sysRoot, String basePath) {
+//        return engine.getTemplate(sysRoot + basePath, "UTF-8");
+//    }
 
     /**
      * @param classPath
      * @return
      */
-    public Template loadTemplateClassPath(String classPath) {
-        return engine.getTemplate(classPath, "gbk");
-    }
+//    public Template loadTemplateClassPath(String classPath) {
+//        return engine.getTemplate(classPath, "gbk");
+//    }
 }

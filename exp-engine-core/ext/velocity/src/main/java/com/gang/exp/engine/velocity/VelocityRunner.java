@@ -10,16 +10,8 @@ import com.gang.exp.engine.api.EngineRunner;
  */
 public class VelocityRunner implements EngineRunner {
 
-    //    @Override
-    public String doEngine() {
-        //        velocity.init();
-        //
-        //        VelocityContext context = new VelocityContext();
-        //
-        //        context.put("name", new String("Velocity"));
-        //
-        //        Template template = null;
-
+    @Override
+    public String doEngine(String templateText) {
 
         return null;
     }

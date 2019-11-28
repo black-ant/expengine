@@ -24,17 +24,17 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="com-gang-exp-engine-ext-api" options="" />
-      <module name="com-gang-exp-engine-velocity" options="" />
-      <module name="common" options="" />
-      <module name="core" options="" />
-      <module name="dao" options="" />
+      <module name="com-gang-exp-engine-ext-api" options="-Xlint:unchecked" />
+      <module name="com-gang-exp-engine-velocity" options="-Xlint:unchecked" />
+      <module name="common" options="-Xlint:unchecked" />
+      <module name="core" options="-Xlint:unchecked" />
+      <module name="dao" options="-Xlint:unchecked" />
       <module name="exp-engine-common" options="-parameters" />
       <module name="exp-engine-core" options="-parameters" />
       <module name="exp-engine-dao" options="-parameters" />
       <module name="ext" options="-parameters" />
-      <module name="rest" options="" />
-      <module name="thread" options="" />
+      <module name="rest" options="-Xlint:unchecked" />
+      <module name="thread" options="-Xlint:unchecked" />
       <module name="velocity" options="-parameters" />
     </option>
   </component>

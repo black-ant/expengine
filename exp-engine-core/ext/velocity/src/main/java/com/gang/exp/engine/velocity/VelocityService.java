@@ -7,4 +7,8 @@ package com.gang.exp.engine.velocity;
  * @Created by zengzg
  */
 public class VelocityService {
+
+    public String exchange() {
+        return "";
+    }
 }

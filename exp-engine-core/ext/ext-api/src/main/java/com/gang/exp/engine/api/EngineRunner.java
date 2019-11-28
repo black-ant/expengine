@@ -8,6 +8,7 @@ package com.gang.exp.engine.api;
  */
 public interface EngineRunner {
 
-    public String doEngine();
+    public String doEngine(String templateText);
+
 
 }

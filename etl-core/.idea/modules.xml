@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/com-gang-exp-engine-common.iml" filepath="$PROJECT_DIR$/common/com-gang-exp-engine-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/output/velocity/com-gang-exp-engine-velocity.iml" filepath="$PROJECT_DIR$/output/velocity/com-gang-exp-engine-velocity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com-gang-exp-etl.iml" filepath="$PROJECT_DIR$/com-gang-exp-etl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datacenter/com-gang-exp-etl-datacenter.iml" filepath="$PROJECT_DIR$/datacenter/com-gang-exp-etl-datacenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/engine/com-gang-exp-etl-engine.iml" filepath="$PROJECT_DIR$/engine/com-gang-exp-etl-engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logic/com-gang-exp-etl-logic.iml" filepath="$PROJECT_DIR$/logic/com-gang-exp-etl-logic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/output/com-gang-exp-etl-output.iml" filepath="$PROJECT_DIR$/output/com-gang-exp-etl-output.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest/com-gang-exp-etl-rest.iml" filepath="$PROJECT_DIR$/rest/com-gang-exp-etl-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/output/commonout/commonout.iml" filepath="$PROJECT_DIR$/output/commonout/commonout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/output/output-sdk/output-sdk.iml" filepath="$PROJECT_DIR$/output/output-sdk/output-sdk.iml" />
+    </modules>
+  </component>
+</project>

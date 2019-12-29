@@ -36,7 +36,6 @@
     <orderEntry type="module" module-name="output-sdk" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.62" level="project" />
     <orderEntry type="module" module-name="com-gang-exp-engine-common" />
-    <orderEntry type="library" name="Maven: com.gang.exp.engine:com-gang-exp-engine-thread:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.10" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.uuid:java-uuid-generator:3.1.5" level="project" />
     <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.2.0" level="project" />

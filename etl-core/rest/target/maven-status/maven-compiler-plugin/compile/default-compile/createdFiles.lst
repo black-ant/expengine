@@ -1,8 +1,0 @@
-com\gang\exp\engine\rest\AbstarctController.class
-com\gang\exp\engine\rest\common\ExceptionAdvice.class
-com\gang\exp\engine\rest\EngineOperationController.class
-com\gang\exp\engine\rest\TemplateController.class
-com\gang\exp\engine\rest\UserController.class
-com\gang\exp\engine\rest\config\JerseyConfig.class
-com\gang\exp\engine\rest\TemplateLogController.class
-com\gang\exp\engine\rest\config\MyWebMvcConfig.class

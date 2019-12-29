@@ -4,16 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>com.gang.exp</groupId>
-        <artifactId>com-gang-exp-etl</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>com.gang</groupId>
+        <artifactId>com-gang-etl</artifactId>
+        <version>1.0.0</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>com-gang-exp-etl-datacenter</artifactId>
-    <groupId>org.springframework.boot</groupId>
-    <version>1.0.0</version>
+    <artifactId>com-gang-etl-datacenter</artifactId>
 
     <dependencies>
         <dependency>
@@ -34,7 +32,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.13</version>
+            <version>5.1.48</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -49,11 +47,11 @@
             <optional>true</optional>
             <version>1.18.10</version>
         </dependency>
-        <!--        <dependency>-->
-        <!--            <artifactId>mybatis-generator-core</artifactId>-->
-        <!--            <groupId>org.mybatis.generator</groupId>-->
-        <!--            <version>1.3.7</version>-->
-        <!--        </dependency>-->
+        <dependency>
+            <artifactId>mybatis-generator-core</artifactId>
+            <groupId>org.mybatis.generator</groupId>
+            <version>1.3.7</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -62,38 +60,38 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <!--            <plugin>-->
-            <!--                <groupId>org.mybatis.generator</groupId>-->
-            <!--                <artifactId>mybatis-generator-maven-plugin</artifactId>-->
-            <!--                <version>1.3.5</version>-->
-            <!--                <executions>-->
-            <!--                    <execution>-->
-            <!--                        <id>Generate MyBatis Artifacts</id>-->
-            <!--                        <phase>deploy</phase>-->
-            <!--                        <goals>-->
-            <!--                            <goal>generate</goal>-->
-            <!--                        </goals>-->
-            <!--                    </execution>-->
-            <!--                </executions>-->
-            <!--                <configuration>-->
-            <!--                    &lt;!&ndash; generator 工具配置文件的位置 &ndash;&gt;-->
-            <!--                    <configurationFile>src/main/resources/config/generatorConfig.xml</configurationFile>-->
-            <!--                    <verbose>true</verbose>-->
-            <!--                    <overwrite>true</overwrite>-->
-            <!--                </configuration>-->
-            <!--                <dependencies>-->
-            <!--                    <dependency>-->
-            <!--                        <groupId>mysql</groupId>-->
-            <!--                        <artifactId>mysql-connector-java</artifactId>-->
-            <!--                        <version>8.0.13</version>-->
-            <!--                    </dependency>-->
-            <!--                    <dependency>-->
-            <!--                        <groupId>org.mybatis.generator</groupId>-->
-            <!--                        <artifactId>mybatis-generator-core</artifactId>-->
-            <!--                        <version>1.3.5</version>-->
-            <!--                    </dependency>-->
-            <!--                </dependencies>-->
-            <!--            </plugin>-->
+            <plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>1.3.5</version>
+                <executions>
+                    <execution>
+                        <id>Generate MyBatis Artifacts</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- generator 工具配置文件的位置 -->
+                    <configurationFile>src/main/resources/config/generatorConfig.xml</configurationFile>
+                    <verbose>true</verbose>
+                    <overwrite>true</overwrite>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>5.1.48</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.mybatis.generator</groupId>
+                        <artifactId>mybatis-generator-core</artifactId>
+                        <version>1.3.5</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
         </plugins>
     </build>
 

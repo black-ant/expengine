@@ -12,7 +12,6 @@
         <module name="commonout" />
         <module name="com-gang-exp-etl-datacenter" />
         <module name="com-gang-exp-engine-common" />
-        <module name="com-gang-exp-etl-rest" />
         <module name="com-gang-exp-engine-velocity" />
       </profile>
     </annotationProcessing>

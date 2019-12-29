@@ -9,7 +9,6 @@
       <module fileurl="file://$PROJECT_DIR$/engine/com-gang-exp-etl-engine.iml" filepath="$PROJECT_DIR$/engine/com-gang-exp-etl-engine.iml" />
       <module fileurl="file://$PROJECT_DIR$/logic/com-gang-exp-etl-logic.iml" filepath="$PROJECT_DIR$/logic/com-gang-exp-etl-logic.iml" />
       <module fileurl="file://$PROJECT_DIR$/output/com-gang-exp-etl-output.iml" filepath="$PROJECT_DIR$/output/com-gang-exp-etl-output.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rest/com-gang-exp-etl-rest.iml" filepath="$PROJECT_DIR$/rest/com-gang-exp-etl-rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/output/commonout/commonout.iml" filepath="$PROJECT_DIR$/output/commonout/commonout.iml" />
       <module fileurl="file://$PROJECT_DIR$/output/output-sdk/output-sdk.iml" filepath="$PROJECT_DIR$/output/output-sdk/output-sdk.iml" />
     </modules>

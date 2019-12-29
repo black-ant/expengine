@@ -3,9 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>com-gang-exp-etl-ext</artifactId>
-        <groupId>com.gang.exp</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <artifactId>com-gang-etl-ext</artifactId>
+        <groupId>com.gang</groupId>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -23,8 +23,8 @@
             <artifactId>fastjson</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.gang.exp</groupId>
-            <artifactId>com-gang-exp-etl-common</artifactId>
+            <groupId>com.gang</groupId>
+            <artifactId>com-gang-etl-common</artifactId>
             <version>${project.version}</version>
         </dependency>
 

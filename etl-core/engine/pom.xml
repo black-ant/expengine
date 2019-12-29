@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.gang.exp</groupId>
-        <artifactId>com-gang-exp-etl</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>com.gang</groupId>
+        <artifactId>com-gang-etl</artifactId>
+        <version>1.0.0</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>com-gang-exp-engine-thread</artifactId>
+    <artifactId>com-gang-exp-etl-engine</artifactId>
 
     <dependencies>
         <dependency>
@@ -18,20 +18,14 @@
             <version>${spring.boot.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.gang.exp</groupId>
+            <groupId>com.gang</groupId>
             <artifactId>com-gang-exp-output-sdk</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-            </plugin>
-        </plugins>
         <pluginManagement>
             <plugins>
                 <!--This plugin's configuration is used to store Eclipse m2e settings only. It has

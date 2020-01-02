@@ -2,46 +2,48 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com-gang-exp-etl-logic" />
         <module name="com-gang-exp-etl-engine" />
-        <module name="output-sdk" />
-        <module name="commonout" />
-        <module name="com-gang-exp-etl-datacenter" />
+        <module name="datacenter" />
+        <module name="out-velocity" />
+        <module name="out-common" />
         <module name="com-gang-exp-engine-common" />
-        <module name="com-gang-exp-engine-velocity" />
+        <module name="server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com-gang-exp-engine-common" target="8" />
-      <module name="com-gang-exp-engine-ext-api" target="1.8" />
-      <module name="com-gang-exp-engine-output" target="1.8" />
       <module name="com-gang-exp-engine-velocity" target="1.8" />
       <module name="com-gang-exp-etl" target="1.8" />
       <module name="com-gang-exp-etl-datacenter" target="1.8" />
       <module name="com-gang-exp-etl-engine" target="1.8" />
       <module name="com-gang-exp-etl-logic" target="1.8" />
       <module name="com-gang-exp-etl-output" target="1.8" />
-      <module name="com-gang-exp-etl-rest" target="1.8" />
       <module name="commonout" target="1.8" />
+      <module name="datacenter" target="1.8" />
+      <module name="out-common" target="1.8" />
+      <module name="out-velocity" target="1.8" />
       <module name="output-sdk" target="1.8" />
+      <module name="server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="com-gang-exp-engine-common" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-exp-engine-ext-api" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-exp-engine-output" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-exp-engine-velocity" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-exp-etl-datacenter" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-exp-etl-engine" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-exp-etl-logic" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-exp-etl-rest" options="-parameters -Xlint:unchecked" />
       <module name="commonout" options="-parameters -Xlint:unchecked" />
+      <module name="datacenter" options="-parameters -Xlint:unchecked" />
+      <module name="out-common" options="-parameters -Xlint:unchecked" />
+      <module name="out-velocity" options="-parameters -Xlint:unchecked" />
       <module name="output-sdk" options="-parameters -Xlint:unchecked" />
+      <module name="server" options="-parameters -Xlint:unchecked" />
     </option>
   </component>
 </project>

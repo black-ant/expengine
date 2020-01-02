@@ -8,8 +8,12 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/datacenter/pom.xml" />
+        <option value="$PROJECT_DIR$/output/commonout/pom.xml" />
         <option value="$PROJECT_DIR$/output/ext-api/pom.xml" />
         <option value="$PROJECT_DIR$/output/output/pom.xml" />
+        <option value="$PROJECT_DIR$/output/pom.xml" />
+        <option value="$PROJECT_DIR$/output/velocity/pom.xml" />
       </set>
     </option>
   </component>

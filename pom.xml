@@ -10,6 +10,7 @@
         <module>out-common</module>
         <module>out-velocity</module>
         <module>out-messagequeue</module>
+        <module>engine</module>
     </modules>
 
     <parent>

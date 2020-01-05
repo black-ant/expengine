@@ -10,6 +10,7 @@
         <module name="datacenter" />
         <module name="common-lib" />
         <module name="out-messagequeue" />
+        <module name="engine" />
         <module name="out-common" />
         <module name="server" />
       </profile>
@@ -19,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common-lib" options="-parameters" />
       <module name="datacenter" options="-parameters" />
+      <module name="engine" options="-parameters" />
       <module name="out-common" options="-parameters" />
       <module name="out-messagequeue" options="-parameters" />
       <module name="out-velocity" options="-parameters" />

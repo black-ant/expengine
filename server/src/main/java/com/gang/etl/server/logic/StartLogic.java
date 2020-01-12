@@ -1,6 +1,7 @@
 package com.gang.etl.server.logic;
 
 import com.gang.etl.datacenter.dao.ExpUserDAO;
+import com.gang.etl.out.common.output.OrgCommonOutput;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,9 +23,17 @@ public class StartLogic implements ApplicationRunner {
     @Autowired
     private ExpUserDAO expUserDAO;
 
+    @Autowired
+    private OrgCommonOutput orgCommonOutput;
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
         logger.info("------> {} <-------", expUserDAO.findAll());
+    }
 
+
+    public String create() {
+        String backInfo = orgCommonOutput.createOrg();
+        return "ok";
     }
 }

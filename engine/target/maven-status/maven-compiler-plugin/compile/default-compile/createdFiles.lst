@@ -1,0 +1,4 @@
+com\gang\etl\engine\logic\AbstractParamLogic.class
+com\gang\etl\engine\logic\ToParamLogic.class
+com\gang\etl\engine\EngineApplication.class
+com\gang\etl\engine\logic\TemplateParamLogic.class

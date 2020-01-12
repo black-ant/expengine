@@ -1,6 +1,7 @@
 package com.gang.etl.server.controller;
 
 import com.gang.common.swagger.config.SwaggerConfig;
+import com.gang.etl.server.logic.StartLogic;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,9 @@ public class StartController {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    @Autowired
+    private StartLogic startLogic;
+
     @Value("${server.port}")
     private String serverPort;
 
@@ -34,5 +38,10 @@ public class StartController {
     @GetMapping("getInfo/{info}")
     public String getInfo(@PathVariable("info") String info) {
         return "test getInfo path , this port is :" + info;
+    }
+
+    @GetMapping("create")
+    public String create() {
+        return startLogic.create();
     }
 }

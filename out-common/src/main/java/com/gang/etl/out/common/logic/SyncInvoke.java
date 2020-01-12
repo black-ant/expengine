@@ -1,5 +1,6 @@
 package com.gang.etl.out.common.logic;
 
+import com.gang.sdk.api.to.SyncBaseBean;
 import com.gang.sdk.api.type.SyncOperationType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.Map;
 
 /**
  * @Classname SyncInvoke
@@ -24,25 +26,45 @@ public class SyncInvoke {
     private SyncSDKFactory syncSDKFactory;
 
 
+    public SyncBaseBean invoke(String clazzName, SyncOperationType syncOperationType, Map<String, Object> params) {
+
+        logger.info("------> this is in invoke <-------");
+
+        SyncBaseBean syncBaseBean = null;
+        try {
+            Class<?> handler = Class.forName(clazzName);
+            syncBaseBean = invokeMain(handler, syncOperationType, params);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return syncBaseBean;
+    }
+
+
     /**
      * invoke 核心逻辑
      *
-     * @param paras
+     * @param params
      * @return
      */
-    public Object invokeMain(Class clazz, SyncOperationType syncOperationType, Object... paras) {
+    public SyncBaseBean invokeMain(Class clazz, SyncOperationType syncOperationType, Map<String, Object> params) {
 
-        Object baseBean = null;
-        try {
-            Method method = doMethod(clazz, syncOperationType);
-            baseBean = syncSDKFactory.classLoadTO(method);
-            baseBean = method.invoke(syncSDKFactory.classLoader(clazz.getName()), paras);
-        } catch (IllegalAccessException e) {
-            logger.error("E----> error :{} -- content :{}", e.getClass() + e.getMessage(), e);
+        SyncBaseBean baseBean = null;
+        //        try {
+        Method method = doMethod(clazz, syncOperationType);
+        baseBean = syncSDKFactory.classLoadTO(method);
+        //            if (params.size() == 0) {
+        //                baseBean = (SyncBaseBean) method.invoke(syncSDKFactory.classLoader(clazz.getName()), paras);
+        //            } else if (params.size() == 1) {
+        //                baseBean = (SyncBaseBean) method.invoke(syncSDKFactory.classLoader(clazz.getName()), paras);
+        //            }
 
-        } catch (InvocationTargetException e) {
-            logger.error("E----> error :{} -- content :{}", e.getClass() + e.getMessage(), e);
-        }
+        //        } catch (IllegalAccessException e) {
+        //            logger.error("E----> error :{} -- content :{}", e.getClass() + e.getMessage(), e);
+        //
+        //        } catch (InvocationTargetException e) {
+        //            logger.error("E----> error :{} -- content :{}", e.getClass() + e.getMessage(), e);
+        //        }
         return baseBean;
     }
 

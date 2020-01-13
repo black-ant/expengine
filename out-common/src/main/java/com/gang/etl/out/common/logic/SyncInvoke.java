@@ -1,12 +1,17 @@
 package com.gang.etl.out.common.logic;
 
+import com.alibaba.fastjson.JSONObject;
+import com.gang.common.lib.to.ResponseModel;
+import com.gang.common.lib.utils.ReflectionUtils;
 import com.gang.sdk.api.to.SyncBaseBean;
 import com.gang.sdk.api.type.SyncOperationType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.lang.reflect.Array;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Map;
@@ -26,11 +31,11 @@ public class SyncInvoke {
     private SyncSDKFactory syncSDKFactory;
 
 
-    public SyncBaseBean invoke(String clazzName, SyncOperationType syncOperationType, Map<String, Object> params) {
+    public ResponseModel invoke(String clazzName, SyncOperationType syncOperationType, Map<String, JSONObject> params) {
 
         logger.info("------> this is in invoke <-------");
 
-        SyncBaseBean syncBaseBean = null;
+        ResponseModel syncBaseBean = null;
         try {
             Class<?> handler = Class.forName(clazzName);
             syncBaseBean = invokeMain(handler, syncOperationType, params);
@@ -47,25 +52,39 @@ public class SyncInvoke {
      * @param params
      * @return
      */
-    public SyncBaseBean invokeMain(Class clazz, SyncOperationType syncOperationType, Map<String, Object> params) {
+    public ResponseModel invokeMain(Class clazz, SyncOperationType syncOperationType, Map<String, JSONObject> params) {
 
-        SyncBaseBean baseBean = null;
-        //        try {
-        Method method = doMethod(clazz, syncOperationType);
-        baseBean = syncSDKFactory.classLoadTO(method);
-        //            if (params.size() == 0) {
-        //                baseBean = (SyncBaseBean) method.invoke(syncSDKFactory.classLoader(clazz.getName()), paras);
-        //            } else if (params.size() == 1) {
-        //                baseBean = (SyncBaseBean) method.invoke(syncSDKFactory.classLoader(clazz.getName()), paras);
-        //            }
+        logger.info("------> in invokeMain <-------");
 
-        //        } catch (IllegalAccessException e) {
-        //            logger.error("E----> error :{} -- content :{}", e.getClass() + e.getMessage(), e);
-        //
-        //        } catch (InvocationTargetException e) {
-        //            logger.error("E----> error :{} -- content :{}", e.getClass() + e.getMessage(), e);
-        //        }
+        ResponseModel baseBean = null;
+        try {
+            Method method = doMethod(clazz, syncOperationType);
+            baseBean = syncSDKFactory.classLoadTO(method);
+
+            baseBean = (ResponseModel) method.invoke(syncSDKFactory.springClassLoad(clazz.getName()),
+                    getParamObject(method, params));
+
+        } catch (IllegalAccessException e) {
+            logger.error("E----> error :{} -- content :{}", e.getClass() + e.getMessage(), e);
+
+        } catch (InvocationTargetException e) {
+            logger.error("E----> error :{} -- content :{}", e.getClass() + e.getMessage(), e);
+        }
         return baseBean;
+    }
+
+    /**
+     * 属性转
+     */
+    public Object[] getParamObject(Method method, Map<String, JSONObject> params) {
+
+        Object[] paramArray = new Object[method.getParameterTypes().length];
+        for (int i = 0; i < method.getParameterTypes().length; i++) {
+            Class clazz = method.getParameterTypes()[i];
+            JSONObject paramInfo = params.get(clazz.getSimpleName());
+            paramArray[i] = JSONObject.toJavaObject(paramInfo, clazz);
+        }
+        return paramArray;
     }
 
     public Method doMethod(Class clazz, SyncOperationType syncOperationType) {

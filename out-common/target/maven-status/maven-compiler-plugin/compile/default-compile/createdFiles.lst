@@ -4,4 +4,5 @@ com\gang\etl\out\common\output\FileOutput.class
 com\gang\etl\out\common\logic\SyncMethodInfo.class
 com\gang\etl\out\common\logic\SyncInvoke.class
 com\gang\etl\out\common\logic\SyncSDKFactory.class
+com\gang\etl\out\common\output\OrgCommonOutput.class
 com\gang\etl\out\common\output\TxtOutput.class

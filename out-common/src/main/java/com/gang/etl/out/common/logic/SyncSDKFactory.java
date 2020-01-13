@@ -1,6 +1,7 @@
 package com.gang.etl.out.common.logic;
 
 import com.alibaba.fastjson.JSONObject;
+import com.gang.common.lib.to.ResponseModel;
 import com.gang.etl.common.lib.exception.SyncErrorEnum;
 import com.gang.etl.common.lib.exception.SyncException;
 import com.gang.etl.datacenter.dao.SyncTypeDAO;
@@ -38,7 +39,8 @@ public class SyncSDKFactory {
     @Autowired
     private SyncMethodInfo syncMethodInfo;
 
-    private ConcurrentHashMap<String, ConcurrentHashMap<String, Method>> methodMap = new ConcurrentHashMap<String, ConcurrentHashMap<String, Method>>();
+    private ConcurrentHashMap<String, ConcurrentHashMap<String, Method>> methodMap = new ConcurrentHashMap<String,
+            ConcurrentHashMap<String, Method>>();
 
 
     /**
@@ -95,11 +97,11 @@ public class SyncSDKFactory {
      *
      * @param
      */
-    public SyncBaseBean classLoadTO(Method method) {
-        SyncBaseBean toBean = null;
+    public ResponseModel classLoadTO(Method method) {
+        ResponseModel toBean = null;
         try {
             Class className = method.getReturnType();
-            toBean = (SyncBaseBean) springClassLoad(className.getName());
+            toBean = (ResponseModel) classLoader(className.getName());
         } catch (Exception e) {
             logger.error("E----> not found send class :{} --- content :{} ", e.getClass(), e);
         }

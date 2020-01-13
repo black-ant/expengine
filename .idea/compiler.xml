@@ -11,14 +11,14 @@
         <module name="engine" />
         <module name="com-gang-ext-sdk-workwechat" />
         <module name="com-gang-sdk-dingtalk" />
-        <module name="com-gang-common-lib" />
         <module name="common-lib" />
         <module name="com-gang-commn-mybatis" />
         <module name="com-gang-ext-wechat" />
-        <module name="com-gang-ext-sdk-parent" />
+        <module name="com-gang-common-lib" />
         <module name="out-velocity" />
         <module name="server" />
         <module name="com-gang-sdk-api" />
+        <module name="com-gang-ext-sdk-parent" />
         <module name="com-gang-common-swagger" />
         <module name="out-messagequeue" />
         <module name="com-gang-common-redis" />

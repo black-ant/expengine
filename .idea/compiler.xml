@@ -9,6 +9,7 @@
         <module name="out-common" />
         <module name="com-gang-common-parent-sdk" />
         <module name="engine" />
+        <module name="com-gang-common-cache" />
         <module name="com-gang-ext-sdk-workwechat" />
         <module name="com-gang-sdk-dingtalk" />
         <module name="common-lib" />
@@ -21,17 +22,19 @@
         <module name="com-gang-ext-sdk-parent" />
         <module name="com-gang-common-swagger" />
         <module name="out-messagequeue" />
-        <module name="com-gang-common-redis" />
         <module name="datacenter" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com-gang-common-cache" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="com-gang-commn-mybatis" options="-parameters -Xlint:unchecked" />
+      <module name="com-gang-common-cache" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-lib" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-parent-sdk" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-common-redis" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-swagger" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-ext-sdk-parent" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-ext-sdk-workwechat" options="-parameters -Xlint:unchecked" />

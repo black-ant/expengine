@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
  * SyncSettingDAO继承基类
  */
 @Repository
-public interface SyncSettingDAO extends MyBatisBaseDao<SyncSetting, SyncSetting> {
+public interface SyncSettingMapper extends MyBatisBaseMapper<SyncSetting, SyncSetting> {
 }

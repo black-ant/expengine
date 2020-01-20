@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
  */
 @Mapper
 @Repository
-public interface SyncStrategyDAO extends MyBatisBaseDao<SyncStrategy, String> {
+public interface SyncStrategyMapper extends MyBatisBaseMapper<SyncStrategy, String> {
 }

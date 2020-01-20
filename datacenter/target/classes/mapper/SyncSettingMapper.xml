@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.gang.etl.datacenter.mapper.SyncSettingDAO">
+<mapper namespace="com.gang.etl.datacenter.mapper.SyncSettingMapper">
   <resultMap id="BaseResultMap" type="com.gang.etl.datacenter.entity.SyncSetting">
     <result column="id" jdbcType="VARCHAR" property="id" />
     <result column="setting_body" jdbcType="VARCHAR" property="settingBody" />

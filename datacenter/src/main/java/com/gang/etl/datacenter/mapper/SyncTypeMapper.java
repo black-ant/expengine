@@ -8,7 +8,8 @@ import java.util.List;
 
 @Component
 @Mapper
-public interface SyncTypeMapper {
+public interface SyncTypeMapper extends MyBatisBaseMapper<SyncType, String> {
+
     int deleteByPrimaryKey(String id);
 
     int insert(SyncType record);

@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Classname SyncAppController
+ * @Classname SyncTypeController
  * @Description TODO
- * @Date 2020/1/15 21:50
+ * @Date 2020/1/20 22:43
  * @Created by zengzg
  */
 @RestController
-@RequestMapping("/app")
-public class SyncAppController {
+@RequestMapping("/synctype")
+public class SyncTypeController {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -46,6 +46,4 @@ public class SyncAppController {
         logger.info("------> delete <-------");
         return ResponseModel.commonResponse(code);
     }
-
-
 }

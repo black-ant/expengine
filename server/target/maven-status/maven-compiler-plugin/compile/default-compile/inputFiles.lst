@@ -1,6 +1,8 @@
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\config\MyWebMvcConfig.java
+D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\SyncAppController.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\AbstractLogic.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\SyncFieldInfoController.java
+D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\SyncSettingController.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\AbsractVelocity.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\FileIOLogic.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\SyncFieldInfoLogic.java

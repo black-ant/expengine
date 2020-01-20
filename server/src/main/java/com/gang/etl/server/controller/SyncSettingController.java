@@ -22,7 +22,7 @@ public class SyncSettingController {
         return "";
     }
 
-    @PostMapping("/create")
+    @PostMapping("/insert")
     public String create(SyncSetting syncSetting) {
         return "";
     }

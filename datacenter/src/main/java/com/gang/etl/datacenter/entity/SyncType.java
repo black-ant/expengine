@@ -1,11 +1,13 @@
 package com.gang.etl.datacenter.entity;
 
 import java.io.Serializable;
+
 import lombok.Data;
 
 /**
  * sync_type
- * @author 
+ *
+ * @author
  */
 @Data
 public class SyncType implements Serializable {
@@ -20,6 +22,11 @@ public class SyncType implements Serializable {
      * 策略类型
      */
     private String typePolicy;
+
+    /**
+     * 类型代码
+     */
+    private String typeCode;
 
     /**
      * 类型名

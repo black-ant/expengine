@@ -3,6 +3,7 @@ com\gang\etl\server\config\MyWebMvcConfig.class
 com\gang\etl\server\logic\StartLogic.class
 com\gang\etl\server\logic\SyncFieldInfoLogic.class
 com\gang\etl\server\controller\SyncFieldInfoController.class
+com\gang\etl\server\controller\SyncTypeController.class
 com\gang\etl\server\controller\SyncSettingController.class
 com\gang\etl\server\logic\AbstractLogic.class
 com\gang\etl\server\controller\StartController.class

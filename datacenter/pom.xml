@@ -13,6 +13,10 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.gang</groupId>
             <artifactId>com-gang-commn-mybatis</artifactId>
             <version>1.0.0</version>

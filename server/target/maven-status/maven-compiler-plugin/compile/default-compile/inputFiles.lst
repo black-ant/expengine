@@ -10,6 +10,7 @@ D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\lo
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\exception\ExchangeException.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\StartLogic.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\TemplateLogic.java
+D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\SyncTypeController.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\ServerApplication.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\exception\ExchangeErrorEnum.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\StartController.java

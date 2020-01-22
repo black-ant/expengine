@@ -14,7 +14,7 @@ public interface SyncTypeMapper extends MyBatisBaseMapper<SyncType, String> {
 
     int insert(SyncType record);
 
-    SyncType selectByPrimaryKey(String id);
+    SyncType getByKeyOrCode(String id);
 
     SyncType selectByNameAndData(String typeName, String dataType);
 

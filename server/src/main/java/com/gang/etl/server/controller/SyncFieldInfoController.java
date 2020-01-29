@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.List;
+
 /**
  * @Classname SyncFieldInfoController
  * @Description TODO
@@ -34,11 +36,11 @@ public class SyncFieldInfoController {
     }
 
     @PostMapping("/gettos")
-    public ResponseModel<String> getTOSField(@RequestParam("syncType") String syncType, @RequestParam(
+    public ResponseModel<List<String>> getTOSField(@RequestParam("syncType") String syncType, @RequestParam(
             "syncType") String operation) {
 
         logger.info("------> syncType :{} + sync operation :{} <-------", syncType, operation);
-        return ResponseModel.commonResponse("");
+        return ResponseModel.commonResponse(syncFieldInfoLogic.getTOSMap(syncType));
     }
 
     @GetMapping("/get/{key}")

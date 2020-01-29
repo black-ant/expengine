@@ -21,11 +21,11 @@
         #{typeName,jdbcType=VARCHAR}, #{supplierId,jdbcType=VARCHAR}, #{supplierName,jdbcType=VARCHAR},
         #{dataType,jdbcType=VARCHAR}
     </sql>
-    <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <select id="getByKeyOrCode" parameterType="java.lang.String" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
         from sync_type
-        where id = #{id,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=VARCHAR} OR type_code = #{id,jdbcType=VARCHAR}
     </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from sync_type

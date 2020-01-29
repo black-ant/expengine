@@ -19,10 +19,12 @@
         <module name="out-velocity" />
         <module name="server" />
         <module name="com-gang-sdk-api" />
+        <module name="com-gang-common-multiple-source" />
         <module name="com-gang-ext-sdk-parent" />
+        <module name="out-msgqueue" />
         <module name="com-gang-common-swagger" />
-        <module name="out-messagequeue" />
         <module name="datacenter" />
+        <module name="out-database" />
       </profile>
     </annotationProcessing>
   </component>
@@ -31,6 +33,7 @@
       <module name="com-gang-commn-mybatis" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-cache" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-lib" options="-parameters -Xlint:unchecked" />
+      <module name="com-gang-common-multiple-source" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-parent-sdk" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-common-swagger" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-ext-sdk-parent" options="-parameters -Xlint:unchecked" />
@@ -42,7 +45,8 @@
       <module name="datacenter" options="-parameters" />
       <module name="engine" options="-parameters" />
       <module name="out-common" options="-parameters" />
-      <module name="out-messagequeue" options="-parameters" />
+      <module name="out-database" options="-parameters" />
+      <module name="out-msgqueue" options="-parameters" />
       <module name="out-velocity" options="-parameters" />
       <module name="server" options="-parameters" />
     </option>

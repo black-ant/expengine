@@ -1,5 +1,6 @@
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\config\MyWebMvcConfig.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\SyncAppController.java
+D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\common\ExpServerAspect.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\AbstractLogic.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\SyncFieldInfoController.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\SyncSettingController.java
@@ -14,3 +15,4 @@ D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\co
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\ServerApplication.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\exception\ExchangeErrorEnum.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\StartController.java
+D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\CacheLogic.java

@@ -1,0 +1,3 @@
+com\gang\etl\out\msgqueue\mq\RabbitMQConfig$RabbitMQProperties.class
+com\gang\etl\out\msgqueue\mq\RabbitMQConfig.class
+com\gang\etl\out\msgqueue\mq\RabbitMQLogic.class

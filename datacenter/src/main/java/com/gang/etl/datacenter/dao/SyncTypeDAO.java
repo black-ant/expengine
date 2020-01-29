@@ -22,7 +22,7 @@ public class SyncTypeDAO {
     private SyncTypeMapper syncTypeMapper;
 
     public SyncType getByKeyOrCode(String key) {
-        return syncTypeMapper.selectByPrimaryKey(key);
+        return syncTypeMapper.getByKeyOrCode(key);
     }
 
     public SyncType getByNameAndData(String typeName, String dataType) {

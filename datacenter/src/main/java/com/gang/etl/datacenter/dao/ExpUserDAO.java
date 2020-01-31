@@ -3,6 +3,7 @@ package com.gang.etl.datacenter.dao;
 import com.gang.etl.datacenter.entity.ExpUser;
 import com.gang.etl.datacenter.mapper.ExpUserMapper;
 import com.gang.etl.datacenter.service.IExpUserService;
+import com.gang.etl.datacenter.service.impl.ExpUserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,10 +19,10 @@ import java.util.List;
 public class ExpUserDAO {
 
     @Autowired
-    private IExpUserService expUserMapper;
+    private ExpUserServiceImpl expUserService;
 
 
     public List<ExpUser> findAll() {
-        return expUserMapper.list();
+        return expUserService.list();
     }
 }

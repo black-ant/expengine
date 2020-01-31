@@ -4,6 +4,7 @@ import com.gang.common.lib.to.ResponseModel;
 import com.gang.etl.datacenter.entity.SyncSetting;
 import com.gang.etl.datacenter.mapper.SyncSettingMapper;
 import com.gang.etl.datacenter.service.ISyncSettingService;
+import com.gang.etl.datacenter.service.impl.SyncSettingServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SyncSettingController {
 
     @Autowired
-    private ISyncSettingService settingService;
+    private SyncSettingServiceImpl settingService;
 
     @GetMapping("/get/{key}")
     public ResponseModel get(@PathVariable("key") String key) {

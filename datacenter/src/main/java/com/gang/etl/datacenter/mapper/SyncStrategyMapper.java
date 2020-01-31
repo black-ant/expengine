@@ -1,13 +1,16 @@
 package com.gang.etl.datacenter.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.gang.etl.datacenter.entity.SyncStrategy;
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 /**
- * SyncStrategyDAO继承基类
+ * <p>
+ *  Mapper 接口
+ * </p>
+ *
+ * @author ant-black
+ * @since 2020-01-31
  */
-@Mapper
-@Repository
-public interface SyncStrategyMapper extends MyBatisBaseMapper<SyncStrategy, String> {
+public interface SyncStrategyMapper extends BaseMapper<SyncStrategy> {
+
 }

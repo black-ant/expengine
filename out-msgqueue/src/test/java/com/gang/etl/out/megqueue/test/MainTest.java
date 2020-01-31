@@ -15,7 +15,7 @@ import java.io.IOException;
  * @Date 2020/1/29 22:41
  * @Created by zengzg
  */
-@SpringBootTest
+//@SpringBootTest
 public class MainTest {
 
     private static final Logger log = LoggerFactory.getLogger(MainTest.class);

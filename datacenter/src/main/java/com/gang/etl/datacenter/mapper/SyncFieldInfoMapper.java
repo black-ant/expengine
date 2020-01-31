@@ -1,21 +1,16 @@
 package com.gang.etl.datacenter.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.gang.etl.datacenter.entity.SyncFieldInfo;
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Component;
 
-import java.util.List;
+/**
+ * <p>
+ *  Mapper 接口
+ * </p>
+ *
+ * @author ant-black
+ * @since 2020-01-31
+ */
+public interface SyncFieldInfoMapper extends BaseMapper<SyncFieldInfo> {
 
-@Mapper
-@Component
-public interface SyncFieldInfoMapper {
-    int deleteByPrimaryKey(Integer id);
-
-    int insert(SyncFieldInfo record);
-
-    SyncFieldInfo selectByPrimaryKey(Integer id);
-
-    List<SyncFieldInfo> selectAll();
-
-    int updateByPrimaryKey(SyncFieldInfo record);
 }

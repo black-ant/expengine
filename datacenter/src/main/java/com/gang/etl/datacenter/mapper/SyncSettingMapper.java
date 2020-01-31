@@ -1,11 +1,16 @@
 package com.gang.etl.datacenter.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.gang.etl.datacenter.entity.SyncSetting;
-import org.springframework.stereotype.Repository;
 
 /**
- * SyncSettingDAO继承基类
+ * <p>
+ *  Mapper 接口
+ * </p>
+ *
+ * @author ant-black
+ * @since 2020-01-31
  */
-@Repository
-public interface SyncSettingMapper extends MyBatisBaseMapper<SyncSetting, SyncSetting> {
+public interface SyncSettingMapper extends BaseMapper<SyncSetting> {
+
 }

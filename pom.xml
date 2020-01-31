@@ -9,7 +9,7 @@
         <module>common-lib</module>
         <module>out-common</module>
         <module>out-velocity</module>
-        <module>out-msgqueue</module>
+        <!--        <module>out-msgqueue</module>-->
         <module>engine</module>
         <module>out-database</module>
     </modules>

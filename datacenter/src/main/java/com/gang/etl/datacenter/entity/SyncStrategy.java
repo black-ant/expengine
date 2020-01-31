@@ -1,15 +1,25 @@
 package com.gang.etl.datacenter.entity;
 
-import java.io.Serializable;
+import com.gang.common.lib.to.AbstractEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
+
 
 /**
- * sync_strategy
- * @author 
+ * <p>
+ *
+ * </p>
+ *
+ * @author ant-black
+ * @since 2020-01-31
  */
 @Data
-public class SyncStrategy implements Serializable {
-    private String id;
+@EqualsAndHashCode(callSuper = true)
+@Accessors(chain = true)
+public class SyncStrategy extends AbstractEntity {
+
+    private static final long serialVersionUID = 1L;
 
     private String strategyType;
 
@@ -35,5 +45,5 @@ public class SyncStrategy implements Serializable {
      */
     private String strategyJob;
 
-    private static final long serialVersionUID = 1L;
+
 }

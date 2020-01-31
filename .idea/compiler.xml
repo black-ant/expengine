@@ -27,6 +27,9 @@
         <module name="out-database" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="out-msgqueue" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

@@ -1,129 +1,71 @@
 package com.gang.etl.datacenter.entity;
 
-import java.io.Serializable;
-import java.util.Date;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.gang.common.lib.to.AbstractEntity;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
 
-public class ExpTemplate implements Serializable {
-    private Integer id;
+import java.time.LocalDateTime;
 
+
+/**
+ * <p>
+ *
+ * </p>
+ *
+ * @author ant-black
+ * @since 2020-01-31
+ */
+@Data
+@EqualsAndHashCode(callSuper = true)
+@Accessors(chain = true)
+public class ExpTemplate extends AbstractEntity {
+
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * 模板名称
+     */
     private String templateTitle;
 
+    /**
+     * 模板主体
+     */
     private String templateBody;
 
+    /**
+     * 模板描述
+     */
     private String templateDesc;
 
     private String templateModule;
 
+    /**
+     * 模板类型
+     */
     private String templateType;
 
+    /**
+     * 模板创建人
+     */
     private Integer createId;
 
+    /**
+     * 最后更新人
+     */
     private Integer updateId;
 
-    private Date createDate;
+    /**
+     * 创建时间
+     */
+    private LocalDateTime createDate;
 
-    private Date updateDate;
+    /**
+     * 更新时间
+     */
+    @TableField("update_Date")
+    private LocalDateTime updateDate;
 
-    private static final long serialVersionUID = 1L;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getTemplateTitle() {
-        return templateTitle;
-    }
-
-    public void setTemplateTitle(String templateTitle) {
-        this.templateTitle = templateTitle == null ? null : templateTitle.trim();
-    }
-
-    public String getTemplateBody() {
-        return templateBody;
-    }
-
-    public void setTemplateBody(String templateBody) {
-        this.templateBody = templateBody == null ? null : templateBody.trim();
-    }
-
-    public String getTemplateDesc() {
-        return templateDesc;
-    }
-
-    public void setTemplateDesc(String templateDesc) {
-        this.templateDesc = templateDesc == null ? null : templateDesc.trim();
-    }
-
-    public String getTemplateModule() {
-        return templateModule;
-    }
-
-    public void setTemplateModule(String templateModule) {
-        this.templateModule = templateModule == null ? null : templateModule.trim();
-    }
-
-    public String getTemplateType() {
-        return templateType;
-    }
-
-    public void setTemplateType(String templateType) {
-        this.templateType = templateType == null ? null : templateType.trim();
-    }
-
-    public Integer getCreateId() {
-        return createId;
-    }
-
-    public void setCreateId(Integer createId) {
-        this.createId = createId;
-    }
-
-    public Integer getUpdateId() {
-        return updateId;
-    }
-
-    public void setUpdateId(Integer updateId) {
-        this.updateId = updateId;
-    }
-
-    public Date getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
-    }
-
-    public Date getUpdateDate() {
-        return updateDate;
-    }
-
-    public void setUpdateDate(Date updateDate) {
-        this.updateDate = updateDate;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", templateTitle=").append(templateTitle);
-        sb.append(", templateBody=").append(templateBody);
-        sb.append(", templateDesc=").append(templateDesc);
-        sb.append(", templateModule=").append(templateModule);
-        sb.append(", templateType=").append(templateType);
-        sb.append(", createId=").append(createId);
-        sb.append(", updateId=").append(updateId);
-        sb.append(", createDate=").append(createDate);
-        sb.append(", updateDate=").append(updateDate);
-        sb.append(", serialVersionUID=").append(serialVersionUID);
-        sb.append("]");
-        return sb.toString();
-    }
 }

@@ -1,17 +1,27 @@
 package com.gang.etl.datacenter.entity;
 
-import java.io.Serializable;
-
+import com.gang.common.lib.to.AbstractEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
+
 
 /**
- * sync_type
+ * <p>
  *
- * @author
+ * </p>
+ *
+ * @author ant-black
+ * @since 2020-01-31
  */
 @Data
-public class SyncType implements Serializable {
-    private String id;
+@EqualsAndHashCode(callSuper = true)
+@Accessors(chain = true)
+public class SyncType extends AbstractEntity {
+
+    private static final long serialVersionUID = 1L;
+
+    private String typeCode;
 
     /**
      * 加载类
@@ -22,11 +32,6 @@ public class SyncType implements Serializable {
      * 策略类型
      */
     private String typePolicy;
-
-    /**
-     * 类型代码
-     */
-    private String typeCode;
 
     /**
      * 类型名
@@ -48,5 +53,5 @@ public class SyncType implements Serializable {
      */
     private String dataType;
 
-    private static final long serialVersionUID = 1L;
+
 }

@@ -2,6 +2,7 @@ package com.gang.etl.datacenter.dao;
 
 import com.gang.etl.datacenter.entity.SyncFieldInfo;
 import com.gang.etl.datacenter.mapper.SyncFieldInfoMapper;
+import com.gang.etl.datacenter.service.ISyncFieldInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -15,14 +16,14 @@ import org.springframework.stereotype.Component;
 public class SyncFiledInfoDAO {
 
     @Autowired
-    private SyncFieldInfoMapper syncFieldInfoMapper;
+    private ISyncFieldInfoService syncFieldInfoMapper;
 
     public SyncFieldInfo insert(SyncFieldInfo syncFieldInfo) {
-        syncFieldInfoMapper.insert(syncFieldInfo);
+        syncFieldInfoMapper.save(syncFieldInfo);
         return syncFieldInfo;
     }
 
     public SyncFieldInfo selectByPrimaryKey(Integer hey) {
-        return syncFieldInfoMapper.selectByPrimaryKey(hey);
+        return syncFieldInfoMapper.getById(hey);
     }
 }

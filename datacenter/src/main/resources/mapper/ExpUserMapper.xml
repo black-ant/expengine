@@ -1,42 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.gang.etl.datacenter.mapper.ExpUserMapper">
-    <resultMap id="BaseResultMap" type="com.gang.etl.datacenter.entity.ExpUser">
-        <id column="id" jdbcType="VARCHAR" property="id"/>
-        <result column="username" jdbcType="VARCHAR" property="username"/>
-        <result column="user_power" jdbcType="VARCHAR" property="userPower"/>
-        <result column="user_password" jdbcType="VARCHAR" property="userPassword"/>
-        <result column="user_type" jdbcType="VARCHAR" property="userType"/>
-    </resultMap>
-    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
-    delete from exp_user
-    where id = #{id,jdbcType=VARCHAR}
-  </delete>
-    <insert id="insert" parameterType="com.gang.etl.datacenter.entity.ExpUser">
-        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.String">
-            SELECT LAST_INSERT_ID()
-        </selectKey>
-        insert into exp_user (username, user_power, user_password,
-        user_type)
-        values (#{username,jdbcType=VARCHAR}, #{userPower,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR},
-        #{userType,jdbcType=VARCHAR})
-    </insert>
-    <update id="updateByPrimaryKey" parameterType="com.gang.etl.datacenter.entity.ExpUser">
-    update exp_user
-    set username = #{username,jdbcType=VARCHAR},
-      user_power = #{userPower,jdbcType=VARCHAR},
-      user_password = #{userPassword,jdbcType=VARCHAR},
-      user_type = #{userType,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=VARCHAR}
-  </update>
-    <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
-    select id, username, user_power, user_password, user_type
-    from exp_user
-    where id = #{id,jdbcType=VARCHAR}
-  </select>
-    <select id="selectAll" resultMap="BaseResultMap">
-    select id, username, user_power, user_password, user_type
-    from exp_user
-  </select>
 
 </mapper>

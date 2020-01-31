@@ -1,24 +1,16 @@
 package com.gang.etl.datacenter.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.gang.etl.datacenter.entity.SyncType;
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Component;
 
-import java.util.List;
+/**
+ * <p>
+ *  Mapper 接口
+ * </p>
+ *
+ * @author ant-black
+ * @since 2020-01-31
+ */
+public interface SyncTypeMapper extends BaseMapper<SyncType> {
 
-@Component
-@Mapper
-public interface SyncTypeMapper extends MyBatisBaseMapper<SyncType, String> {
-
-    int deleteByPrimaryKey(String id);
-
-    int insert(SyncType record);
-
-    SyncType getByKeyOrCode(String id);
-
-    SyncType selectByNameAndData(String typeName, String dataType);
-
-    List<SyncType> selectAll();
-
-    int updateByPrimaryKey(SyncType record);
 }

@@ -3,6 +3,7 @@ package com.gang.etl.datacenter.mapper;
 import java.io.Serializable;
 import java.util.List;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 
 /**
@@ -15,5 +16,15 @@ public interface MyBatisBaseMapper<Model, PK extends Serializable> {
 
     int insert(Model record);
 
+    int update(Model record);
+
     int insertSelective(Model record);
+
+    Model getOne(PK key);
+
+    List<Model> findAll();
+
+    void deleteById(PK key);
+
+
 }

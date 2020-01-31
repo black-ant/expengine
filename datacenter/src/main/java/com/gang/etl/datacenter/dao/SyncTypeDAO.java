@@ -2,6 +2,7 @@ package com.gang.etl.datacenter.dao;
 
 import com.gang.etl.datacenter.entity.SyncType;
 import com.gang.etl.datacenter.mapper.SyncTypeMapper;
+import com.gang.etl.datacenter.service.ISyncTypeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,18 +20,18 @@ public class SyncTypeDAO {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
-    private SyncTypeMapper syncTypeMapper;
+    private ISyncTypeService syncTypeService;
 
     public SyncType getByKeyOrCode(String key) {
-        return syncTypeMapper.getByKeyOrCode(key);
+        return syncTypeService.getById(key);
     }
 
     public SyncType getByNameAndData(String typeName, String dataType) {
-        return syncTypeMapper.selectByNameAndData(typeName, dataType);
+        return syncTypeService.getById(dataType);
     }
 
     public SyncType insert(SyncType syncType) {
-        syncTypeMapper.insert(syncType);
+        syncTypeService.save(syncType);
         return syncType;
     }
 }

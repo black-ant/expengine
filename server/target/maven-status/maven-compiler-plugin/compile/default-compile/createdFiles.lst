@@ -10,9 +10,11 @@ com\gang\etl\server\logic\AbstractLogic.class
 com\gang\etl\server\logic\CacheLogic.class
 com\gang\etl\server\controller\AbstratController.class
 com\gang\etl\server\controller\StartController.class
-com\gang\etl\server\controller\SyncAppController.class
 com\gang\etl\server\exception\ExchangeErrorEnum.class
+com\gang\etl\server\controller\SyncTemplateController.class
+com\gang\etl\server\controller\ExpUserController.class
 com\gang\etl\server\logic\FileIOLogic.class
 com\gang\etl\server\ServerApplication.class
 com\gang\etl\server\common\ExpServerAspect.class
 com\gang\etl\server\logic\AbsractVelocity.class
+com\gang\etl\server\controller\SyncStrategyController.class

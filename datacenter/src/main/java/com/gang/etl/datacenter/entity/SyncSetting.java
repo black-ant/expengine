@@ -1,5 +1,7 @@
 package com.gang.etl.datacenter.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.gang.common.lib.to.AbstractEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -22,6 +24,9 @@ import java.time.LocalDateTime;
 public class SyncSetting extends AbstractEntity {
 
     private static final long serialVersionUID = 1L;
+
+    @TableId(type = IdType.ASSIGN_ID)
+    private String id;
 
     /**
      * 配置体

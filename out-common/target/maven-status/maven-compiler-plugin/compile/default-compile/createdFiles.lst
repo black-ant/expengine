@@ -6,3 +6,4 @@ com\gang\etl\out\common\logic\SyncInvoke.class
 com\gang\etl\out\common\logic\SyncSDKFactory.class
 com\gang\etl\out\common\output\OrgCommonOutput.class
 com\gang\etl\out\common\output\TxtOutput.class
+com\gang\etl\out\common\logic\SyncClassInfo.class

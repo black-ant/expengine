@@ -1,5 +1,6 @@
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\config\MyWebMvcConfig.java
-D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\SyncAppController.java
+D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\SyncTemplateController.java
+D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\SyncStrategyController.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\common\ExpServerAspect.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\AbstractLogic.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\SyncFieldInfoController.java
@@ -10,6 +11,7 @@ D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\lo
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\UserService.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\config\MyFilter.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\exception\ExchangeException.java
+D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\ExpUserController.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\StartLogic.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\logic\TemplateLogic.java
 D:\java\workspace\git\exp\etl-server\server\src\main\java\com\gang\etl\server\controller\AbstratController.java

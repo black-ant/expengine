@@ -2,12 +2,19 @@ package com.gang.etl.server.controller;
 
 import com.gang.common.lib.to.ResponseModel;
 import com.gang.etl.datacenter.entity.SyncFieldInfo;
+import com.gang.etl.datacenter.entity.SyncSetting;
+import com.gang.etl.datacenter.entity.SyncType;
+import com.gang.etl.datacenter.service.impl.SyncFieldInfoServiceImpl;
+import com.gang.etl.datacenter.service.impl.SyncSettingServiceImpl;
+import com.gang.etl.datacenter.service.impl.SyncTypeServiceImpl;
+import com.gang.etl.out.common.logic.SyncClassInfo;
 import com.gang.etl.server.logic.SyncFieldInfoLogic;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,29 +30,22 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/syncfield")
-public class SyncFieldInfoController {
+public class SyncFieldInfoController extends AbstratController<SyncFieldInfoServiceImpl, SyncFieldInfo> {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
+
     @Autowired
-    private SyncFieldInfoLogic syncFieldInfoLogic;
+    private SyncClassInfo classInfo;
 
-    @PostMapping("/insert")
-    public ResponseModel<SyncFieldInfo> insert(SyncFieldInfo syncFieldInfo) {
-        return ResponseModel.commonResponse(syncFieldInfoLogic.insert(syncFieldInfo));
+    @Autowired
+    private SyncTypeServiceImpl syncTypeService;
+
+    @GetMapping("getInfo")
+    public ResponseModel<List<String>> getFieldInfo(@RequestParam("key") String key) {
+        SyncType syncType = syncTypeService.getById(key);
+        return ResponseModel.commonResponse(classInfo.getTosParams(syncType.getTypeClass()));
     }
 
-    @PostMapping("/gettos")
-    public ResponseModel<List<String>> getTOSField(@RequestParam("syncType") String syncType, @RequestParam(
-            "syncType") String operation) {
-
-        logger.info("------> syncType :{} + sync operation :{} <-------", syncType, operation);
-        return ResponseModel.commonResponse(syncFieldInfoLogic.getTOSMap(syncType));
-    }
-
-    @GetMapping("/get/{key}")
-    public ResponseModel<SyncFieldInfo> get(@PathVariable("key") Integer key) {
-        return ResponseModel.commonResponse(syncFieldInfoLogic.selectByPrimaryKey(key));
-    }
 
 }

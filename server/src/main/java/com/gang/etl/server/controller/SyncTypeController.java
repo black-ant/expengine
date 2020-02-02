@@ -8,6 +8,8 @@ import com.gang.common.lib.utils.ReflectionUtils;
 import com.gang.etl.datacenter.entity.SyncType;
 import com.gang.etl.datacenter.service.impl.SyncTypeServiceImpl;
 import com.gang.sdk.api.annotation.SyncClass;
+import com.gang.sdk.api.annotation.SyncConfig;
+import com.gang.sdk.api.annotation.SyncField;
 import com.gang.sdk.api.annotation.SyncTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,8 +22,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 /**
  * @Classname SyncTypeController
@@ -50,11 +54,16 @@ public class SyncTypeController extends AbstratController<SyncTypeServiceImpl, S
             try {
                 Class clazz = Class.forName(item);
                 logger.info("------> class Name is :{} <-------", item);
-                if (null != clazz.getAnnotation(SyncClass.class) || null != clazz.getAnnotation(SyncTO.class)) {
-                    SyncType syncType = null != clazz.getAnnotation(SyncClass.class) ? createSyncType(clazz,
-                            clazz.getAnnotation(SyncClass.class)) : createSyncType(clazz,
-                            clazz.getAnnotation(SyncTO.class));
 
+                SyncType syncType =
+                        null != clazz.getAnnotation(SyncClass.class) ? createSyncType(clazz,
+                                clazz.getAnnotation(SyncClass.class)) :
+                                null != clazz.getAnnotation(SyncTO.class) ? createSyncType(clazz,
+                                        clazz.getAnnotation(SyncTO.class)) :
+                                        null != clazz.getAnnotation(SyncConfig.class) ? createSyncType(clazz,
+                                                clazz.getAnnotation(SyncConfig.class)) : null;
+
+                if (null != syncType) {
                     UpdateWrapper<SyncType> userUpdateWrapper = new UpdateWrapper<>();
                     userUpdateWrapper.eq("type_code", syncType.getTypeCode());
                     baseMapper.saveOrUpdate(syncType, userUpdateWrapper);
@@ -70,30 +79,47 @@ public class SyncTypeController extends AbstratController<SyncTypeServiceImpl, S
         return ResponseModel.commonResponse(syncTypesList);
     }
 
+    /**
+     * TODO : 是否使用一个注解 , 更加清晰 ?
+     *
+     * @param clazz
+     * @param annotation
+     * @return
+     */
     public SyncType createSyncType(Class clazz, Annotation annotation) {
         SyncType syncType = new SyncType();
         syncType.setTypeClass(clazz.getName());
         String appName = "";
         String typeName = "";
         String classType = "";
+        String aliasName = "";
         if (annotation instanceof SyncTO) {
             SyncTO syncTO = (SyncTO) annotation;
             appName = syncTO.app();
             typeName = syncTO.type();
-            syncType.setTypeFiledInfo(JSONObject.toJSONString(ReflectionUtils.getFieldsName(clazz, null)));
+            aliasName = syncTO.name();
+            syncType.setTypeFiledInfo(getFieldsNameJSON(clazz));
             classType = "TO";
-        } else {
+        } else if (annotation instanceof SyncClass) {
             SyncClass syncClass = (SyncClass) annotation;
             appName = syncClass.app();
             typeName = syncClass.type();
+            aliasName = syncClass.name();
             classType = "OP";
+        } else {
+            SyncConfig syncTO = (SyncConfig) annotation;
+            appName = syncTO.app();
+            typeName = syncTO.type();
+            aliasName = syncTO.name();
+            syncType.setTypeFiledInfo(getFieldsNameJSON(clazz));
+            classType = "TO";
         }
 
         syncType.setSupplierId(appName);
-        syncType.setSupplierName(appName);
-        syncType.setDataType(classType + "_" + typeName);
-        syncType.setTypeName(appName + "_" + typeName);
-        syncType.setTypeCode(appName + "_" + syncType.getDataType());
+        syncType.setSupplierName(aliasName);
+        syncType.setDataType(classType);
+        syncType.setTypePart(typeName);
+        syncType.setTypeCode(appName + "_" + typeName + "_" + syncType.getDataType());
 
         return syncType;
     }
@@ -112,11 +138,22 @@ public class SyncTypeController extends AbstratController<SyncTypeServiceImpl, S
         return ResponseModel.commonResponse(code);
     }
 
-    //    @InitBinder
-    //    @Autowired
-    //    public void setRespository(SyncTypeServiceImpl syncTypeService) {
-    //        this.baseMapper = syncTypeService;
-    //    }
-
+    /**
+     * 获取JSON 属性
+     *
+     * @param clazz
+     * @return
+     */
+    public String getFieldsNameJSON(Class<?> clazz) {
+        JSONObject fields = new JSONObject();
+        while (Object.class != clazz && clazz != null) {
+            for (Field field : clazz.getDeclaredFields()) {
+                SyncField syncField = field.getAnnotation(SyncField.class);
+                fields.put(field.getName(), null == syncField ? "" : syncField.defaultValue());
+            }
+            clazz = clazz.getSuperclass();
+        }
+        return fields.toJSONString();
+    }
 
 }

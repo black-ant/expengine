@@ -2,23 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3c696bc-ea47-4d0f-883b-edd10985241f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncClassInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/ExpUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncStrategyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncTemplateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/gang/etl/common/lib/to/SyncModuleTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/gang/etl/common/lib/to/SyncTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncAppRef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncAppRefController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncMainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/FieldLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/MainLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/cache/target/com-gang-common-cache-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../common/cache/target/com-gang-common-cache-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/common-lib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/common-lib/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/to/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/to/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/to/ResponseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/to/ResponseModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/ReflectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/ReflectionUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/CommonStringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/common-lib/target/classes/com/gang/common/lib/to/AbstractEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/common-lib/target/classes/com/gang/common/lib/to/AbstractEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/common-lib/target/classes/com/gang/common/lib/to/ResponseModel$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/common-lib/target/classes/com/gang/common/lib/to/ResponseModel$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/common-lib/target/classes/com/gang/common/lib/to/ResponseModel$ResponseType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/common-lib/target/classes/com/gang/common/lib/to/ResponseModel$ResponseType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/common-lib/target/classes/com/gang/common/lib/to/ResponseModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/common-lib/target/classes/com/gang/common/lib/to/ResponseModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/common-lib/target/classes/com/gang/common/lib/utils/ReflectionUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/common-lib/target/classes/com/gang/common/lib/utils/ReflectionUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/common-lib/target/classes/com/gang/common/lib/utils/StringUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/common-lib/target/com-gang-common-lib-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../common/common-lib/target/com-gang-common-lib-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/ext/dingtalk/src/main/java/com/gang/ext/sdk/dingtalk/logic/OrgLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/dingtalk/src/main/java/com/gang/ext/sdk/dingtalk/logic/OrgLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/ext/dingtalk/src/main/java/com/gang/ext/sdk/dingtalk/logic/UserLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/dingtalk/src/main/java/com/gang/ext/sdk/dingtalk/logic/UserLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/ext/dingtalk/target/classes/com/gang/ext/sdk/dingtalk/logic/OrgLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/dingtalk/target/classes/com/gang/ext/sdk/dingtalk/logic/OrgLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/ext/dingtalk/target/classes/com/gang/ext/sdk/dingtalk/logic/UserLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/dingtalk/target/classes/com/gang/ext/sdk/dingtalk/logic/UserLogic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/dingtalk/target/com-gang-sdk-dingtalk-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/dingtalk/target/com-gang-sdk-dingtalk-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/to/SyncConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/sdk-api/target/classes/com/gang/sdk/api/annotation/SyncClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/sdk-api/target/classes/com/gang/sdk/api/annotation/SyncClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/ext/sdk-api/target/classes/com/gang/sdk/api/annotation/SyncConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/sdk-api/target/classes/com/gang/sdk/api/annotation/SyncConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/sdk-api/target/classes/com/gang/sdk/api/annotation/SyncTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/sdk-api/target/classes/com/gang/sdk/api/annotation/SyncTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/ext/sdk-api/target/classes/com/gang/sdk/api/to/SyncConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/sdk-api/target/com-gang-sdk-api-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/sdk-api/target/com-gang-sdk-api-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/wechat/target/com-gang-ext-wechat-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/wechat/target/com-gang-ext-wechat-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/BaseLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/BaseLogic.java" afterDir="false" />
@@ -26,45 +45,57 @@
       <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/UserLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/UserLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/OrgTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/OrgTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/UserTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/UserTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/WorkWechatConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/WorkWechatConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/logic/BaseLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/logic/BaseLogic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/logic/OrgLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/logic/OrgLogic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/logic/UserLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/logic/UserLogic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/to/OrgTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/to/OrgTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/to/UserTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/to/UserTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/to/WorkWechatConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/target/classes/com/gang/ext/sdk/workwechat/to/WorkWechatConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/ext/workwechat/target/com-gang-ext-sdk-workwechat-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../common/ext/workwechat/target/com-gang-ext-sdk-workwechat-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/multiple-source/target/com-gang-common-multiple-source-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../common/multiple-source/target/com-gang-common-multiple-source-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/mybatis/target/com-gang-commn-mybatis-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../common/mybatis/target/com-gang-commn-mybatis-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/parent-sdk/target/com-gang-common-parent-sdk-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../common/parent-sdk/target/com-gang-common-parent-sdk-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/swagger/target/com-gang-common-swagger-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../common/swagger/target/com-gang-common-swagger-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-lib/target/com-gang-etl-common-lib-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/target/com-gang-etl-common-lib-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/ExpTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/ExpTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/ExpUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/ExpUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/common/DatabaseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/common/DatabaseGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncFieldInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncFieldInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncSetting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncType.java" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacenter/target/classes/com/gang/etl/datacenter/common/DatabaseGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/classes/com/gang/etl/datacenter/common/DatabaseGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacenter/target/classes/com/gang/etl/datacenter/entity/SyncFieldInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/classes/com/gang/etl/datacenter/entity/SyncFieldInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacenter/target/classes/com/gang/etl/datacenter/entity/SyncSetting.class" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/classes/com/gang/etl/datacenter/entity/SyncSetting.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datacenter/target/classes/com/gang/etl/datacenter/entity/SyncType.class" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/classes/com/gang/etl/datacenter/entity/SyncType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datacenter/target/com-gang-etl-datacenter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/com-gang-etl-datacenter-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/datacenter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/target/com-gang-etl-engine-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/engine/target/com-gang-etl-engine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncInvoke.java" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncInvoke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/output/OrgCommonOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/output/OrgCommonOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out-common/target/classes/com/gang/etl/out/common/logic/SyncInvoke.class" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/target/classes/com/gang/etl/out/common/logic/SyncInvoke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out-common/target/classes/com/gang/etl/out/common/output/OrgCommonOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/target/classes/com/gang/etl/out/common/output/OrgCommonOutput.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out-common/target/com-gang-etl-out-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/target/com-gang-etl-out-common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out-common/target/surefire-reports/TEST-com.gang.etl.out.common.OutCommonApplicationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/target/surefire-reports/TEST-com.gang.etl.out.common.OutCommonApplicationTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out-common/target/surefire-reports/com.gang.etl.out.common.OutCommonApplicationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/target/surefire-reports/com.gang.etl.out.common.OutCommonApplicationTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out-database/target/com-gang-etl-out-database-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out-database/target/com-gang-etl-out-database-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out-velocity/target/com-gang-etl-out-velocity-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out-velocity/target/com-gang-etl-out-velocity-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/AbstratController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/AbstratController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncAppController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncFieldInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncFieldInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncSettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncSettingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncTypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/SyncFieldInfoLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/etl/server/controller/AbstratController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/etl/server/controller/AbstratController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/etl/server/controller/SyncAppController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/etl/server/controller/SyncFieldInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/etl/server/controller/SyncFieldInfoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/etl/server/controller/SyncSettingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/etl/server/controller/SyncSettingController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/etl/server/controller/SyncTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/gang/etl/server/controller/SyncTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/gang/etl/server/logic/SyncFieldInfoLogic.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/com-gang-etl-server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/com-gang-etl-server-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -111,11 +142,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncTypeController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncMainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+            <state relative-caret-position="14">
+              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,46 +155,91 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncType.java">
+        <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/type/WorkWechatAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/test/java/com/gang/ext/sdk/workwechat/WorkWechatApplicationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-396">
+              <folding>
+                <element signature="e#0#2191#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/test/java/com/gang/ext/sdk/workwechat/OrgTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="69" column="78" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/MainLogic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="25" selection-start-line="25" selection-end-line="26" selection-end-column="22" />
+              <caret line="57" column="58" lean-forward="true" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncStrategy.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/ServerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="330">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncSetting.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/FileIOLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            <state relative-caret-position="22">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncFieldInfo.java">
+        <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncInvoke.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="208">
+              <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/OrgLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="44" column="88" lean-forward="true" selection-start-line="44" selection-start-column="88" selection-end-line="44" selection-end-column="88" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/ExpUser.java">
+        <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/com/baomidou/mybatis-plus-extension/3.3.1.tmp/mybatis-plus-extension-3.3.1.tmp.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="208">
+              <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+              <folding>
+                <element signature="e#3364#3365#0" expanded="true" />
+                <element signature="e#3422#3423#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -204,62 +280,62 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../common" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/out-msgqueue/src/main/java/com/gang/etl/out/msgqueue/RabbitApplication.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/config/MyFilter.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/mapper/ExpUserMapper.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/mapper/SyncSettingMapper.java" />
-        <option value="$PROJECT_DIR$/server/pom.xml" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/mapper/SyncFieldInfoMapper.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/mapper/MyBatisBaseMapper.java" />
-        <option value="$PROJECT_DIR$/datacenter/pom.xml" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/mapper/ExpTemplateMapper.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/IExpUserService.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/IExpTemplateService.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/impl/ExpTemplateServiceImpl.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/mapper/SyncTypeMapper.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/ISyncSettingService.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncSettingServiceImpl.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncStrategyServiceImpl.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncTypeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncFieldInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/impl/ExpUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/dao/ExpUserDAO.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/dao/SyncTypeDAO.java" />
         <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/dao/SyncFiledInfoDAO.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/common/DatabaseGenerator.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncAppController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/ExpUserController.java" />
-        <option value="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/ReflectionUtils.java" />
         <option value="$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncClassInfo.java" />
-        <option value="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncClass.java" />
-        <option value="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/OrgLogic.java" />
-        <option value="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/UserLogic.java" />
-        <option value="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncTO.java" />
-        <option value="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/UserTO.java" />
-        <option value="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/OrgTO.java" />
         <option value="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/StringUtils.java" />
-        <option value="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/CommonStringUtils.java" />
         <option value="$PROJECT_DIR$/../common/pom.xml" />
         <option value="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/BaseLogic.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/AbstratController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncTemplateController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncStrategyController.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncSettingController.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncFieldInfoController.java" />
         <option value="$PROJECT_DIR$/../common/common-lib/pom.xml" />
         <option value="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/to/AbstractEntity.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncType.java" />
         <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncStrategy.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncSetting.java" />
-        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncFieldInfo.java" />
         <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/ExpUser.java" />
         <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/ExpTemplate.java" />
+        <option value="$PROJECT_DIR$/../common/ext/dingtalk/src/main/java/com/gang/ext/sdk/dingtalk/logic/UserLogic.java" />
+        <option value="$PROJECT_DIR$/../common/ext/dingtalk/src/main/java/com/gang/ext/sdk/dingtalk/logic/OrgLogic.java" />
+        <option value="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncTO.java" />
+        <option value="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncField.java" />
+        <option value="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncClass.java" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncType.java" />
+        <option value="$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/output/OrgCommonOutput.java" />
+        <option value="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/UserTO.java" />
+        <option value="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/OrgTO.java" />
+        <option value="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/UserLogic.java" />
+        <option value="$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncConfig.java" />
+        <option value="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/ReflectionUtils.java" />
+        <option value="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/WorkWechatConfig.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/AbstratController.java" />
+        <option value="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/to/ResponseModel.java" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/common/DatabaseGenerator.java" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncLog.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncAppRefController.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncLogController.java" />
+        <option value="$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncInvoke.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/SyncFieldInfoLogic.java" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncSetting.java" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncFieldInfo.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncFieldInfoController.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/FieldLogic.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncSettingController.java" />
+        <option value="$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncAppRef.java" />
+        <option value="$PROJECT_DIR$/common-lib/src/main/java/com/gang/etl/common/lib/to/SyncTO.java" />
+        <option value="$PROJECT_DIR$/common-lib/src/main/java/com/gang/etl/common/lib/to/SyncTypeEnum.java" />
+        <option value="$PROJECT_DIR$/common-lib/src/main/java/com/gang/etl/common/lib/to/SyncParTypeEnum.java" />
+        <option value="$PROJECT_DIR$/common-lib/src/main/java/com/gang/etl/common/lib/to/SyncModuleTO.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncTypeController.java" />
+        <option value="$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/CommonStringUtils.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/MainLogic.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncMainController.java" />
+        <option value="$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/OrgLogic.java" />
       </list>
     </option>
   </component>
@@ -313,7 +389,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="975" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -322,8 +398,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -333,121 +409,7 @@
             </path>
             <path>
               <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="to" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-              <item name="datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-              <item name="out-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-              <item name="out-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-              <item name="out-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
-              <item name="out-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
@@ -474,6 +436,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etl-server" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
@@ -483,46 +454,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.baomidou:mybatis-plus-extension:3.3.1.tmp" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.baomidou:mybatis-plus-extension:3.3.1.tmp" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-plus-extension-3.3.1.tmp.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.baomidou:mybatis-plus-extension:3.3.1.tmp" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-plus-extension-3.3.1.tmp.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.4.6" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.4.6" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-3.4.6.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etl-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.4.6" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-3.4.6.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="annotations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -538,24 +469,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../case/case 6.5.1 SDK_work_wechat" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.6275022" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="zielu.svntoolbox.prj.config" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\workspace\git\exp\etl-server\datacenter\src\main\resources\mapper" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.gang.etl.datacenter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\entity" />
       <recent name="D:\java\workspace\git\exp\etl-server\datacenter\src\main\resources\mapper" />
       <recent name="D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\mapper" />
       <recent name="D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\service\impl" />
       <recent name="D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\service" />
-      <recent name="D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -675,7 +610,8 @@
       <workItem from="1579769642731" duration="15229000" />
       <workItem from="1580301041094" duration="8320000" />
       <workItem from="1580471910192" duration="10907000" />
-      <workItem from="1580531781568" duration="24362000" />
+      <workItem from="1580531781568" duration="24652000" />
+      <workItem from="1580610511423" duration="33547000" />
     </task>
     <servers />
   </component>
@@ -712,7 +648,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146394000" />
+    <option name="totallyTimeSpent" value="180231000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -727,7 +663,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49636805" visible="true" weight="0.2386059" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49636805" visible="true" weight="0.2419571" />
       <window_info id="Structure" order="1" sideWeight="0.5681818" side_tool="true" weight="0.2969169" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.50363195" side_tool="true" weight="0.2969169" />
@@ -738,20 +674,20 @@
       <window_info id="Web" order="8" sideWeight="0.50757575" side_tool="true" weight="0.2969169" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.32991204" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.88739944" weight="0.8782991" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7647453" visible="true" weight="0.04398827" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.88739944" weight="0.04398827" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7647453" weight="0.55718476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32991204" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.82506704" weight="0.62463343" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.82506704" weight="0.36510265" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="10" weight="0.32991204" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.69501466" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.5762463" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.8064516" />
-      <window_info anchor="bottom" id="JRebel Executor" order="15" sideWeight="0.791555" weight="0.36070383" />
+      <window_info active="true" anchor="bottom" id="JRebel Executor" order="15" sideWeight="0.791555" visible="true" weight="0.5879765" />
       <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.20844504" side_tool="true" weight="0.7346041" />
       <window_info anchor="bottom" id="Problems" order="17" />
       <window_info anchor="bottom" id="Java Enterprise" order="18" />
@@ -804,12 +740,6 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncInvoke.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/OrgLogic.java</url>
           <line>45</line>
           <properties />
@@ -823,15 +753,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncInvoke.java</url>
-          <line>86</line>
+          <line>91</line>
           <properties />
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncInvoke.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/OrgLogic.java</url>
@@ -844,24 +768,6 @@
           <line>21</line>
           <properties />
           <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/SyncFieldInfoLogic.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/SyncFieldInfoLogic.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/SyncFieldInfoLogic.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/out-msgqueue/src/main/java/com/gang/etl/out/msgqueue/mq/RabbitMQConfig.java</url>
@@ -888,34 +794,43 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/javax/servlet/http/HttpServlet.java</url>
-          <line>633</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncTypeController.java</url>
-          <line>115</line>
-          <properties />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncTypeController.java</url>
-          <line>84</line>
+          <line>104</line>
           <properties />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncTypeController.java</url>
-          <line>75</line>
+          <line>92</line>
           <properties />
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/to/ResponseModel.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>baseMapper.getOne(filedQuery)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>syncType.getTypePart()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ResponseModel.commonResponse(jsonObject.toJSONString())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>doGet(req, resp);</expression-string>
         <language-id>JAVA</language-id>
@@ -946,54 +861,96 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>new ResponseModel.Builder&lt;T&gt;().data(entity)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ResponseModel.commonResponse(syncType)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>init(config)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/com/baomidou/mybatis-plus-core/3.3.1.tmp/mybatis-plus-core-3.3.1.tmp.jar!/com/baomidou/mybatisplus/core/metadata/IPage.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gang/etl/datacenter/controller/SyncAppRefController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="330">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/ExpUserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gang/etl/datacenter/controller/SyncLogController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        <state relative-caret-position="330">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncLogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/mapper/SyncLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncLogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/to/ResponseModel.java">
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/mapper/SyncFieldInfoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="264">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/mapper/SyncTypeMapper.java">
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncAppRefServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/resources/mapper/SyncFieldInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/mapper/SyncAppRefMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/resources/mapper/SyncAppRefMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/ISyncAppRefService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/ISyncLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/StartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1004,352 +961,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/output/OrgCommonOutput.java">
+    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/output/OfficeOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-122">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/output/TxtOutput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncInvoke.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncMethodInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-542">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncSDKFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="27" />
+        <state relative-caret-position="165">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/output/FileOutput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="165">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/output/OfficeOut.java">
+    <entry file="file://$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/type/SyncOperationType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="165">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncClassInfo.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncAppRefController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="296">
+          <caret line="17" column="94" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="94" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/dao/SyncTypeDAO.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="296">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/com/baomidou/mybatis-plus-core/3.3.1.tmp/mybatis-plus-core-3.3.1.tmp.jar!/com/baomidou/mybatisplus/core/conditions/Wrapper.class">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/TemplateLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="-594" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/CacheLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/com/baomidou/mybatis-plus-extension/3.3.1.tmp/mybatis-plus-extension-3.3.1.tmp.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/AbstractLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="109" column="36" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="36" />
+        <state relative-caret-position="-188">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/type/WorkWechatAPI.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/AbsractVelocity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" lean-forward="true" selection-start-column="8" selection-end-column="24" />
+        <state relative-caret-position="110">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/ReflectionUtils.java">
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncSetting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="126" column="30" lean-forward="true" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="30" />
+        <state relative-caret-position="404">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncFieldInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="48" selection-end-column="33" />
           <folding>
-            <element signature="e#9895#9896#0" expanded="true" />
-            <element signature="e#9940#9941#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncClass.java">
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncFieldInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="-56">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncTO.java">
+    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncAppRef.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/OrgLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/UserLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        <state relative-caret-position="450">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/OrgTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/WorkWechatConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/to/UserTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="7" />
+        <state relative-caret-position="208">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/util/regex/Matcher.java">
+    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/output/OrgCommonOutput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="793" column="19" selection-start-line="793" selection-start-column="19" selection-end-line="793" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="467" column="64" selection-start-line="467" selection-start-column="64" selection-end-line="467" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/BaseLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/CommonStringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2294#2295#0" expanded="true" />
-            <element signature="e#2361#2362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncTypeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="232" column="53" selection-start-line="232" selection-start-column="53" selection-end-line="232" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-237">
-          <caret line="986" column="25" selection-start-line="986" selection-start-column="25" selection-end-line="986" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/AbstratController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        <state relative-caret-position="406">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncTemplateController.java">
+    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncMethodInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="242">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncStrategyController.java">
+    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncSDKFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-836">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-lib/src/main/java/com/gang/etl/common/lib/to/SyncTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-lib/src/main/java/com/gang/etl/common/lib/to/SyncPartTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-lib/src/main/java/com/gang/etl/common/lib/to/SyncModuleTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncSettingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="396">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/StartController.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/StartLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="165">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/com/baomidou/mybatis-plus-extension/3.3.1.tmp/mybatis-plus-extension-3.3.1.tmp.jar!/com/baomidou/mybatisplus/extension/service/impl/ServiceImpl.class">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/FieldLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="95" column="31" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="31" />
+        <state relative-caret-position="134">
+          <caret line="87" column="22" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/bind/support/DefaultDataBinderFactory.java">
+    <entry file="file://$PROJECT_DIR$/../common/ext/sdk-api/src/main/java/com/gang/sdk/api/annotation/SyncConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/to/AbstractEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="25" selection-start-line="25" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncSetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncFieldInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/javax/servlet/http/HttpServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="633" selection-start-line="633" selection-end-line="633" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncFieldInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../common/common-lib/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/ExpTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datacenter/src/main/java/com/gang/etl/datacenter/entity/ExpUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="237">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncTypeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+        <state relative-caret-position="269">
+          <caret line="106" column="41" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common/common-lib/src/main/java/com/gang/common/lib/utils/CommonStringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/com/baomidou/mybatis-plus-extension/3.3.1.tmp/mybatis-plus-extension-3.3.1.tmp.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+          <folding>
+            <element signature="e#3364#3365#0" expanded="true" />
+            <element signature="e#3422#3423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out-common/src/main/java/com/gang/etl/out/common/logic/SyncInvoke.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/FileIOLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/ServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/type/WorkWechatAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/test/java/com/gang/ext/sdk/workwechat/OrgTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="69" column="78" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/test/java/com/gang/ext/sdk/workwechat/WorkWechatApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <folding>
+            <element signature="e#0#2191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/controller/SyncMainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/gang/etl/server/logic/MainLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="57" column="58" lean-forward="true" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../common/ext/workwechat/src/main/java/com/gang/ext/sdk/workwechat/logic/OrgLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="44" column="88" lean-forward="true" selection-start-line="44" selection-start-column="88" selection-end-line="44" selection-end-column="88" />
         </state>
       </provider>
     </entry>

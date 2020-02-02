@@ -59,6 +59,7 @@ public class AbstratController<T extends IService, D extends AbstractEntity> {
 
     @PostMapping("insert")
     public ResponseModel insert(@RequestBody D entity) {
+        logger.info("------> this is create new <-------");
         return ResponseModel.commonResponse(baseMapper.save(entity));
     }
 

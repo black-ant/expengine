@@ -30,7 +30,12 @@ public class SyncInvoke {
     @Autowired
     private SyncSDKFactory syncSDKFactory;
 
-
+    /**
+     * @param clazzName         处理类名
+     * @param syncOperationType 操作类型
+     * @param params            参数值
+     * @return
+     */
     public ResponseModel invoke(String clazzName, SyncOperationType syncOperationType, Map<String, JSONObject> params) {
 
         logger.info("------> this is in invoke <-------");

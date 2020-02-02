@@ -44,6 +44,12 @@ public class SyncType extends AbstractEntity {
     private String typeName;
 
     /**
+     * 类型角色
+     */
+    private String typePart;
+
+
+    /**
      * 供应商类型
      */
     private String supplierId;

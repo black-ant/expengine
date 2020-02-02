@@ -133,7 +133,7 @@ public class DatabaseGenerator {
         //        strategy.setSuperControllerClass("你自己的父类控制器,没有就不用设置!");
         // 写于父类中的公共字段
         strategy.setSuperEntityColumns("id");
-        String table_name = "exp_user,exp_template,sync_type,sync_setting,sync_strategy,sync_field_info";
+        String table_name = "sync_log,sync_app_ref";
         strategy.setInclude(table_name.split(","));
 
         //        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));

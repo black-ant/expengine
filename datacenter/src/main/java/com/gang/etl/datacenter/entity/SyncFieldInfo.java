@@ -29,9 +29,9 @@ public class SyncFieldInfo extends AbstractEntity {
     /**
      * 资源字段
      */
-    private String filedOrigin;
+    private String fieldBody;
 
-    private String fieldSource;
+    private String oldField;
 
     private String fieldType;
 
@@ -47,14 +47,9 @@ public class SyncFieldInfo extends AbstractEntity {
     /**
      * 数据;类型
      */
-    private String dataType;
+    private String typePart;
 
     private String status;
-
-    /**
-     * 用户id
-     */
-    private String domainId;
 
     /**
      * 同步策略

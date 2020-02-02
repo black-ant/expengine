@@ -3,8 +3,6 @@ package com.gang.etl.out.common.output;
 import com.alibaba.fastjson.JSONObject;
 import com.gang.etl.out.common.logic.SyncInvoke;
 import com.gang.ext.sdk.workwechat.to.OrgTO;
-import com.gang.ext.sdk.workwechat.to.WorkWechatConfig;
-import com.gang.sdk.api.to.SyncConfig;
 import com.gang.sdk.api.type.SyncOperationType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

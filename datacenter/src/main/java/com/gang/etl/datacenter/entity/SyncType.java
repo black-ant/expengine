@@ -26,6 +26,9 @@ public class SyncType extends AbstractEntity {
     @TableId(type = IdType.ASSIGN_ID)
     private String id;
 
+    /**
+     * 唯一限定名
+     */
     private String typeCode;
 
     /**
@@ -46,8 +49,17 @@ public class SyncType extends AbstractEntity {
     /**
      * 类型角色
      */
+    private String typeApp;
+
+    /**
+     * 类型角色
+     */
     private String typePart;
 
+    /**
+     * 二级处理类型
+     */
+    private String typeSecondary;
 
     /**
      * 供应商类型
@@ -58,11 +70,6 @@ public class SyncType extends AbstractEntity {
      * 供应商名称
      */
     private String supplierName;
-
-    /**
-     * 处理类型
-     */
-    private String dataType;
 
     /**
      * 类名称

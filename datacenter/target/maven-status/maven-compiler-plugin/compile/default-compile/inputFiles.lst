@@ -11,7 +11,6 @@ D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datac
 D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\dao\SyncFiledInfoDAO.java
 D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\mapper\SyncLogMapper.java
 D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\dao\SyncTypeDAO.java
-D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\common\DataBaseAspect.java
 D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\entity\SyncAppRef.java
 D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\entity\SyncType.java
 D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\entity\SyncSetting.java
@@ -37,4 +36,3 @@ D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datac
 D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\service\IExpTemplateService.java
 D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\entity\SyncFieldInfo.java
 D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\mapper\SyncAppRefMapper.java
-D:\java\workspace\git\exp\etl-server\datacenter\src\main\java\com\gang\etl\datacenter\common\DatabaseGenerator.java

@@ -31,12 +31,40 @@ public class SyncFieldInfo extends AbstractEntity {
      */
     private String fieldBody;
 
-    private String oldField;
+    /**
+     * 来源模板
+     */
+    private String fieldOriginFormat;
 
-    private String fieldType;
+    /**
+     * 去处模板
+     */
+    private String fieldSourceFormat;
 
+
+    /**
+     * 字段类型唯一限定Code
+     */
+    private String fieldTypeCode;
+
+    /**
+     * 创建人
+     */
     private String createUser;
 
+    /**
+     * 更新人
+     */
+    private String updateUser;
+
+    /**
+     * 更新时间
+     */
+    private String updateDate;
+
+    /**
+     * 版本
+     */
     private String version;
 
     /**
@@ -49,6 +77,9 @@ public class SyncFieldInfo extends AbstractEntity {
      */
     private String typePart;
 
+    /**
+     * 状态
+     */
     private String status;
 
     /**

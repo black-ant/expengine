@@ -6,49 +6,62 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="out-common" />
-        <module name="com-gang-common-parent-sdk" />
-        <module name="engine" />
-        <module name="com-gang-common-cache" />
-        <module name="com-gang-ext-sdk-workwechat" />
-        <module name="com-gang-sdk-dingtalk" />
-        <module name="common-lib" />
-        <module name="com-gang-commn-mybatis" />
-        <module name="com-gang-ext-wechat" />
-        <module name="com-gang-common-lib" />
-        <module name="out-velocity" />
-        <module name="server" />
-        <module name="com-gang-sdk-api" />
-        <module name="com-gang-common-multiple-source" />
-        <module name="com-gang-ext-sdk-parent" />
-        <module name="out-msgqueue" />
-        <module name="com-gang-common-swagger" />
-        <module name="datacenter" />
-        <module name="out-database" />
+        <module name="com-gang-etl-support-rest" />
+        <module name="com-gang-etl-out-common" />
+        <module name="com-gang-engine-sdk" />
+        <module name="com-gang-etl-support-rabbitmq" />
+        <module name="com-gang-etl-server" />
+        <module name="com-gang-etl-out-database" />
+        <module name="com-gang-etl-support-file" />
+        <module name="com-gang-etl-support-database" />
+        <module name="com-gang-etl-datacenter" />
+        <module name="com-gang-etl-support-dingtalk" />
+        <module name="com-gang-etl-engine-api" />
+        <module name="com-gang-etl-support-velocity" />
+        <module name="com-gang-etl-support-redis" />
+        <module name="com-gang-etl-core" />
+        <module name="com-gang-etl-out-velocity" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com-gang-engine-sdk" target="1.8" />
+      <module name="com-gang-etl-core" target="1.8" />
+      <module name="com-gang-etl-datacenter" target="1.8" />
+      <module name="com-gang-etl-engine" target="1.8" />
+      <module name="com-gang-etl-engine-api" target="1.8" />
+      <module name="com-gang-etl-out-common" target="1.8" />
+      <module name="com-gang-etl-out-database" target="1.8" />
+      <module name="com-gang-etl-out-velocity" target="1.8" />
+      <module name="com-gang-etl-server" target="1.8" />
+      <module name="com-gang-etl-support" target="1.8" />
+      <module name="com-gang-etl-support-database" target="1.8" />
+      <module name="com-gang-etl-support-dingtalk" target="1.8" />
+      <module name="com-gang-etl-support-file" target="1.8" />
+      <module name="com-gang-etl-support-rabbitmq" target="1.8" />
+      <module name="com-gang-etl-support-redis" target="1.8" />
+      <module name="com-gang-etl-support-rest" target="1.8" />
+      <module name="com-gang-etl-support-velocity" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="com-gang-commn-mybatis" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-common-cache" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-common-lib" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-common-multiple-source" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-common-parent-sdk" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-common-swagger" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-ext-sdk-parent" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-ext-sdk-workwechat" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-ext-wechat" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-sdk-api" options="-parameters -Xlint:unchecked" />
-      <module name="com-gang-sdk-dingtalk" options="-parameters -Xlint:unchecked" />
-      <module name="common-lib" options="-parameters" />
-      <module name="datacenter" options="-parameters" />
-      <module name="engine" options="-parameters" />
-      <module name="out-common" options="-parameters" />
-      <module name="out-database" options="-parameters" />
-      <module name="out-msgqueue" options="-parameters" />
-      <module name="out-velocity" options="-parameters" />
-      <module name="server" options="-parameters" />
+      <module name="com-gang-engine-sdk" options="-parameters" />
+      <module name="com-gang-etl-core" options="-parameters" />
+      <module name="com-gang-etl-datacenter" options="-parameters" />
+      <module name="com-gang-etl-engine" options="-parameters" />
+      <module name="com-gang-etl-engine-api" options="-parameters" />
+      <module name="com-gang-etl-out-common" options="-parameters" />
+      <module name="com-gang-etl-out-database" options="-parameters" />
+      <module name="com-gang-etl-out-velocity" options="-parameters" />
+      <module name="com-gang-etl-server" options="-parameters" />
+      <module name="com-gang-etl-support" options="-parameters" />
+      <module name="com-gang-etl-support-database" options="-parameters" />
+      <module name="com-gang-etl-support-dingtalk" options="-parameters" />
+      <module name="com-gang-etl-support-file" options="-parameters" />
+      <module name="com-gang-etl-support-rabbitmq" options="-parameters" />
+      <module name="com-gang-etl-support-redis" options="-parameters" />
+      <module name="com-gang-etl-support-rest" options="-parameters" />
+      <module name="com-gang-etl-support-velocity" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>com-gang-etl-engine</artifactId>
+        <groupId>com.gang</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>com-gang-etl-support</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>support-file</module>
+        <module>support-database</module>
+        <module>support-rabbitmq</module>
+        <module>support-redis</module>
+        <module>support-velocity</module>
+        <module>support-rest</module>
+        <module>support-dingtalk</module>
+        <module>support-github</module>
+    </modules>
+
+
+</project>

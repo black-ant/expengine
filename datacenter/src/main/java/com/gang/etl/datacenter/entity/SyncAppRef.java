@@ -36,6 +36,11 @@ public class SyncAppRef extends AbstractEntity {
     private String appId;
 
     /**
+     * 冗余Code
+     */
+    private String appCode;
+
+    /**
      * 同步策略ID
      */
     private String syncStrategyId;

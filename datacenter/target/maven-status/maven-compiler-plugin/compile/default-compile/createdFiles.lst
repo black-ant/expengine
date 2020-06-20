@@ -4,8 +4,6 @@ com\gang\etl\datacenter\entity\SyncAppRef.class
 com\gang\etl\datacenter\service\IExpTemplateService.class
 com\gang\etl\datacenter\entity\ExpUser.class
 com\gang\etl\datacenter\service\impl\SyncSettingServiceImpl.class
-com\gang\etl\datacenter\common\DataBaseAspect.class
-com\gang\etl\datacenter\common\DatabaseGenerator$1.class
 com\gang\etl\datacenter\service\impl\ExpUserServiceImpl.class
 com\gang\etl\datacenter\service\ISyncSettingService.class
 com\gang\etl\datacenter\mapper\SyncLogMapper.class
@@ -25,7 +23,6 @@ com\gang\etl\datacenter\mapper\SyncStrategyMapper.class
 com\gang\etl\datacenter\entity\SyncLog.class
 com\gang\etl\datacenter\dao\SyncFiledInfoDAO.class
 com\gang\etl\datacenter\service\ISyncLogService.class
-com\gang\etl\datacenter\common\DatabaseGenerator$2.class
 com\gang\etl\datacenter\service\ISyncFieldInfoService.class
 com\gang\etl\datacenter\mapper\SyncFieldInfoMapper.class
 com\gang\etl\datacenter\mapper\SyncTypeMapper.class
@@ -34,7 +31,6 @@ com\gang\etl\datacenter\service\ISyncAppRefService.class
 com\gang\etl\datacenter\service\impl\SyncFieldInfoServiceImpl.class
 com\gang\etl\datacenter\mapper\MyBatisBaseMapper.class
 com\gang\etl\datacenter\service\impl\ExpTemplateServiceImpl.class
-com\gang\etl\datacenter\common\DatabaseGenerator.class
 com\gang\etl\datacenter\entity\SyncSetting.class
 com\gang\etl\datacenter\service\impl\SyncLogServiceImpl.class
 com\gang\etl\datacenter\entity\SyncStrategy.class

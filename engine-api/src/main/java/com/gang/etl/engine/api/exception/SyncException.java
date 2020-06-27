@@ -24,8 +24,13 @@ public class SyncException extends CommonException {
         super(message);
     }
 
-    public SyncException(String syncType, String message) {
-        super(message);
+    public SyncException(String code, String message) {
+        super(message, code);
+        this.syncType = syncType;
+    }
+
+    public SyncException(String code, String syncType, String message) {
+        super(message, code);
         this.syncType = syncType;
     }
 

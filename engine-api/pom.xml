@@ -16,11 +16,19 @@
             <groupId>com.gang</groupId>
             <artifactId>com-gang-common-parent-sdk</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.gang</groupId>
+            <artifactId>com-gang-common-lib</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
     </dependencies>
 
 </project>

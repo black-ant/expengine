@@ -9,6 +9,10 @@ package com.gang.etl.engine.api.exception;
 public enum SyncErrorEnum {
 
     SYNC_SERVICE_ERROR("E_SYNC_00001", "Service Error", ""),
+    SYNC_SYNCTYPE_ERROR("E_SYNC_00002", "No Sync Type", ""),
+    SYNC_SYNCDATE_ERROR("E_SYNC_00003", "No Sync Data", ""),
+    SYNC_SYNCSERVICE_ERROR("E_SYNC_00004", "No Sync Service", ""),
+    SYNC_FIELD_NULL("E_SYNC_00005", "Null Field", ""),
 
     NO_CLASS("E_SYNC_00010", "No Class info", ""),
     NO_METHOD("E_SYNC_00030", "No Method", "");

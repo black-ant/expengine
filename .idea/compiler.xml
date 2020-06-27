@@ -11,16 +11,15 @@
         <module name="com-gang-engine-sdk" />
         <module name="com-gang-etl-support-rabbitmq" />
         <module name="com-gang-etl-server" />
-        <module name="com-gang-etl-out-database" />
+        <module name="com-gang-etl-support-github" />
         <module name="com-gang-etl-support-file" />
-        <module name="com-gang-etl-support-database" />
+        <module name="com-gang-etl-core" />
         <module name="com-gang-etl-datacenter" />
         <module name="com-gang-etl-support-dingtalk" />
         <module name="com-gang-etl-engine-api" />
         <module name="com-gang-etl-support-velocity" />
         <module name="com-gang-etl-support-redis" />
-        <module name="com-gang-etl-core" />
-        <module name="com-gang-etl-out-velocity" />
+        <module name="com-gang-etl-support-database" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -37,6 +36,7 @@
       <module name="com-gang-etl-support-database" target="1.8" />
       <module name="com-gang-etl-support-dingtalk" target="1.8" />
       <module name="com-gang-etl-support-file" target="1.8" />
+      <module name="com-gang-etl-support-github" target="1.8" />
       <module name="com-gang-etl-support-rabbitmq" target="1.8" />
       <module name="com-gang-etl-support-redis" target="1.8" />
       <module name="com-gang-etl-support-rest" target="1.8" />
@@ -58,6 +58,7 @@
       <module name="com-gang-etl-support-database" options="-parameters" />
       <module name="com-gang-etl-support-dingtalk" options="-parameters" />
       <module name="com-gang-etl-support-file" options="-parameters" />
+      <module name="com-gang-etl-support-github" options="-parameters" />
       <module name="com-gang-etl-support-rabbitmq" options="-parameters" />
       <module name="com-gang-etl-support-redis" options="-parameters" />
       <module name="com-gang-etl-support-rest" options="-parameters" />

@@ -4,17 +4,16 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/engine-sdk/com-gang-engine-sdk.iml" filepath="$PROJECT_DIR$/engine-sdk/com-gang-engine-sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-core/com-gang-etl-core.iml" filepath="$PROJECT_DIR$/engine-core/com-gang-etl-core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/datacenter/com-gang-etl-datacenter.iml" filepath="$PROJECT_DIR$/datacenter/com-gang-etl-datacenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/engine-datacenter/com-gang-etl-datacenter.iml" filepath="$PROJECT_DIR$/engine-datacenter/com-gang-etl-datacenter.iml" />
       <module fileurl="file://$PROJECT_DIR$/com-gang-etl-engine.iml" filepath="$PROJECT_DIR$/com-gang-etl-engine.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-api/com-gang-etl-engine-api.iml" filepath="$PROJECT_DIR$/engine-api/com-gang-etl-engine-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/out-common/com-gang-etl-out-common.iml" filepath="$PROJECT_DIR$/out-common/com-gang-etl-out-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/out-database/com-gang-etl-out-database.iml" filepath="$PROJECT_DIR$/out-database/com-gang-etl-out-database.iml" />
-      <module fileurl="file://$PROJECT_DIR$/out-velocity/com-gang-etl-out-velocity.iml" filepath="$PROJECT_DIR$/out-velocity/com-gang-etl-out-velocity.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-server/com-gang-etl-server.iml" filepath="$PROJECT_DIR$/engine-server/com-gang-etl-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/com-gang-etl-support.iml" filepath="$PROJECT_DIR$/engine-support/com-gang-etl-support.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-database/com-gang-etl-support-database.iml" filepath="$PROJECT_DIR$/engine-support/support-database/com-gang-etl-support-database.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-dingtalk/com-gang-etl-support-dingtalk.iml" filepath="$PROJECT_DIR$/engine-support/support-dingtalk/com-gang-etl-support-dingtalk.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-file/com-gang-etl-support-file.iml" filepath="$PROJECT_DIR$/engine-support/support-file/com-gang-etl-support-file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/engine-support/support-github/com-gang-etl-support-github.iml" filepath="$PROJECT_DIR$/engine-support/support-github/com-gang-etl-support-github.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-rabbitmq/com-gang-etl-support-rabbitmq.iml" filepath="$PROJECT_DIR$/engine-support/support-rabbitmq/com-gang-etl-support-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-redis/com-gang-etl-support-redis.iml" filepath="$PROJECT_DIR$/engine-support/support-redis/com-gang-etl-support-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-rest/com-gang-etl-support-rest.iml" filepath="$PROJECT_DIR$/engine-support/support-rest/com-gang-etl-support-rest.iml" />

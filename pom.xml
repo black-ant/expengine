@@ -65,13 +65,11 @@
     </dependencyManagement>
 
     <modules>
-        <module>datacenter</module>
+        <module>engine-datacenter</module>
         <module>engine-server</module>
         <module>engine-api</module>
         <module>out-common</module>
-        <module>out-velocity</module>
         <module>engine-core</module>
-        <module>out-database</module>
         <module>engine-support</module>
         <module>engine-sdk</module>
     </modules>

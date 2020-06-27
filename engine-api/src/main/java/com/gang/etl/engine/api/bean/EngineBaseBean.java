@@ -1,6 +1,7 @@
 package com.gang.etl.engine.api.bean;
 
 import com.gang.etl.engine.api.common.IEngineService;
+import lombok.Data;
 
 /**
  * @Classname EngineBaseBean
@@ -8,65 +9,32 @@ import com.gang.etl.engine.api.common.IEngineService;
  * @Date 2020/6/20 18:40
  * @Created by zengzg
  */
+@Data
 public class EngineBaseBean<T> {
 
+    public final static String OP_PRODUCE = "Produce";
+    public final static String OP_CONSUME = "Consume";
+
     private String syncType;
+
+    private String typeOperation;
+
+    private String typePart;
 
     private T data;
 
     private String config;
 
-    private IEngineService engineService;
+    private EngineBaseSetting baseConfig;
 
     private String serviceName;
 
+    private String settingName;
+
+    private IEngineService engineService;
+
     private Object lock;
 
-    public String getSyncType() {
-        return syncType;
-    }
+    private EngineBaseResponse response;
 
-    public void setSyncType(String syncType) {
-        this.syncType = syncType;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
-    public String getConfig() {
-        return config;
-    }
-
-    public void setConfig(String config) {
-        this.config = config;
-    }
-
-    public IEngineService getEngineService() {
-        return engineService;
-    }
-
-    public void setEngineService(IEngineService engineService) {
-        this.engineService = engineService;
-    }
-
-    public String getServiceName() {
-        return serviceName;
-    }
-
-    public void setServiceName(String serviceName) {
-        this.serviceName = serviceName;
-    }
-
-    public Object getLock() {
-        return lock;
-    }
-
-    public void setLock(Object lock) {
-        this.lock = lock;
-    }
 }

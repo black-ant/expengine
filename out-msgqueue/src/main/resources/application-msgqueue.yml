@@ -1,7 +1,0 @@
-gang:
-  etl:
-    mq:
-      rabbit:
-        exchange: gang
-        queue: gang
-        routingKey: gang

@@ -1,5 +1,6 @@
 package com.gang.etl.engine.template;
 
+import com.gang.etl.engine.api.bean.EngineBaseBean;
 import com.gang.etl.engine.api.bean.EngineProduceBean;
 import com.gang.etl.engine.thread.EngineThread;
 import org.checkerframework.checker.units.qual.A;
@@ -18,12 +19,11 @@ public class ProduceTemplate {
     @Autowired
     private EngineThread engineThread;
 
-
     /**
      * @param engineProduceBean
      * @return
      */
-    public EngineProduceBean doEngineProduce(EngineProduceBean engineProduceBean) {
+    public EngineBaseBean excute(EngineBaseBean engineProduceBean) {
 
         // Step 1 : do strategy
 

@@ -2,15 +2,16 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/datacenter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine-datacenter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-sdk" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-database" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-dingtalk" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-file" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine-support/support-github" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-rabbitmq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-rest" charset="UTF-8" />

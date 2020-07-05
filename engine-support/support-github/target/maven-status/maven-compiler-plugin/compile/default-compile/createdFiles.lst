@@ -1,0 +1,3 @@
+com\gang\etl\git\DemoLogic.class
+com\gang\etl\git\logic\GitProduceService.class
+com\gang\etl\git\to\GitConfig.class

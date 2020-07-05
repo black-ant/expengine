@@ -14,10 +14,13 @@
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-dingtalk/com-gang-etl-support-dingtalk.iml" filepath="$PROJECT_DIR$/engine-support/support-dingtalk/com-gang-etl-support-dingtalk.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-file/com-gang-etl-support-file.iml" filepath="$PROJECT_DIR$/engine-support/support-file/com-gang-etl-support-file.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-github/com-gang-etl-support-github.iml" filepath="$PROJECT_DIR$/engine-support/support-github/com-gang-etl-support-github.iml" />
+      <module fileurl="file://$PROJECT_DIR$/engine-support/support-ldap/com-gang-etl-support-ldap.iml" filepath="$PROJECT_DIR$/engine-support/support-ldap/com-gang-etl-support-ldap.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-rabbitmq/com-gang-etl-support-rabbitmq.iml" filepath="$PROJECT_DIR$/engine-support/support-rabbitmq/com-gang-etl-support-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-redis/com-gang-etl-support-redis.iml" filepath="$PROJECT_DIR$/engine-support/support-redis/com-gang-etl-support-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-rest/com-gang-etl-support-rest.iml" filepath="$PROJECT_DIR$/engine-support/support-rest/com-gang-etl-support-rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-velocity/com-gang-etl-support-velocity.iml" filepath="$PROJECT_DIR$/engine-support/support-velocity/com-gang-etl-support-velocity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/engine-support/support-wechat/com-gang-etl-support-wechat.iml" filepath="$PROJECT_DIR$/engine-support/support-wechat/com-gang-etl-support-wechat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/engine-support/support-workwechat/com-gang-etl-support-workwechat.iml" filepath="$PROJECT_DIR$/engine-support/support-workwechat/com-gang-etl-support-workwechat.iml" />
     </modules>
   </component>
 </project>

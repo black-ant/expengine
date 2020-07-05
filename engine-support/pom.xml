@@ -20,6 +20,9 @@
         <module>support-rest</module>
         <module>support-dingtalk</module>
         <module>support-github</module>
+        <module>support-workwechat</module>
+        <module>support-wechat</module>
+        <module>support-ldap</module>
     </modules>
 
 

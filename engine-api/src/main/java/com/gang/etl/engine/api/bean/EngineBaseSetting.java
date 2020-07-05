@@ -6,6 +6,6 @@ package com.gang.etl.engine.api.bean;
  * @Date 2020/6/11 22:30
  * @Created by zengzg
  */
-public class EngineBaseSetting {
+public class EngineBaseSetting implements ISyncBaseTO {
 
 }

@@ -72,6 +72,7 @@
         <module>engine-core</module>
         <module>engine-support</module>
         <module>engine-sdk</module>
+        <module>engine-plugins</module>
     </modules>
 
 </project>

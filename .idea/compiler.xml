@@ -9,17 +9,19 @@
         <module name="com-gang-etl-support-rest" />
         <module name="com-gang-etl-support-wechat" />
         <module name="com-gang-etl-out-common" />
+        <module name="com-gang-etl-plugins-velocity-html" />
         <module name="com-gang-engine-sdk" />
         <module name="com-gang-etl-support-rabbitmq" />
         <module name="com-gang-etl-server" />
         <module name="com-gang-etl-support-github" />
         <module name="com-gang-etl-support-file" />
         <module name="com-gang-etl-core" />
-        <module name="com-gang-etl-datacenter" />
-        <module name="com-gang-etl-support-dingtalk" />
         <module name="com-gang-etl-engine-api" />
+        <module name="com-gang-etl-support-dingtalk" />
+        <module name="com-gang-etl-support-mongodb" />
         <module name="com-gang-etl-support-ldap" />
         <module name="com-gang-etl-support-workwechat" />
+        <module name="com-gang-etl-datacenter" />
         <module name="com-gang-etl-support-velocity" />
         <module name="com-gang-etl-support-database" />
         <module name="com-gang-etl-support-redis" />
@@ -34,6 +36,8 @@
       <module name="com-gang-etl-out-common" target="1.8" />
       <module name="com-gang-etl-out-database" target="1.8" />
       <module name="com-gang-etl-out-velocity" target="1.8" />
+      <module name="com-gang-etl-plugins" target="1.8" />
+      <module name="com-gang-etl-plugins-velocity-html" target="1.8" />
       <module name="com-gang-etl-server" target="1.8" />
       <module name="com-gang-etl-support" target="1.8" />
       <module name="com-gang-etl-support-database" target="1.8" />
@@ -41,6 +45,7 @@
       <module name="com-gang-etl-support-file" target="1.8" />
       <module name="com-gang-etl-support-github" target="1.8" />
       <module name="com-gang-etl-support-ldap" target="1.8" />
+      <module name="com-gang-etl-support-mongodb" target="1.8" />
       <module name="com-gang-etl-support-rabbitmq" target="1.8" />
       <module name="com-gang-etl-support-redis" target="1.8" />
       <module name="com-gang-etl-support-rest" target="1.8" />
@@ -59,6 +64,8 @@
       <module name="com-gang-etl-out-common" options="-parameters" />
       <module name="com-gang-etl-out-database" options="-parameters" />
       <module name="com-gang-etl-out-velocity" options="-parameters" />
+      <module name="com-gang-etl-plugins" options="-parameters" />
+      <module name="com-gang-etl-plugins-velocity-html" options="-parameters" />
       <module name="com-gang-etl-server" options="-parameters" />
       <module name="com-gang-etl-support" options="-parameters" />
       <module name="com-gang-etl-support-database" options="-parameters" />
@@ -66,6 +73,7 @@
       <module name="com-gang-etl-support-file" options="-parameters" />
       <module name="com-gang-etl-support-github" options="-parameters" />
       <module name="com-gang-etl-support-ldap" options="-parameters" />
+      <module name="com-gang-etl-support-mongodb" options="-parameters" />
       <module name="com-gang-etl-support-rabbitmq" options="-parameters" />
       <module name="com-gang-etl-support-redis" options="-parameters" />
       <module name="com-gang-etl-support-rest" options="-parameters" />

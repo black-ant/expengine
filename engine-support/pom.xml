@@ -23,6 +23,7 @@
         <module>support-workwechat</module>
         <module>support-wechat</module>
         <module>support-ldap</module>
+        <module>support-mongodb</module>
     </modules>
 
 

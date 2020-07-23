@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * @Classname SyncPushController
  * @Description TODO
@@ -32,6 +35,17 @@ public class SyncPushController {
         engineBaseBean = engineLogic.excute(engineBaseBean);
         EngineBaseResponse baseResponse = engineBaseBean.getResponse();
         return ResponseModel.commonResponse(engineBaseBean);
+    }
+
+    @PostMapping("list")
+    public ResponseModel pushList(List<EngineBaseBean> engineBaseBeans) {
+        logger.info("------> this is in pushList <-------");
+        List<EngineBaseResponse> baseResponses = new LinkedList<>();
+        engineBaseBeans.forEach(item -> {
+            engineLogic.excute(item);
+            baseResponses.add(item.getResponse());
+        });
+        return ResponseModel.commonResponse(baseResponses);
     }
 
 }

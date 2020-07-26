@@ -10,19 +10,20 @@
         <module name="com-gang-etl-support-wechat" />
         <module name="com-gang-etl-out-common" />
         <module name="com-gang-etl-plugins-velocity-html" />
-        <module name="com-gang-engine-sdk" />
-        <module name="com-gang-etl-support-rabbitmq" />
         <module name="com-gang-etl-server" />
+        <module name="com-gang-etl-support-ldap" />
+        <module name="com-gang-etl-support-rabbitmq" />
+        <module name="com-gang-engine-sdk" />
         <module name="com-gang-etl-support-github" />
         <module name="com-gang-etl-support-file" />
         <module name="com-gang-etl-core" />
         <module name="com-gang-etl-engine-api" />
+        <module name="com-gang-etl-plugin-ldap" />
         <module name="com-gang-etl-support-dingtalk" />
-        <module name="com-gang-etl-support-mongodb" />
-        <module name="com-gang-etl-support-ldap" />
+        <module name="com-gang-etl-support-velocity" />
         <module name="com-gang-etl-support-workwechat" />
         <module name="com-gang-etl-datacenter" />
-        <module name="com-gang-etl-support-velocity" />
+        <module name="com-gang-etl-support-mongodb" />
         <module name="com-gang-etl-support-database" />
         <module name="com-gang-etl-support-redis" />
       </profile>
@@ -36,6 +37,7 @@
       <module name="com-gang-etl-out-common" target="1.8" />
       <module name="com-gang-etl-out-database" target="1.8" />
       <module name="com-gang-etl-out-velocity" target="1.8" />
+      <module name="com-gang-etl-plugin-ldap" target="1.8" />
       <module name="com-gang-etl-plugins" target="1.8" />
       <module name="com-gang-etl-plugins-velocity-html" target="1.8" />
       <module name="com-gang-etl-server" target="1.8" />
@@ -64,6 +66,7 @@
       <module name="com-gang-etl-out-common" options="-parameters" />
       <module name="com-gang-etl-out-database" options="-parameters" />
       <module name="com-gang-etl-out-velocity" options="-parameters" />
+      <module name="com-gang-etl-plugin-ldap" options="-parameters" />
       <module name="com-gang-etl-plugins" options="-parameters" />
       <module name="com-gang-etl-plugins-velocity-html" options="-parameters" />
       <module name="com-gang-etl-server" options="-parameters" />

@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>velocity-html</module>
+        <module>com-gang-etl-plugin-ldap</module>
     </modules>
 
 

@@ -2,6 +2,7 @@ package com.gang.etl.git.logic;
 
 import com.gang.etl.engine.api.bean.EngineProduceBean;
 import com.gang.etl.engine.api.common.IProduceService;
+import com.gang.etl.engine.api.service.BaseProduceService;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,10 +12,14 @@ import org.springframework.stereotype.Component;
  * @Created by zengzg
  */
 @Component
-public class GitProduceService implements IProduceService {
+public class GitProduceService extends BaseProduceService implements IProduceService {
 
     @Override
     public EngineProduceBean execute(EngineProduceBean consumerBean) {
+
+        String config = consumerBean.getConfig();
+
+
         return null;
     }
 }

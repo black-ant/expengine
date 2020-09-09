@@ -24,4 +24,7 @@ public class SyncFileSetting extends EngineBaseSetting {
 
     @AnnoField(name = "文件类型", nullable = false)
     private String fileType;
+
+    @AnnoField(name = "自动分割")
+    private Boolean segmentation;
 }

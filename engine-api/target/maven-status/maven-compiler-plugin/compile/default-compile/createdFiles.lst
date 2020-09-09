@@ -1,7 +1,9 @@
 com\gang\etl\engine\api\bean\EngineBaseResponse.class
 com\gang\etl\engine\api\bean\EngineBaseSetting.class
 com\gang\etl\engine\api\to\SyncPartTypeEnum.class
+com\gang\etl\engine\api\service\BaseProduceService.class
 com\gang\etl\engine\api\bean\EngineConsumerBean.class
+com\gang\etl\engine\api\common\IPluginsService.class
 com\gang\etl\engine\api\to\TemplateTO.class
 com\gang\etl\engine\api\exception\SyncConversionException.class
 com\gang\etl\engine\api\common\IComsumerService.class

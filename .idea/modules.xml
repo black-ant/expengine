@@ -3,28 +3,16 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/engine-sdk/com-gang-engine-sdk.iml" filepath="$PROJECT_DIR$/engine-sdk/com-gang-engine-sdk.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-core/com-gang-etl-core.iml" filepath="$PROJECT_DIR$/engine-core/com-gang-etl-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-datacenter/com-gang-etl-datacenter.iml" filepath="$PROJECT_DIR$/engine-datacenter/com-gang-etl-datacenter.iml" />
       <module fileurl="file://$PROJECT_DIR$/com-gang-etl-engine.iml" filepath="$PROJECT_DIR$/com-gang-etl-engine.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-api/com-gang-etl-engine-api.iml" filepath="$PROJECT_DIR$/engine-api/com-gang-etl-engine-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/engine-core/com-gang-etl-engine-core.iml" filepath="$PROJECT_DIR$/engine-core/com-gang-etl-engine-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/out-common/com-gang-etl-out-common.iml" filepath="$PROJECT_DIR$/out-common/com-gang-etl-out-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-plugins/com-gang-etl-plugin-ldap/com-gang-etl-plugin-ldap.iml" filepath="$PROJECT_DIR$/engine-plugins/com-gang-etl-plugin-ldap/com-gang-etl-plugin-ldap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/engine-plugins/etl-plugin-job/com-gang-etl-plugin-job.iml" filepath="$PROJECT_DIR$/engine-plugins/etl-plugin-job/com-gang-etl-plugin-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-plugins/com-gang-etl-plugins.iml" filepath="$PROJECT_DIR$/engine-plugins/com-gang-etl-plugins.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-plugins/velocity-html/com-gang-etl-plugins-velocity-html.iml" filepath="$PROJECT_DIR$/engine-plugins/velocity-html/com-gang-etl-plugins-velocity-html.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-server/com-gang-etl-server.iml" filepath="$PROJECT_DIR$/engine-server/com-gang-etl-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/com-gang-etl-support.iml" filepath="$PROJECT_DIR$/engine-support/com-gang-etl-support.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-database/com-gang-etl-support-database.iml" filepath="$PROJECT_DIR$/engine-support/support-database/com-gang-etl-support-database.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-dingtalk/com-gang-etl-support-dingtalk.iml" filepath="$PROJECT_DIR$/engine-support/support-dingtalk/com-gang-etl-support-dingtalk.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-file/com-gang-etl-support-file.iml" filepath="$PROJECT_DIR$/engine-support/support-file/com-gang-etl-support-file.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-github/com-gang-etl-support-github.iml" filepath="$PROJECT_DIR$/engine-support/support-github/com-gang-etl-support-github.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-ldap/com-gang-etl-support-ldap.iml" filepath="$PROJECT_DIR$/engine-support/support-ldap/com-gang-etl-support-ldap.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-mongodb/com-gang-etl-support-mongodb.iml" filepath="$PROJECT_DIR$/engine-support/support-mongodb/com-gang-etl-support-mongodb.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-rabbitmq/com-gang-etl-support-rabbitmq.iml" filepath="$PROJECT_DIR$/engine-support/support-rabbitmq/com-gang-etl-support-rabbitmq.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-redis/com-gang-etl-support-redis.iml" filepath="$PROJECT_DIR$/engine-support/support-redis/com-gang-etl-support-redis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-rest/com-gang-etl-support-rest.iml" filepath="$PROJECT_DIR$/engine-support/support-rest/com-gang-etl-support-rest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-velocity/com-gang-etl-support-velocity.iml" filepath="$PROJECT_DIR$/engine-support/support-velocity/com-gang-etl-support-velocity.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-wechat/com-gang-etl-support-wechat.iml" filepath="$PROJECT_DIR$/engine-support/support-wechat/com-gang-etl-support-wechat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-workwechat/com-gang-etl-support-workwechat.iml" filepath="$PROJECT_DIR$/engine-support/support-workwechat/com-gang-etl-support-workwechat.iml" />
     </modules>
   </component>
 </project>

@@ -9,17 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>com-gang-etl-plugin-ldap</artifactId>
+    <artifactId>com-gang-etl-plugin-job</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.gang</groupId>
-            <artifactId>com-gang-common-lib</artifactId>
-            <version>1.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.gang</groupId>
-            <artifactId>com-gang-etl-engine-api</artifactId>
-        </dependency>
-    </dependencies>
+
 </project>

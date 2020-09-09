@@ -4,11 +4,9 @@
       <root url="jar://$PROJECT_DIR$/../../../../resource/repo/com/gang/com-gang-etl-out-velocity/1.0-SNAPSHOT/com-gang-etl-out-velocity-1.0-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/out-velocity/com-gang-etl-out-velocity-1.0-SNAPSHOT-javadoc.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../resource/repo/com/gang/com-gang-etl-out-velocity/1.0-SNAPSHOT/com-gang-etl-out-velocity-1.0-SNAPSHOT-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/out-velocity/com-gang-etl-out-velocity-1.0-SNAPSHOT-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../resource/repo/com/gang/com-gang-etl-out-velocity/1.0-SNAPSHOT/com-gang-etl-out-velocity-1.0-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>

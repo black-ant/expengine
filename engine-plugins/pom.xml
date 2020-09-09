@@ -12,8 +12,9 @@
     <artifactId>com-gang-etl-plugins</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>velocity-html</module>
-        <module>com-gang-etl-plugin-ldap</module>
+        <!--        <module>velocity-html</module>-->
+        <!--        <module>com-gang-etl-plugin-ldap</module>-->
+        <module>etl-plugin-job</module>
     </modules>
 
 

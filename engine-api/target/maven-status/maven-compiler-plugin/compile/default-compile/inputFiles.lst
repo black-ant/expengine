@@ -6,8 +6,10 @@ D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engin
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\common\IEngineConversion.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\exception\SyncException.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\to\SyncPartTypeEnum.java
+D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\common\IPluginsService.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\bean\EngineBaseSetting.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\common\IEngineService.java
+D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\service\BaseProduceService.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\bean\EngineBaseResponse.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\exception\SyncConversionException.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\bean\EngineProduceBean.java

@@ -7,8 +7,10 @@ import com.gang.etl.engine.logic.SimpleEngineLogic;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.LinkedList;
@@ -28,6 +30,16 @@ public class SyncPushController {
 
     @Autowired
     private SimpleEngineLogic engineLogic;
+
+    @GetMapping("conversion/{origin}/{source}")
+    public ResponseModel conversion(
+            @RequestParam("origin") String origin,
+            @RequestParam("source") String source) {
+
+        logger.info("------> conversion :{} -- {}  <-------", origin, source);
+        return ResponseModel.commonResponse("success");
+    }
+
 
     @PostMapping("single")
     public ResponseModel pushSingle(EngineBaseBean engineBaseBean) {

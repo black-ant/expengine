@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @Created by zengzg
  */
 @RestController
-@RequestMapping("/synclog")
+@RequestMapping("/sync/log")
 public class SyncLogController extends AbstratController<SyncLogServiceImpl, SyncLog> {
 }

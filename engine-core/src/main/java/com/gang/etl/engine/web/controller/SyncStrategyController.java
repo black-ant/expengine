@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Created by zengzg
  */
 @RestController
-@RequestMapping("/strategy")
+@RequestMapping("/sync/strategy")
 public class SyncStrategyController extends AbstratController<SyncStrategyServiceImpl, SyncStrategy> {
 
 }

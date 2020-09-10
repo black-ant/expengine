@@ -27,7 +27,7 @@ import java.util.List;
  * @Created by zengzg
  */
 @RestController
-@RequestMapping("/synctype")
+@RequestMapping("/sync/type")
 public class SyncTypeController extends AbstratController<SyncTypeServiceImpl, SyncType> {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());

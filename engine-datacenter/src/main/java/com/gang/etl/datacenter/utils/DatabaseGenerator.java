@@ -32,7 +32,7 @@
 //public class DatabaseGenerator {
 //
 //    private static String[] tableList = {
-//            "sync_business"
+//            "sync_log"
 //    };
 //
 //    private static String parentName = "com.gang.etl.datacenter";
@@ -51,6 +51,7 @@
 //        gc.setOutputDir(projectPath + "/src/main/java");
 //        gc.setAuthor("ant-black");
 //        gc.setOpen(false);
+//        //        gc.setFileOverride(Boolean.TRUE);
 //        // gc.setSwagger2(true); 实体属性 Swagger2 注解
 //        mpg.setGlobalConfig(gc);
 //

@@ -1,7 +1,7 @@
 package com.gang.etl.datacenter.mapper;
 
+import com.gang.etl.datacenter.entity.SyncBusinessRate;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.gang.etl.datacenter.entity.ExpTemplate;
 
 /**
  * <p>
@@ -9,8 +9,8 @@ import com.gang.etl.datacenter.entity.ExpTemplate;
  * </p>
  *
  * @author ant-black
- * @since 2020-01-31
+ * @since 2020-09-10
  */
-public interface ExpTemplateMapper extends BaseMapper<ExpTemplate> {
+public interface SyncBusinessRateMapper extends BaseMapper<SyncBusinessRate> {
 
 }

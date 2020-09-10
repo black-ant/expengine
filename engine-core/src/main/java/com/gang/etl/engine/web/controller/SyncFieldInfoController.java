@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Created by zengzg
  */
 @RestController
-@RequestMapping("/syncfield")
+@RequestMapping("/sync/field")
 public class SyncFieldInfoController extends AbstratController<SyncFieldInfoServiceImpl, SyncFieldInfo> {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());

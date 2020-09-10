@@ -1,6 +1,6 @@
 package com.gang.etl.datacenter.service;
 
-import com.gang.etl.datacenter.entity.SyncAppRef;
+import com.gang.etl.datacenter.entity.SyncBusinessRate;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author ant-black
- * @since 2020-02-02
+ * @since 2020-09-10
  */
-public interface ISyncAppRefService extends IService<SyncAppRef> {
+public interface ISyncBusinessRateService extends IService<SyncBusinessRate> {
 
 }

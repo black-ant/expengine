@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author ant-black
- * @since 2020-02-02
+ * @since 2020-09-10
  */
 public interface ISyncLogService extends IService<SyncLog> {
 

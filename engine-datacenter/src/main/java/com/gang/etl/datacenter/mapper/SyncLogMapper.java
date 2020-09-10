@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author ant-black
- * @since 2020-02-02
+ * @since 2020-09-10
  */
 public interface SyncLogMapper extends BaseMapper<SyncLog> {
 

@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Created by zengzg
  */
 @RestController
-@RequestMapping("setting")
+@RequestMapping("sync/setting")
 public class SyncSettingController extends AbstratController<SyncSettingServiceImpl, SyncSetting> {
 
     @Autowired

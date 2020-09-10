@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author ant-black
- * @since 2020-02-02
+ * @since 2020-09-10
  */
 @Service
 public class SyncLogServiceImpl extends ServiceImpl<SyncLogMapper, SyncLog> implements ISyncLogService {

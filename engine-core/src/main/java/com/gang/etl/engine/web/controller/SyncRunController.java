@@ -22,14 +22,32 @@ import java.util.List;
  * @Date 2020/6/27 21:31
  * @Created by zengzg
  */
-@RequestMapping("/push")
+@RequestMapping("/run")
 @RestController
-public class SyncPushController {
+public class SyncRunController {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     private SimpleEngineLogic engineLogic;
+
+
+    @GetMapping("business/type/{typeId}")
+    public ResponseModel businessType(
+            @RequestParam("typeId") String typeId) {
+        logger.info("------> conversion :{} -- {}  <-------", typeId);
+
+
+
+        return ResponseModel.commonResponse("success");
+    }
+
+    @GetMapping("business/single/{businessId}")
+    public ResponseModel business(
+            @RequestParam("businessId") String businessId) {
+        logger.info("------> conversion :{} -- {}  <-------", businessId);
+        return ResponseModel.commonResponse("success");
+    }
 
     @GetMapping("conversion/{origin}/{source}")
     public ResponseModel conversion(

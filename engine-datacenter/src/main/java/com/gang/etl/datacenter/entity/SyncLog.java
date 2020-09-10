@@ -1,31 +1,37 @@
 package com.gang.etl.datacenter.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.gang.common.lib.to.AbstractEntity;
+import java.time.LocalDateTime;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
-import java.time.LocalDateTime;
-
 /**
  * <p>
- *
+ * 
  * </p>
  *
  * @author ant-black
- * @since 2020-02-02
+ * @since 2020-09-10
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
+@TableName("sync_log")
 public class SyncLog extends AbstractEntity {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID=1L;
 
-    @TableId(type = IdType.ASSIGN_ID)
-    private String id;
+    /**
+     * 所属域
+     */
+    private String logDomain;
+
+    /**
+     * 所属频道
+     */
+    private String logChannel;
 
     /**
      * log 体
@@ -33,9 +39,34 @@ public class SyncLog extends AbstractEntity {
     private String logBody;
 
     /**
-     * log 策略
+     * 同步请求
      */
-    private String logStrategy;
+    private String logRequest;
+
+    /**
+     * 同步返回
+     */
+    private String logResponse;
+
+    /**
+     * 同步状态 : 0 : 失败 1 : 拉取成功 2：推送成功
+     */
+    private String logStatus;
+
+    /**
+     * 同步业务
+     */
+    private String syncBusiness;
+
+    /**
+     * 同步策略
+     */
+    private String syncStrategy;
+
+    /**
+     * setting 流转
+     */
+    private String syncSetting;
 
     /**
      * 同步信息
@@ -46,6 +77,21 @@ public class SyncLog extends AbstractEntity {
      * 同步版本
      */
     private String syncVersion;
+
+    /**
+     * 下次同步信息
+     */
+    private String cacheNextInfo;
+
+    /**
+     * 当前数据信息
+     */
+    private String cacheDataHash;
+
+    /**
+     * 补充字段
+     */
+    private String cacheExt;
 
     /**
      * 创建时间
@@ -66,6 +112,16 @@ public class SyncLog extends AbstractEntity {
      * 更新人
      */
     private String updateUser;
+
+    /**
+     * 拉取 , 推送
+     */
+    private String syncOperationType;
+
+    /**
+     * 增量 , 全量
+     */
+    private String syncScopeType;
 
 
 }

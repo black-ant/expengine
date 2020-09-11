@@ -11,5 +11,11 @@
 
     <artifactId>com-gang-etl-support-dingtalk</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.gang</groupId>
+            <artifactId>com-gang-etl-engine-api</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

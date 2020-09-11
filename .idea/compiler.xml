@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com-gang-etl-plugin-job" />
-        <module name="com-gang-engine-sdk" />
-        <module name="com-gang-etl-engine-core" />
         <module name="com-gang-etl-support-file" />
-        <module name="com-gang-etl-out-common" />
         <module name="com-gang-etl-datacenter" />
+        <module name="com-gang-etl-support-dingtalk" />
+        <module name="com-gang-etl-plugin-job" />
+        <module name="com-gang-etl-out-common" />
+        <module name="com-gang-etl-engine-core" />
+        <module name="com-gang-engine-sdk" />
         <module name="com-gang-etl-server" />
         <module name="com-gang-etl-engine-api" />
       </profile>
@@ -27,6 +28,7 @@
       <module name="com-gang-etl-plugins" target="1.8" />
       <module name="com-gang-etl-server" target="1.8" />
       <module name="com-gang-etl-support" target="1.8" />
+      <module name="com-gang-etl-support-dingtalk" target="1.8" />
       <module name="com-gang-etl-support-file" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -39,6 +41,7 @@
       <module name="com-gang-etl-out-common" options="-parameters" />
       <module name="com-gang-etl-plugin-job" options="-parameters" />
       <module name="com-gang-etl-server" options="-parameters" />
+      <module name="com-gang-etl-support-dingtalk" options="-parameters" />
       <module name="com-gang-etl-support-file" options="-parameters" />
     </option>
   </component>

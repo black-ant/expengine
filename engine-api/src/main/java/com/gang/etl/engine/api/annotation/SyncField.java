@@ -20,6 +20,8 @@ public @interface SyncField {
 
     String defaultValue() default "";
 
+    String description() default "";
+
     String name() default "";
 
     String alias() default "";

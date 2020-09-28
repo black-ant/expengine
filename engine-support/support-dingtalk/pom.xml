@@ -16,6 +16,11 @@
             <groupId>com.gang</groupId>
             <artifactId>com-gang-etl-engine-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>taobao-sdk-java</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 
 </project>

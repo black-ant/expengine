@@ -2,8 +2,8 @@ package com.gang.etl.engine.conversion;
 
 import com.gang.etl.datacenter.dao.SyncFiledInfoDAO;
 import com.gang.etl.datacenter.entity.SyncFieldInfo;
-import com.gang.etl.engine.api.bean.EngineConsumerBean;
-import com.gang.etl.engine.api.bean.EngineProduceBean;
+import com.gang.etl.engine.api.to.EngineConsumerBean;
+import com.gang.etl.engine.api.to.EngineProduceBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

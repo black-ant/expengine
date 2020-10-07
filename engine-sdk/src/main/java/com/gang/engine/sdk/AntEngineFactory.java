@@ -1,7 +1,7 @@
 package com.gang.engine.sdk;
 
 import com.gang.common.lib.utils.ReflectionUtils;
-import com.gang.etl.engine.api.bean.EngineBaseSetting;
+import com.gang.etl.engine.api.to.EngineBaseSetting;
 import com.gang.etl.engine.api.common.IEngineService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

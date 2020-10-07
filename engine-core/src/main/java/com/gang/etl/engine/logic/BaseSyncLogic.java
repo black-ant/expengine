@@ -5,8 +5,8 @@ import com.gang.common.lib.utils.AntAnnotationUtils;
 import com.gang.common.lib.utils.ReflectionUtils;
 import com.gang.etl.datacenter.dao.SyncTypeDAO;
 import com.gang.etl.datacenter.entity.SyncType;
-import com.gang.etl.engine.api.bean.EngineBaseBean;
-import com.gang.etl.engine.api.bean.EngineBaseSetting;
+import com.gang.etl.engine.api.to.EngineBaseBean;
+import com.gang.etl.engine.api.to.EngineBaseSetting;
 import com.gang.etl.engine.api.bean.ISyncBaseTO;
 import com.gang.etl.engine.api.common.IEngineService;
 import com.gang.etl.engine.api.exception.SyncErrorEnum;
@@ -116,4 +116,6 @@ public class BaseSyncLogic {
     public void checkAfterEngineBaseBean(EngineBaseBean engineBaseBean) {
         logger.info("------> this is over <-------");
     }
+
+
 }

@@ -12,8 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/engine-plugins/com-gang-etl-plugins.iml" filepath="$PROJECT_DIR$/engine-plugins/com-gang-etl-plugins.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-server/com-gang-etl-server.iml" filepath="$PROJECT_DIR$/engine-server/com-gang-etl-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/com-gang-etl-support.iml" filepath="$PROJECT_DIR$/engine-support/com-gang-etl-support.iml" />
-      <module fileurl="file://$PROJECT_DIR$/engine-support/support-dingtalk/com-gang-etl-support-dingtalk.iml" filepath="$PROJECT_DIR$/engine-support/support-dingtalk/com-gang-etl-support-dingtalk.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-support/support-file/com-gang-etl-support-file.iml" filepath="$PROJECT_DIR$/engine-support/support-file/com-gang-etl-support-file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/engine-support/support-github/com-gang-etl-support-github.iml" filepath="$PROJECT_DIR$/engine-support/support-github/com-gang-etl-support-github.iml" />
     </modules>
   </component>
 </project>

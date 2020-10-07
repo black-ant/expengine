@@ -1,9 +1,4 @@
-D:\java\workspace\git\exp\etl-engine\out-common\src\main\java\com\gang\etl\out\common\output\FileOutput.java
 D:\java\workspace\git\exp\etl-engine\out-common\src\main\java\com\gang\etl\out\common\logic\SyncInvoke.java
-D:\java\workspace\git\exp\etl-engine\out-common\src\main\java\com\gang\etl\out\common\output\AbstractOut.java
-D:\java\workspace\git\exp\etl-engine\out-common\src\main\java\com\gang\etl\out\common\output\TxtOutput.java
-D:\java\workspace\git\exp\etl-engine\out-common\src\main\java\com\gang\etl\out\common\output\OrgCommonOutput.java
-D:\java\workspace\git\exp\etl-engine\out-common\src\main\java\com\gang\etl\out\common\output\OfficeOut.java
 D:\java\workspace\git\exp\etl-engine\out-common\src\main\java\com\gang\etl\out\common\logic\SyncClassInfo.java
 D:\java\workspace\git\exp\etl-engine\out-common\src\main\java\com\gang\etl\out\common\logic\SyncMethodInfo.java
 D:\java\workspace\git\exp\etl-engine\out-common\src\main\java\com\gang\etl\out\common\logic\SyncSDKFactory.java

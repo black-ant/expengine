@@ -49,11 +49,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: com.gang:com-gang-ext-sdk-parent:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.gang:com-gang-ext-sdk-workwechat:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.gang:com-gang-common-api-sync:1.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.62" level="project" />
-    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
     <orderEntry type="library" name="Maven: com.gang:com-gang-etl-common-lib:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.gang:com-gang-common-parent-sdk:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.gang:com-gang-common-swagger:1.0.0" level="project" />
@@ -94,6 +89,8 @@
     <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.3.2" level="project" />
     <orderEntry type="library" name="Maven: com.google.j2objc:j2objc-annotations:1.3" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.17" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.62" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
     <orderEntry type="module" module-name="com-gang-etl-datacenter" />
     <orderEntry type="library" name="Maven: com.gang:com-gang-common-mybatis-plus:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.1.6.RELEASE" level="project" />
@@ -130,6 +127,8 @@
     <orderEntry type="library" name="Maven: org.apache.commons:commons-text:1.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-collections4:4.1" level="project" />
     <orderEntry type="library" name="Maven: cn.hutool:hutool-all:5.1.3" level="project" />
+    <orderEntry type="module" module-name="com-gang-etl-engine-api" />
+    <orderEntry type="library" name="Maven: javax.ws.rs:javax.ws.rs-api:2.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.1.8.RELEASE" level="project" />

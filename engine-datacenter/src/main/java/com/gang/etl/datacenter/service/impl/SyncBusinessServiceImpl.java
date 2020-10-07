@@ -1,5 +1,7 @@
 package com.gang.etl.datacenter.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.AbstractWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.gang.etl.datacenter.entity.SyncBusiness;
 import com.gang.etl.datacenter.mapper.SyncBusinessMapper;
 import com.gang.etl.datacenter.service.ISyncBusinessService;
@@ -8,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author ant-black
@@ -16,5 +18,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class SyncBusinessServiceImpl extends ServiceImpl<SyncBusinessMapper, SyncBusiness> implements ISyncBusinessService {
+
+    public SyncBusiness findByCode(String code) {
+        QueryWrapper<SyncBusiness> wrapper = new QueryWrapper();
+        wrapper.eq("id", code).or().eq("business_code", code);
+        return getOne(wrapper);
+    }
 
 }

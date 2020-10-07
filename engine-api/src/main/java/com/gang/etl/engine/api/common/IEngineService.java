@@ -1,6 +1,6 @@
 package com.gang.etl.engine.api.common;
 
-import com.gang.etl.engine.api.bean.EngineBaseBean;
+import com.gang.etl.engine.api.to.EngineBaseBean;
 
 /**
  * @Classname IEngineService

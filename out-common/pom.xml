@@ -14,17 +14,17 @@
     <dependencies>
         <dependency>
             <groupId>com.gang</groupId>
-            <artifactId>com-gang-ext-sdk-parent</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.gang</groupId>
             <artifactId>com-gang-etl-common-lib</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.gang</groupId>
             <artifactId>com-gang-etl-datacenter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gang</groupId>
+            <artifactId>com-gang-etl-engine-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

@@ -1,9 +1,8 @@
 package com.gang.etl.engine.thread;
 
-import com.gang.etl.engine.api.bean.EngineBaseBean;
+import com.gang.etl.engine.api.to.EngineBaseBean;
 import com.gang.etl.engine.api.common.IEngineService;
 import com.gang.etl.engine.container.SyncBeanFactory;
-import com.gang.etl.engine.container.SyncContainer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

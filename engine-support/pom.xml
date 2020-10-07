@@ -18,8 +18,8 @@
         <!--        <module>support-redis</module>-->
         <!--        <module>support-velocity</module>-->
         <!--        <module>support-rest</module>-->
-        <module>support-dingtalk</module>
-        <!--        <module>support-github</modul.e>-->
+        <!--        <module>support-dingtalk</module>-->
+        <module>support-github</module>
         <!--        <module>support-workwechat</module>-->
         <!--        <module>support-wechat</module>-->
         <!--        <module>support-ldap</module>-->

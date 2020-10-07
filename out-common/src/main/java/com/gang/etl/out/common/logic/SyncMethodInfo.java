@@ -1,8 +1,8 @@
 package com.gang.etl.out.common.logic;
 
 import com.alibaba.fastjson.JSONObject;
-import com.gang.sdk.api.annotation.SyncParam;
-import com.gang.sdk.api.type.SyncOperationType;
+import com.gang.etl.engine.api.annotation.SyncParam;
+import com.gang.etl.engine.api.type.SyncOperationType;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 

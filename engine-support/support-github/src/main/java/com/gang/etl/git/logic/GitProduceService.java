@@ -1,8 +1,9 @@
 package com.gang.etl.git.logic;
 
-import com.gang.etl.engine.api.bean.EngineProduceBean;
+import com.gang.etl.engine.api.to.EngineProduceBean;
 import com.gang.etl.engine.api.common.IProduceService;
 import com.gang.etl.engine.api.service.BaseProduceService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -14,11 +15,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class GitProduceService extends BaseProduceService implements IProduceService {
 
+    @Autowired
+    private GitOperation gitOperation;
+
     @Override
     public EngineProduceBean execute(EngineProduceBean consumerBean) {
 
         String config = consumerBean.getConfig();
 
+        //        gitOperation.pullGit();
 
         return null;
     }

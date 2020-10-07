@@ -1,9 +1,7 @@
 package com.gang.etl.engine.template;
 
-import com.gang.etl.engine.api.bean.EngineBaseBean;
-import com.gang.etl.engine.api.bean.EngineProduceBean;
+import com.gang.etl.engine.api.to.EngineBaseBean;
 import com.gang.etl.engine.thread.EngineThread;
-import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -14,10 +12,11 @@ import org.springframework.stereotype.Component;
  * @Created by zengzg
  */
 @Component
-public class ProduceTemplate {
+public class ProduceTemplate extends BaseSyncTemplate {
 
     @Autowired
     private EngineThread engineThread;
+
 
     /**
      * @param engineProduceBean

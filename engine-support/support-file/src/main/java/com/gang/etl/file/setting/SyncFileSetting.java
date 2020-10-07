@@ -1,7 +1,7 @@
 package com.gang.etl.file.setting;
 
 import com.gang.common.lib.annotation.AnnoField;
-import com.gang.etl.engine.api.bean.EngineBaseSetting;
+import com.gang.etl.engine.api.to.EngineBaseSetting;
 import lombok.Data;
 
 /**

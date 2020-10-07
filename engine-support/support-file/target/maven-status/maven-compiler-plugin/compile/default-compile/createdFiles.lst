@@ -1,3 +1,4 @@
+com\gang\etl\file\service\FileProduceService.class
 com\gang\etl\file\setting\SyncFileSetting.class
 com\gang\etl\file\service\FileIOLogic.class
-com\gang\etl\file\service\FileProduceService.class
+com\gang\etl\file\service\FileConsumerService.class

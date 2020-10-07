@@ -1,7 +1,7 @@
 package com.gang.etl.engine.api.common;
 
-import com.gang.etl.engine.api.bean.EngineConsumerBean;
-import com.gang.etl.engine.api.bean.EngineProduceBean;
+import com.gang.etl.engine.api.to.EngineConsumerBean;
+import com.gang.etl.engine.api.to.EngineProduceBean;
 
 /**
  * @Classname IEngineConversion

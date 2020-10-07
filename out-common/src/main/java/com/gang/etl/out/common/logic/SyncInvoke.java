@@ -2,16 +2,12 @@ package com.gang.etl.out.common.logic;
 
 import com.alibaba.fastjson.JSONObject;
 import com.gang.common.lib.to.ResponseModel;
-import com.gang.common.lib.utils.ReflectionUtils;
-import com.gang.sdk.api.to.SyncBaseBean;
-import com.gang.sdk.api.type.SyncOperationType;
+import com.gang.etl.engine.api.type.SyncOperationType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.lang.reflect.Array;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Map;

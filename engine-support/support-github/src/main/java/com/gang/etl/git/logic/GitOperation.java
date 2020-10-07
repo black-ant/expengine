@@ -8,6 +8,7 @@ import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.internal.storage.file.FileRepository;
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,6 +22,7 @@ import java.net.URLDecoder;
  * @Date 2020/7/26 21:53
  * @Created by zengzg
  */
+@Component
 public class GitOperation {
 
 

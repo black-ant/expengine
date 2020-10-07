@@ -1,6 +1,6 @@
 package com.gang.etl.file.service;
 
-import com.gang.etl.engine.api.bean.EngineProduceBean;
+import com.gang.etl.engine.api.to.EngineProduceBean;
 import com.gang.etl.engine.api.common.IProduceService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +17,13 @@ public class FileProduceService implements IProduceService {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
+
+    /**
+     * read file from path
+     *
+     * @param consumerBean
+     * @return
+     */
     @Override
     public EngineProduceBean execute(EngineProduceBean consumerBean) {
 

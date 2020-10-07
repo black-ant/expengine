@@ -2,6 +2,7 @@ package com.gang.etl.dingtalk.to;
 
 
 import com.gang.etl.engine.api.annotation.SyncField;
+import lombok.Data;
 
 import java.util.List;
 import java.util.Map;
@@ -12,6 +13,7 @@ import java.util.Map;
  * @Date 2020/9/12 20:26
  * @Created by zengzg
  */
+@Data
 public class DingTalkUserTO {
 
     private static final long serialVersionUID = -1385437685891326341L;

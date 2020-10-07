@@ -1,8 +1,6 @@
 package com.gang.etl.engine.logic;
 
-import com.gang.etl.datacenter.dao.SyncTypeDAO;
-import com.gang.etl.datacenter.entity.SyncType;
-import com.gang.etl.engine.api.bean.EngineBaseBean;
+import com.gang.etl.engine.api.to.EngineBaseBean;
 import com.gang.etl.engine.template.ConsumerTemplate;
 import com.gang.etl.engine.template.ProduceTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,10 +21,13 @@ public class SimpleEngineLogic extends BaseSyncLogic {
     @Autowired
     private ConsumerTemplate consumerTemplate;
 
+
     /**
+     * excute one sync by type
+     *
      * @param engineBaseBean
      */
-    public EngineBaseBean excute(EngineBaseBean engineBaseBean) {
+    public EngineBaseBean excuteByType(EngineBaseBean engineBaseBean) {
         beforeSync(engineBaseBean);
 
         if (engineBaseBean.getTypePart().equals(engineBaseBean.OP_PRODUCE)) {

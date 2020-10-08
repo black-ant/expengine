@@ -30,11 +30,12 @@ public class EngineThread {
     public void createThread(EngineBaseBean engineBaseBean) {
         try {
             executor.submit(() -> {
-                logger.debug("------> createThread submit :{} -- type :{} <-------", engineBaseBean.getServiceName(), engineBaseBean.getSyncType());
+                logger.info("------> createThread submit :{} -- type :{} <-------", engineBaseBean.getServiceName(), engineBaseBean.getSyncType());
                 IEngineService service = syncBeanFactory.getSyncBean(engineBaseBean.getServiceName());
                 service.execute(engineBaseBean);
                 engineBaseBean.getLock().notify();
             });
+            engineBaseBean.getLock().wait();
         } catch (Exception e) {
             logger.error("E----> error :{} -- content :{}", e.getClass(), e.getMessage());
         }

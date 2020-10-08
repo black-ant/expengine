@@ -6,6 +6,7 @@ import com.gang.etl.datacenter.entity.SyncBusiness;
 import com.gang.etl.datacenter.mapper.SyncBusinessMapper;
 import com.gang.etl.datacenter.service.ISyncBusinessService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 /**
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Service;
  * @since 2020-06-27
  */
 @Service
+@Primary
 public class SyncBusinessServiceImpl extends ServiceImpl<SyncBusinessMapper, SyncBusiness> implements ISyncBusinessService {
 
     public SyncBusiness findByCode(String code) {

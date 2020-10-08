@@ -71,6 +71,11 @@ public class SyncBusiness extends AbstractEntity {
     private String syncConsumer;
 
     /**
+     * 生产者配置信息
+     */
+    private String syncConsumerSetting;
+
+    /**
      * 定时任务
      */
     private String syncSchedule;

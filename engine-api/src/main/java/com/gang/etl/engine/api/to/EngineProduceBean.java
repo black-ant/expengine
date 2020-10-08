@@ -14,5 +14,14 @@ public class EngineProduceBean extends EngineBaseBean<JSONObject> {
         setTypeOperation(OP_PRODUCE);
     }
 
+    public Object getSimpleValue() {
+        return null != getData() ? getData().get(DEFAULT_DATA) : null;
+    }
+
+    public void setSimpleValue(Object value) {
+        JSONObject values = null != getData() ? getData() : new JSONObject();
+        values.put(DEFAULT_DATA, value);
+        setData(values);
+    }
 
 }

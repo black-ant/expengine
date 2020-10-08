@@ -27,7 +27,7 @@ mybatis:
   mapper-locations: classpath*:/mapper/*.xml
   config-location: classpath:/config/mybatis-config.xml
 server:
-  port: 8089
+  port: 8088
 gang:
   common:
     swagger:

@@ -1,6 +1,8 @@
 package com.gang.etl.engine.api.to;
 
+import com.alibaba.fastjson.JSONObject;
 import com.gang.etl.engine.api.common.IEngineService;
+import com.gang.etl.engine.api.request.SyncBusinessRequest;
 import lombok.Data;
 
 /**
@@ -14,11 +16,17 @@ public class EngineBaseBean<T> {
 
     public final static String OP_PRODUCE = "Produce";
     public final static String OP_CONSUME = "Consume";
+    public final static String DEFAULT_DATA = "DATA";
 
     /**
      * 同步类型 : User / Org
      */
     private String syncType;
+
+    /**
+     * 业务代码
+     */
+    private String businessCode;
 
     /**
      * Produce / Consume
@@ -74,5 +82,6 @@ public class EngineBaseBean<T> {
      * 是否继续
      */
     private Boolean syncContinue = Boolean.FALSE;
+
 
 }

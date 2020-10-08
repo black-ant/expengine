@@ -1,8 +1,8 @@
 package com.gang.etl.engine.logic;
 
 import com.gang.etl.engine.api.to.EngineBaseBean;
-import com.gang.etl.engine.template.ConsumerTemplate;
-import com.gang.etl.engine.template.ProduceTemplate;
+import com.gang.etl.engine.template.ConsumerLock;
+import com.gang.etl.engine.template.ProduceLock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -16,10 +16,10 @@ import org.springframework.stereotype.Component;
 public class SimpleEngineLogic extends BaseSyncLogic {
 
     @Autowired
-    private ProduceTemplate produceTemplate;
+    private ProduceLock produceTemplate;
 
     @Autowired
-    private ConsumerTemplate consumerTemplate;
+    private ConsumerLock consumerTemplate;
 
 
     /**

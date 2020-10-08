@@ -24,13 +24,19 @@ public class SyncStatusTO {
      * 成功情况
      */
     private Integer successNum;
-    private Map<String, Integer> success = new HashMap<>();
+    /**
+     * 返回信息 : id - info
+     */
+    private Map<String, String> success = new HashMap<>();
 
     /**
      * 失败情况
      */
     private Integer failureNum;
-    private Map<String, Integer> failure = new HashMap<>();
+    /**
+     * 返回信息 : id - info
+     */
+    private Map<String, String> failure = new HashMap<>();
 
     /**
      * 返回信息

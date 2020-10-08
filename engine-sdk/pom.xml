@@ -27,11 +27,11 @@
             <artifactId>com-gang-etl-engine-core</artifactId>
             <version>${sdk.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.gang</groupId>
-            <artifactId>com-gang-etl-support-file</artifactId>
-            <version>${sdk.version}</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.gang</groupId>-->
+        <!--            <artifactId>com-gang-etl-support-file</artifactId>-->
+        <!--            <version>${sdk.version}</version>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>com.gang</groupId>
             <artifactId>com-gang-etl-support-github</artifactId>

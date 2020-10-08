@@ -20,4 +20,15 @@ public class EngineConsumerBean extends EngineBaseBean<JSONObject> {
         setConfig(config);
         setTypePart(baseBean.getTypePart());
     }
+
+    public Object getSimpleValue() {
+        return null != getData() ? getData().get(DEFAULT_DATA) : null;
+    }
+
+    public void setSimpleValue(Object value) {
+        JSONObject values = null != getData() ? getData() : new JSONObject();
+        values.put(DEFAULT_DATA, value);
+    }
+
+
 }

@@ -1,11 +1,12 @@
 package com.gang.etl.engine.logic;
 
-import com.alibaba.fastjson.JSONObject;
 import com.gang.etl.datacenter.entity.SyncBusiness;
 import com.gang.etl.datacenter.service.ISyncBusinessService;
 import com.gang.etl.engine.api.to.EngineBaseBean;
-import com.gang.etl.engine.template.ConsumerTemplate;
-import com.gang.etl.engine.template.ProduceTemplate;
+import com.gang.etl.engine.api.to.SyncStatusTO;
+import com.gang.etl.engine.template.ConsumerLock;
+import com.gang.etl.engine.template.ProduceLock;
+import com.gang.etl.engine.template.SyncFlowLock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,10 +27,13 @@ public class SyncBusinessLogic extends BaseSyncLogic {
     private ISyncBusinessService syncBusinessService;
 
     @Autowired
-    private ProduceTemplate produceTemplate;
+    private ProduceLock produceTemplate;
 
     @Autowired
-    private ConsumerTemplate consumerTemplate;
+    private ConsumerLock consumerTemplate;
+
+    @Autowired
+    private SyncFlowLock syncFlowTemplate;
 
     /**
      * do Single Business by businessId
@@ -37,14 +41,14 @@ public class SyncBusinessLogic extends BaseSyncLogic {
      * @param businessId
      * @return
      */
-    public EngineBaseBean doSingleBusinessCode(String businessId) {
+    public SyncStatusTO doSingleBusinessCode(String businessId) {
 
         logger.info("------> run single business :{} <-------", businessId);
         SyncBusiness business = syncBusinessService.findByCode(businessId);
-        logger.info("------> get One business :{} <-------", JSONObject.toJSONString(business));
+        //        logger.info("------> get One business :{} <-------", JSONObject.toJSONString(business));
 
-
-        return null;
+        SyncStatusTO statusTO = syncFlowTemplate.doFlow(business);
+        return statusTO;
 
     }
 

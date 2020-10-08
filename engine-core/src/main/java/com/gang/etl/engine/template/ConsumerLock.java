@@ -1,18 +1,19 @@
 package com.gang.etl.engine.template;
 
 import com.gang.etl.engine.api.to.EngineBaseBean;
+import com.gang.etl.engine.common.BaseSyncLock;
 import com.gang.etl.engine.thread.EngineThread;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * @Classname ConsumerTemplate
+ * @Classname ConsumerLock
  * @Description TODO
  * @Date 2020/6/11 23:12
  * @Created by zengzg
  */
 @Component
-public class ConsumerTemplate extends BaseSyncTemplate {
+public class ConsumerLock extends BaseSyncLock {
 
     @Autowired
     private EngineThread engineThread;

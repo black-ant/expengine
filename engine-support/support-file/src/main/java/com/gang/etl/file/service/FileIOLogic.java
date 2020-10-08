@@ -1,21 +1,83 @@
 package com.gang.etl.file.service;
 
 
+import cn.hutool.core.io.FileUtil;
+import com.alibaba.fastjson.JSONObject;
+import com.gang.common.lib.utils.FileUtils;
+import com.gang.etl.file.setting.SyncFileSetting;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.util.Map;
 
 @Service
 public class FileIOLogic {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
+
+
+    /**
+     * 递归处理 File 文件
+     * 1 fileName -> contentCode (文件名避免了特殊字符)
+     *
+     * @param filePath
+     * @return
+     */
+    public Boolean readFileRecursion(String filePath, SyncFileSetting fileSetting) {
+
+        logger.info("------> pullLogic :{} <-------", filePath);
+
+        // Get folder Map Suffix
+        Map<String, File> files = FileUtils.getFilesMapNoSuffix(filePath);
+        if (!CollectionUtils.isEmpty(files)) {
+
+            File settingFile = files.get(fileSetting.getRootPath());
+
+            String config = FileUtil.isEmpty(settingFile) ? "" : FileUtil.readString(settingFile, "UTF-8");
+
+            // Get files
+            files.keySet().forEach(item -> {
+                File fileItem = files.get(item);
+
+                // If it is a configuration file : BLOG.md
+                if (checkFile(fileItem)) {
+
+                    // If it is a folder, recursive query
+                    if (FileUtil.isDirectory(fileItem)) {
+                        readFileRecursion(fileItem.getPath(), fileSetting);
+                    } else {
+                        logger.info("------>  <-------");
+                    }
+                } else {
+                    logger.info("------> skip this file <-------");
+                }
+            });
+        }
+        return Boolean.TRUE;
+    }
+
+    /**
+     * 过滤文本
+     *
+     * @return
+     */
+    public Boolean checkFile(File file) {
+        String fileName = file.getName();
+        if (fileName.contains(".git") || fileName.contains("BLOG.md")) {
+            return Boolean.FALSE;
+        }
+        return Boolean.TRUE;
+    }
 
 
     public void readLine(String path) {
@@ -47,6 +109,14 @@ public class FileIOLogic {
 
     public void writeFile() {
 
+    }
+
+    /**
+     * @param path
+     * @return
+     */
+    public String readFile(String path) {
+        return FileUtil.readString(path, "UTF-8");
     }
 
 

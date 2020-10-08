@@ -54,25 +54,18 @@
                 <version>${engine.common.version}</version>
             </dependency>
 
-            <!-- Support -->
-            <dependency>
-                <groupId>com.gang</groupId>
-                <artifactId>com-gang-etl-support-file</artifactId>
-                <version>${engine.common.version}</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 
     <modules>
         <module>engine-datacenter</module>
-        <module>engine-server</module>
         <module>engine-api</module>
         <module>out-common</module>
         <module>engine-core</module>
         <module>engine-support</module>
         <module>engine-sdk</module>
         <module>engine-plugins</module>
+        <module>engine-server</module>
     </modules>
 
 </project>

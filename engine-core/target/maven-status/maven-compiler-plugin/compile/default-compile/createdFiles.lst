@@ -1,6 +1,7 @@
 com\gang\etl\engine\web\controller\UserController.class
 com\gang\etl\engine\logic\BaseSyncLogic.class
 com\gang\etl\engine\web\controller\SyncLogController.class
+com\gang\etl\engine\template\BaseSyncTemplate.class
 com\gang\etl\engine\web\controller\AbstratController.class
 com\gang\etl\engine\container\BaseContainer.class
 com\gang\etl\engine\conversion\DictionaryConversion.class
@@ -10,16 +11,20 @@ com\gang\etl\engine\web\logic\AbsractVelocity.class
 com\gang\etl\engine\web\controller\SyncStrategyController.class
 com\gang\etl\engine\template\ConsumerTemplate.class
 com\gang\etl\engine\web\controller\ExpUserController.class
+com\gang\etl\engine\template\SyncFlowTemplate.class
 com\gang\etl\engine\web\controller\SyncBusinessRateController.class
 com\gang\etl\engine\common\AbstractEngineThread.class
 com\gang\etl\engine\container\SyncBeanFactory.class
 com\gang\etl\engine\web\controller\SyncSettingController.class
+com\gang\etl\engine\logic\SyncBusinessLogic.class
 com\gang\etl\engine\template\ProduceTemplate.class
 com\gang\etl\engine\common\AbstractEngineTemplate.class
 com\gang\etl\engine\web\controller\SyncTypeController.class
 com\gang\etl\engine\web\controller\StartController.class
 com\gang\etl\engine\container\SyncContainer.class
 com\gang\etl\engine\web\controller\SyncFieldInfoController.class
+com\gang\etl\engine\config\SystemProperties.class
+com\gang\etl\engine\template\SyncErrorTemplate.class
 com\gang\etl\engine\web\logic\AbstractLogic.class
 com\gang\etl\engine\thread\ErrorOperationThread.class
 com\gang\etl\engine\web\logic\CacheLogic.class
@@ -27,5 +32,4 @@ com\gang\etl\engine\logic\SimpleEngineLogic.class
 com\gang\etl\engine\web\controller\SyncMainController.class
 com\gang\etl\engine\thread\EngineThread.class
 com\gang\etl\engine\conversion\AbstractEngineConversion.class
-com\gang\etl\engine\logic\RunBusinessLogic.class
 com\gang\etl\engine\web\logic\FieldLogic.class

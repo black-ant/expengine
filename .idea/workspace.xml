@@ -2,80 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74973949-195b-4d06-9dbe-0011878d5cc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_69.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/common/BaseSyncLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/CacheStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/DatabaseStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/ISyncStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/MemoryQueueStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine-api/com-gang-etl-engine-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/com-gang-etl-engine-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineBaseBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineBaseBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineConsumerBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineConsumerBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineProduceBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineProduceBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/SyncStatusTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/SyncStatusTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-api/target/classes/META-INF/com-gang-etl-engine-api.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-api/target/classes/com/gang/etl/engine/api/to/EngineBaseBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/target/classes/com/gang/etl/engine/api/to/EngineBaseBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-api/target/classes/com/gang/etl/engine/api/to/SyncStatusTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/target/classes/com/gang/etl/engine/api/to/SyncStatusTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-api/target/com-gang-etl-engine-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/target/com-gang-etl-engine-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/SimpleEngineLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/SimpleEngineLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/SyncBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/SyncBusinessLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/BaseSyncTemplate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ProduceTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ProduceLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncFlowTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncFlowLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/logic/SimpleEngineLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/logic/SimpleEngineLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/logic/SyncBusinessLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/logic/SyncBusinessLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/template/BaseSyncTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/template/ConsumerTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/template/ProduceTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/template/SyncFlowTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/thread/EngineThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/thread/EngineThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/web/controller/SyncRunController.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/web/controller/SyncRunController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/target/com-gang-etl-engine-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/target/com-gang-etl-engine-core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncBusiness.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncBusiness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/ISyncLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/ISyncLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncBusinessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncBusinessServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncLogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-datacenter/target/classes/com/gang/etl/datacenter/entity/SyncBusiness.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/target/classes/com/gang/etl/datacenter/entity/SyncBusiness.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-datacenter/target/classes/com/gang/etl/datacenter/service/ISyncLogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/target/classes/com/gang/etl/datacenter/service/ISyncLogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-datacenter/target/classes/com/gang/etl/datacenter/service/impl/SyncBusinessServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/target/classes/com/gang/etl/datacenter/service/impl/SyncBusinessServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-datacenter/target/classes/com/gang/etl/datacenter/service/impl/SyncLogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/target/classes/com/gang/etl/datacenter/service/impl/SyncLogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-datacenter/target/com-gang-etl-datacenter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/target/com-gang-etl-datacenter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-plugins/etl-plugin-job/target/com-gang-etl-plugin-job-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/engine-plugins/etl-plugin-job/target/com-gang-etl-plugin-job-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-sdk/com-gang-engine-sdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-sdk/com-gang-engine-sdk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-sdk/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-sdk/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-sdk/target/com-gang-engine-sdk-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/engine-sdk/target/com-gang-engine-sdk-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/CacheStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/CacheStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/strategy/CacheStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/strategy/CacheStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/strategy/ISyncStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/strategy/ISyncStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/strategy/MemoryQueueStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/target/classes/com/gang/etl/engine/strategy/MemoryQueueStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-datacenter/com-gang-etl-datacenter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/com-gang-etl-datacenter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine-server/com-gang-etl-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-server/com-gang-etl-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-server/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-server/target/com-gang-etl-server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/engine-server/target/com-gang-etl-server-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/com-gang-etl-support-file.iml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-file/com-gang-etl-support-file.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-file/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/src/main/java/com/gang/etl/file/service/FileConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-file/src/main/java/com/gang/etl/file/service/FileConsumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/src/main/java/com/gang/etl/file/service/FileIOLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-file/src/main/java/com/gang/etl/file/service/FileIOLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/src/main/java/com/gang/etl/file/service/FileProduceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-file/src/main/java/com/gang/etl/file/service/FileProduceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/src/main/java/com/gang/etl/file/setting/SyncFileSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-file/src/main/java/com/gang/etl/file/setting/SyncFileSetting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/target/classes/com/gang/etl/file/service/FileConsumerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-file/target/classes/com/gang/etl/file/service/FileConsumerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/target/classes/com/gang/etl/file/service/FileIOLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-file/target/classes/com/gang/etl/file/service/FileIOLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/target/classes/com/gang/etl/file/service/FileProduceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-file/target/classes/com/gang/etl/file/service/FileProduceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/target/classes/com/gang/etl/file/setting/SyncFileSetting.class" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-file/target/classes/com/gang/etl/file/setting/SyncFileSetting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/target/com-gang-etl-support-file-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-file/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-file/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-github/com-gang-etl-support-github.iml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-github/com-gang-etl-support-github.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-github/target/com-gang-etl-support-github-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-github/target/com-gang-etl-support-github-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out-common/com-gang-etl-out-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/com-gang-etl-out-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out-common/target/classes/META-INF/com-gang-etl-out-common.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out-common/target/com-gang-etl-out-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/target/com-gang-etl-out-common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out-common/target/surefire-reports/TEST-com.gang.etl.out.common.OutCommonApplicationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out-common/target/surefire-reports/TEST-com.gang.etl.out.common.OutCommonApplicationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/engine-core/target/" />
@@ -111,48 +46,10 @@
         <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/DatabaseStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/ISyncLogService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncLogServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="23" column="92" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineBaseBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="824">
-              <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncBusinessServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -184,7 +81,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/SyncStatusTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
+            <state relative-caret-position="627">
               <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -196,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/MemoryQueueStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="304">
+              <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -205,11 +102,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/ISyncStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/CacheStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/AbstractEngineConversion.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+              <caret line="16" column="74" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/DictionaryConversion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -303,15 +239,15 @@
         <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java" />
         <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/BlockStrategy.java" />
         <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/RecursionStrategy.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/CacheStrategy.java" />
         <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/common/BaseSyncTemplate.java" />
         <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/common/BaseSyncLock.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/MemoryQueueStrategy.java" />
         <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineBaseBean.java" />
         <option value="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncLogServiceImpl.java" />
         <option value="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/ISyncLogService.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/DatabaseStrategy.java" />
         <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/ISyncStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/MemoryQueueStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/DatabaseStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/CacheStrategy.java" />
       </list>
     </option>
   </component>
@@ -353,10 +289,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="3633" />
-    <option name="width" value="1734" />
-    <option name="height" value="1407" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="3456" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -374,41 +311,6 @@
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="to" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
               <item name="engine-core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -439,7 +341,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
@@ -448,7 +350,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conversion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
@@ -462,124 +382,17 @@
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
               <item name="engine-datacenter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-datacenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
-              <item name="support-file" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
-              <item name="support-file" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
-              <item name="support-file" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
-              <item name="support-file" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
-              <item name="support-file" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
-              <item name="support-file" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="setting" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-sdk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
@@ -600,7 +413,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ant-blog-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -698,15 +511,16 @@
       <workItem from="1601996886894" duration="1603000" />
       <workItem from="1602050273321" duration="26161000" />
       <workItem from="1602124028712" duration="5454000" />
-      <workItem from="1602132790155" duration="15033000" />
+      <workItem from="1602132790155" duration="15816000" />
+      <workItem from="1602428694755" duration="681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76564000" />
+    <option name="totallyTimeSpent" value="78028000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3633" y="0" width="1734" height="1407" extended-state="0" />
+    <frame x="1912" y="-8" width="3456" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -716,10 +530,10 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.4984985" visible="true" weight="0.2580645" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.4984985" visible="true" weight="0.1024735" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49865952" weight="0.28903124" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49865952" visible="true" weight="0.22257552" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
@@ -737,7 +551,7 @@
       <window_info anchor="bottom" id="Cvs" order="16" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="17" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="18" />
-      <window_info anchor="right" id="Maven" order="0" visible="true" weight="0.06451613" />
+      <window_info anchor="right" id="Maven" order="0" visible="true" weight="0.025029447" />
       <window_info anchor="right" id="Palette" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Database" order="3" />
@@ -912,20 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/AbstractEngineConversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="74" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/DictionaryConversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/container/SyncContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1032,13 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/engine-support/support-file/src/main/java/com/gang/etl/file/service/FileProduceService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -1084,29 +877,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy.java" />
     <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/BaseSyncLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/CacheStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1180,6 +955,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/ISyncLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncLogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="23" column="92" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineConsumerBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineProduceBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1195,7 +991,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/SyncStatusTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
+        <state relative-caret-position="627">
           <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1203,53 +999,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineConsumerBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/MemoryQueueStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="54" />
+        <state relative-caret-position="304">
+          <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncLogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="23" column="92" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/ISyncLogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/DatabaseStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/ISyncStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/DictionaryConversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/AbstractEngineConversion.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+          <caret line="16" column="74" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/DatabaseStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/CacheStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,6 +1,8 @@
 package com.gang.etl.engine.strategy;
 
 import com.gang.etl.engine.api.to.EngineBaseBean;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,6 +14,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class CacheStrategy implements ISyncStrategy {
 
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+
+    private final static String cachePrefix = "sync:";
 
     @Override
     public EngineBaseBean getBaseBean(String code, EngineBaseBean baseBean) {

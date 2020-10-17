@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  * @Created by zengzg
  */
 @Component
-public class ProduceLock extends BaseSyncLock {
+public class ProduceTemplate extends BaseSyncLock {
 
     @Autowired
     private EngineThread engineThread;

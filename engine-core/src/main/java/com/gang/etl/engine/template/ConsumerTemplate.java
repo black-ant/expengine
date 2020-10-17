@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  * @Created by zengzg
  */
 @Component
-public class ConsumerLock extends BaseSyncLock {
+public class ConsumerTemplate extends BaseSyncLock {
 
     @Autowired
     private EngineThread engineThread;

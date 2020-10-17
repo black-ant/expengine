@@ -4,9 +4,9 @@ import com.gang.etl.datacenter.entity.SyncBusiness;
 import com.gang.etl.datacenter.service.ISyncBusinessService;
 import com.gang.etl.engine.api.to.EngineBaseBean;
 import com.gang.etl.engine.api.to.SyncStatusTO;
-import com.gang.etl.engine.template.ConsumerLock;
-import com.gang.etl.engine.template.ProduceLock;
-import com.gang.etl.engine.template.SyncFlowLock;
+import com.gang.etl.engine.template.ConsumerTemplate;
+import com.gang.etl.engine.template.ProduceTemplate;
+import com.gang.etl.engine.template.SyncFlowTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,13 +27,13 @@ public class SyncBusinessLogic extends BaseSyncLogic {
     private ISyncBusinessService syncBusinessService;
 
     @Autowired
-    private ProduceLock produceTemplate;
+    private ProduceTemplate produceTemplate;
 
     @Autowired
-    private ConsumerLock consumerTemplate;
+    private ConsumerTemplate consumerTemplate;
 
     @Autowired
-    private SyncFlowLock syncFlowTemplate;
+    private SyncFlowTemplate syncFlowTemplate;
 
     /**
      * do Single Business by businessId

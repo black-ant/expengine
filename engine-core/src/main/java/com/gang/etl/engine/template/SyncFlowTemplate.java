@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
  * @Created by zengzg
  */
 @Component
-public class SyncFlowLock extends BaseSyncLock {
+public class SyncFlowTemplate extends BaseSyncLock {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -26,10 +26,10 @@ public class SyncFlowLock extends BaseSyncLock {
     private SystemProperties systemProperties;
 
     @Autowired
-    private ProduceLock produceTemplate;
+    private ProduceTemplate produceTemplate;
 
     @Autowired
-    private ConsumerLock consumerTemplate;
+    private ConsumerTemplate consumerTemplate;
 
 
     /**

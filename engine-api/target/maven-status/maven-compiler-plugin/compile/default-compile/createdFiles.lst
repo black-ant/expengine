@@ -1,7 +1,9 @@
+com\gang\etl\engine\api\service\BaseSupportLogic.class
 com\gang\etl\engine\api\service\BaseProduceService.class
 com\gang\etl\engine\api\common\AnyOperation.class
 com\gang\etl\engine\api\to\EngineBaseResponse.class
 com\gang\etl\engine\api\annotation\SyncUpdate.class
+com\gang\etl\engine\api\query\SearchWrapper.class
 com\gang\etl\engine\api\to\TemplateTO.class
 com\gang\etl\engine\api\common\SyncOperation.class
 com\gang\etl\engine\api\exception\SyncConversionException.class
@@ -9,6 +11,7 @@ com\gang\etl\engine\api\type\SyncPartTypeEnum.class
 com\gang\etl\engine\api\to\SyncBaseBean.class
 com\gang\etl\engine\api\bean\ISyncBaseTO.class
 com\gang\etl\engine\api\annotation\SyncField.class
+com\gang\etl\engine\api\common\IBaseSetting.class
 com\gang\etl\engine\api\exception\SyncErrorEnum.class
 com\gang\etl\engine\api\exception\SyncException.class
 com\gang\etl\engine\api\annotation\SyncInit.class
@@ -29,8 +32,10 @@ com\gang\etl\engine\api\common\IComsumerService.class
 com\gang\etl\engine\api\annotation\SyncTO.class
 com\gang\etl\engine\api\to\EngineProduceBean.class
 com\gang\etl\engine\api\common\IEngineService.class
+com\gang\etl\engine\api\query\BaseQuery.class
 com\gang\etl\engine\api\request\SyncBusinessRequest.class
 com\gang\etl\engine\api\annotation\SyncParam.class
+com\gang\etl\engine\api\utils\EngineObjectUtils.class
 com\gang\etl\engine\api\annotation\SyncConfig.class
 com\gang\etl\engine\api\type\BaseErrorEnum.class
 com\gang\etl\engine\api\common\IProduceService.class

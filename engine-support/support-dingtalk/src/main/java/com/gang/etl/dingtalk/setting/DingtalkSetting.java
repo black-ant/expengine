@@ -1,12 +1,16 @@
 package com.gang.etl.dingtalk.setting;
 
+import com.gang.etl.engine.api.common.IBaseSetting;
+
+import java.util.List;
+
 /**
  * @Classname DingtalkSetting
  * @Description TODO
  * @Date 2020/9/11 22:54
  * @Created by zengzg
  */
-public class DingtalkSetting {
+public class DingtalkSetting implements IBaseSetting {
 
     private String corpid;
     private String appkey;
@@ -43,5 +47,10 @@ public class DingtalkSetting {
 
     public void setAgentId(Long agentId) {
         this.agentId = agentId;
+    }
+
+    @Override
+    public List<String> getSettingMap() {
+        return null;
     }
 }

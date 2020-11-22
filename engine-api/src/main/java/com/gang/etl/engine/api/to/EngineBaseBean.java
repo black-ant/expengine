@@ -2,6 +2,7 @@ package com.gang.etl.engine.api.to;
 
 import com.alibaba.fastjson.JSONObject;
 import com.gang.etl.engine.api.common.IEngineService;
+import com.gang.etl.engine.api.query.BaseQuery;
 import com.gang.etl.engine.api.request.SyncBusinessRequest;
 import lombok.Data;
 
@@ -37,6 +38,11 @@ public class EngineBaseBean<T> {
      * 类型组
      */
     private String typePart;
+
+    /**
+     * 查询语句
+     */
+    private BaseQuery query;
 
     /**
      * 数据主体

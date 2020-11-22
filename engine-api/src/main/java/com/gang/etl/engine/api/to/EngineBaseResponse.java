@@ -2,6 +2,8 @@ package com.gang.etl.engine.api.to;
 
 import lombok.Data;
 
+import java.util.List;
+
 /**
  * @Classname EngineBaseResponse
  * @Description TODO
@@ -16,6 +18,8 @@ public class EngineBaseResponse {
     private String code;
 
     private String backMsg;
+
+    private List backData;
 
     private String extInfo;
 }

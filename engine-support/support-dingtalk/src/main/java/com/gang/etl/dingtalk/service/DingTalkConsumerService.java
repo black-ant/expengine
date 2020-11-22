@@ -1,7 +1,7 @@
 package com.gang.etl.dingtalk.service;
 
-import com.gang.etl.engine.api.bean.EngineProduceBean;
 import com.gang.etl.engine.api.common.IProduceService;
+import com.gang.etl.engine.api.to.EngineProduceBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

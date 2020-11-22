@@ -17,7 +17,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <sync.common.version>1.0.0</sync.common.version>
+        <sync.common.version>1.0.1</sync.common.version>
         <engine.common.version>1.0-SNAPSHOT</engine.common.version>
     </properties>
 
@@ -37,11 +37,25 @@
                 <version>${sync.common.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>3.3.1.tmp</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gang</groupId>
+                <artifactId>com-gang-common-lib</artifactId>
+                <version>${sync.common.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.gang</groupId>
                 <artifactId>com-gang-common-parent-sdk</artifactId>
                 <version>${sync.common.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.gang</groupId>
+                <artifactId>com-gang-common-swagger</artifactId>
+                <version>${sync.common.version}</version>
+            </dependency>
             <!-- Engine Commonn -->
             <dependency>
                 <groupId>com.gang</groupId>
@@ -53,19 +67,33 @@
                 <artifactId>com-gang-etl-engine-core</artifactId>
                 <version>${engine.common.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.gang</groupId>
+                <artifactId>com-gang-etl-common-lib</artifactId>
+                <version>${engine.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gang</groupId>
+                <artifactId>com-gang-etl-datacenter</artifactId>
+                <version>${engine.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gang</groupId>
+                <artifactId>com-gang-etl-engine-api</artifactId>
+                <version>${engine.common.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <modules>
         <module>engine-datacenter</module>
         <module>engine-api</module>
-        <module>out-common</module>
+        <!--        <module>out-common</module>-->
         <module>engine-core</module>
         <module>engine-support</module>
         <module>engine-sdk</module>
         <module>engine-plugins</module>
-        <module>engine-server</module>
+        <!--        <module>engine-server</module>-->
     </modules>
 
 </project>

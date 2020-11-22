@@ -1,10 +1,6 @@
 package com.gang.etl.engine.api.exception;
 
 import com.gang.common.lib.exception.CommonException;
-import org.apache.commons.lang3.tuple.Pair;
-import org.checkerframework.checker.units.qual.C;
-
-import java.util.Base64;
 
 /**
  * @Classname SyncException
@@ -23,6 +19,16 @@ public class SyncException extends CommonException {
     public SyncException(String message) {
         super(message);
     }
+
+    public SyncException(SyncErrorEnum errorEnum) {
+        super(errorEnum.getErrorInfo(), errorEnum.getErrorCode());
+    }
+
+    public SyncException(SyncErrorEnum errorEnum, String syncType) {
+        super(errorEnum.getErrorInfo(), errorEnum.getErrorCode());
+        this.syncType = syncType;
+    }
+
 
     public SyncException(String code, String message) {
         super(message, code);

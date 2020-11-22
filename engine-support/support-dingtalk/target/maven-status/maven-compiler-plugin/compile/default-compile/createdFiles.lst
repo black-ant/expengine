@@ -1,0 +1,12 @@
+com\gang\etl\dingtalk\to\DingTalkQuery.class
+com\gang\etl\dingtalk\logic\DingTalkUserLogic.class
+com\gang\etl\dingtalk\to\DingTalkOrgTO.class
+com\gang\etl\dingtalk\logic\DingTalkOrgLogic.class
+com\gang\etl\dingtalk\setting\DingtalkSetting.class
+com\gang\etl\dingtalk\to\DingTalkUserTO.class
+com\gang\etl\dingtalk\service\DingTalkConsumerService.class
+com\gang\etl\dingtalk\to\BaseDingTalkTO.class
+com\gang\etl\dingtalk\logic\DingTalkBaseLogic.class
+com\gang\etl\dingtalk\service\DingTalkProduceService.class
+com\gang\etl\dingtalk\type\DingTalkRestAPI.class
+com\gang\etl\dingtalk\constant\DingTalkConstant.class

@@ -6,7 +6,7 @@ package com.gang.etl.dingtalk.type;
  * @Date 2020/9/28 21:14
  * @Created by zengzg
  */
-public class DingTalkRestAPI {
+public class  DingTalkRestAPI {
 
     public static final String GET_TOKEN = "https://oapi.dingtalk.com/gettoken";
 

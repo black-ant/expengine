@@ -21,19 +21,12 @@
         <engine.common.version>1.0-SNAPSHOT</engine.common.version>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-    </dependencies>
-
     <dependencyManagement>
         <dependencies>
             <!-- Other Common -->
             <dependency>
                 <groupId>com.gang</groupId>
-                <artifactId>com-gang-commn-mybatis</artifactId>
+                <artifactId>com-gang-common-mybatis-plus</artifactId>
                 <version>${sync.common.version}</version>
             </dependency>
             <dependency>
@@ -79,21 +72,51 @@
             </dependency>
             <dependency>
                 <groupId>com.gang</groupId>
-                <artifactId>com-gang-etl-engine-api</artifactId>
+                <artifactId>com-gang-etl-out-velocity</artifactId>
                 <version>${engine.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gang</groupId>
+                <artifactId>com-gang-etl-support-github</artifactId>
+                <version>${engine.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gang</groupId>
+                <artifactId>com-gang-etl-support-file</artifactId>
+                <version>${engine.common.version}</version>
+            </dependency>
+            <!-- Web -->
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>2.1.1</version>
+            </dependency>
+
+            <!-- JSON -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.69</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
+
     <modules>
         <module>engine-datacenter</module>
         <module>engine-api</module>
-        <!--        <module>out-common</module>-->
+        <!--                <module>out-common</module>-->
         <module>engine-core</module>
         <module>engine-support</module>
         <module>engine-sdk</module>
         <module>engine-plugins</module>
-        <!--        <module>engine-server</module>-->
+        <module>engine-server</module>
     </modules>
 
 </project>

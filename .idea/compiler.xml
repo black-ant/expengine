@@ -7,13 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="com-gang-etl-support-file" />
-        <module name="com-gang-etl-datacenter" />
         <module name="com-gang-etl-support-dingtalk" />
-        <module name="com-gang-etl-engine-api" />
-        <module name="com-gang-etl-engine-core" />
         <module name="com-gang-etl-plugin-job" />
-        <module name="com-gang-engine-sdk" />
+        <module name="com-gang-etl-engine-core" />
         <module name="com-gang-etl-support-github" />
+        <module name="com-gang-etl-datacenter" />
+        <module name="com-gang-engine-sdk" />
+        <module name="com-gang-etl-server" />
+        <module name="com-gang-etl-engine-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

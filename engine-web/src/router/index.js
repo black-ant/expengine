@@ -5,15 +5,12 @@ import HelloWorld from '@/components/HelloWorld'
 import login from '@/pages/login'
 import test from '@/pages/test'
 import index from '@/pages/index'
-import document from '@/pages/document'
-import start from '@/pages/start'
-
 import setting from '@/pages/setting_save'
 import settinglist from '@/pages/setting_list'
-import filedInfo from '@/pages/filedInfo'
+import filedInfo from '@/pages/filed_list'
 
 import applist from '@/pages/app_list'
-import push from '@/pages/push'
+import appsave from '@/pages/app_save'
 
 Vue.use(Router)
 
@@ -42,10 +39,6 @@ export default new Router({
       name: 'document',
       component: document
     }, {
-      path: '/start',
-      name: 'start',
-      component: start
-    }, {
       path: '/setting',
       name: 'setting',
       component: setting
@@ -62,13 +55,9 @@ export default new Router({
       name: 'applist',
       component: applist
     }, {
-      path: '/list',
-      name: 'applist',
-      component: applist
-    }, {
-      path: '/push',
-      name: 'push',
-      component: push
+      path: '/appsave',
+      name: 'appsave',
+      component: appsave
     }
   ]
 })

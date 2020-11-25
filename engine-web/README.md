@@ -5,6 +5,10 @@
 ### engine-web 使用流程
 
 ```
+Step 1 : package.json
+Step 2 : cnpm init -f    
+Step 3 : cnpm install
+Step 4 : cnpm run dev  
 
 ```
 

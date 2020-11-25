@@ -28,6 +28,14 @@ export default {
     console.info("this is in listSetting");
     return common.get("/sync/type/list", null);
   },
+  getApp(key) {
+    console.info("this is in listSetting");
+    return common.get("/sync/type/get/" + key, null);
+  },
+  saveApp(data) {
+    console.info("this is in listSetting");
+    return common.post("/sync/type/insert", data);
+  },
   getcfgto(code) {
     console.info("this is in listSetting");
     return common.get("/setting/getcfgto?code=" + code, null);

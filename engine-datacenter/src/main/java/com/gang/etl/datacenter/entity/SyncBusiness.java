@@ -1,9 +1,12 @@
 package com.gang.etl.datacenter.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.gang.common.lib.to.AbstractEntity;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -24,6 +27,9 @@ import lombok.experimental.Accessors;
 public class SyncBusiness extends AbstractEntity {
 
     private static final long serialVersionUID = 1L;
+
+    @TableId(type = IdType.ASSIGN_ID)
+    private String id;
 
     /**
      * 业务名称
@@ -98,7 +104,7 @@ public class SyncBusiness extends AbstractEntity {
     /**
      * 创建时间
      */
-    private LocalDateTime createDate;
+    private Date createDate;
 
     /**
      * 创建人

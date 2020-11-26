@@ -15,6 +15,8 @@
     <file url="file://$PROJECT_DIR$/engine-support/support-github" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-wechat" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-workwechat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine-web/src/pages/business_list.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine-web/src/pages/business_save.vue" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/out-common" charset="UTF-8" />
   </component>
 </project>

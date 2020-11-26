@@ -16,10 +16,10 @@
               <div class="modal-body">
                 <p>配置连接信息</p>
                 <div class="row">
-                  <div class="col-xs-8" v-for="(value, key) in typeto">
+                  <div class="col-xs-8" v-for="(value, key) in typeto"  v-show="key!='id'">
                     <label>{{key}}</label>
                     <input type="text" class="form-control" :name="value" v-bind:placeholder="value"
-                           v-bind:value="value">
+                           v-model="typeto[key]">
                   </div>
                 </div>
                 <div class="modal-footer">

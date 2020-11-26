@@ -28,13 +28,25 @@ export default {
     console.info("this is in listSetting");
     return common.get("/sync/type/list", null);
   },
+  listBusiness() {
+    console.info("this is in listSetting");
+    return common.get("/sync/business/list", null);
+  },
+  getBusiness(key) {
+    console.info("this is in listSetting");
+    return common.get("/sync/business/get/" + key, null);
+  },
+  saveBusiness(data) {
+    console.info("this is in listSetting");
+    return common.post("/sync/business/saveorupdate", data);
+  },
   getApp(key) {
     console.info("this is in listSetting");
     return common.get("/sync/type/get/" + key, null);
   },
   saveApp(data) {
     console.info("this is in listSetting");
-    return common.post("/sync/type/insert", data);
+    return common.post("/sync/type/saveorupdate", data);
   },
   getcfgto(code) {
     console.info("this is in listSetting");

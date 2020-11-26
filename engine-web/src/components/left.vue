@@ -14,7 +14,10 @@
         <router-link to="/settinglist"><i class="glyphicon glyphicon-th-list"></i>同步配置
         </router-link>
       </li>
-      <li class="list-group-item"><a href="forms.html"><i class="glyphicon glyphicon-list-alt"></i>数据字典</a></li>
+      <li class="list-group-item">
+        <router-link to="/business_list"><i class="glyphicon glyphicon-th-list"></i>业务配置
+        </router-link>
+      </li>
       <li class="list-group-item">
         <router-link to="/filedInfo"><i class="glyphicon glyphicon-th-list"></i>关联关系
         </router-link>

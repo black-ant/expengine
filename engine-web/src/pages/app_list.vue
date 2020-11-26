@@ -12,7 +12,7 @@
           <th>类型</th>
           <th>应用类</th>
           <th>配置设置
-            <button type="button" class="btn btn-success">创建</button>
+            <button type="button" class="btn btn-success" v-on:click="goTo('1')">创建</button>
           </th>
         </tr>
         </thead>

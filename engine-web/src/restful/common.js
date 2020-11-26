@@ -48,7 +48,7 @@ function checkCode(res) {
 
 export default {
   post(url, data) {
-    return axios.post(apiPrefix + url, qs.stringify(data), {
+    return axios.post(apiPrefix + url, JSON.stringify(data), {
       timeout: 10000,
       headers: {
         'X-Requested-With': 'XMLHttpRequest',

@@ -12,9 +12,12 @@ import business_list from '@/pages/business_list'
 import business_save from '@/pages/business_save'
 
 import filedInfo from '@/pages/filed_list'
+import filedConnect from '@/pages/filed_connect'
 
 import applist from '@/pages/app_list'
 import appsave from '@/pages/app_save'
+
+import business_rate from '@/pages/business_rate'
 
 Vue.use(Router)
 
@@ -59,9 +62,17 @@ export default new Router({
       name: 'business_save',
       component: business_save
     }, {
+      path: '/business_rate',
+      name: 'business_rate',
+      component: business_rate
+    }, {
       path: '/filedInfo',
       name: 'filedInfo',
       component: filedInfo
+    }, {
+      path: '/filedConnect',
+      name: 'filedConnect',
+      component: filedConnect
     }, {
       path: '/applist',
       name: 'applist',

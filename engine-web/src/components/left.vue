@@ -19,7 +19,7 @@
         </router-link>
       </li>
       <li class="list-group-item">
-        <router-link to="/filedInfo"><i class="glyphicon glyphicon-th-list"></i>关联关系
+        <router-link to="/filedConnect"><i class="glyphicon glyphicon-th-list"></i>关联关系
         </router-link>
       </li>
       <li class="list-group-item"><a href="calendars.html"><i
@@ -28,7 +28,9 @@
       <!--      <li class="list-group-item"><a href="typography.html"><i class="glyphicon glyphicon-font"></i>Typography</a>-->
       <!--      </li>-->
       <!--      <li class="list-group-item"><a href="footers.html"><i class="glyphicon glyphicon-minus"></i>Footers</a></li>-->
-      <li class="list-group-item"><a href="panels.html"><i class="glyphicon glyphicon-list-alt"></i>系统日志</a>
+      <li class="list-group-item">
+        <router-link to="/business_rate"><i class="glyphicon glyphicon-list-alt"></i>系统日志
+        </router-link>
       </li>
       <!--      <li class="list-group-item"><a href="navs.html"><i class="glyphicon glyphicon-th-list"></i>Navs</a></li>-->
       <!--      <li class="list-group-item"><a href="colors.html"><i class="glyphicon glyphicon-tint"></i>Colors</a></li>-->

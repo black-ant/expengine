@@ -1,12 +1,14 @@
 package com.gang.etl.dingtalk.to;
 
+import com.gang.etl.engine.api.bean.ISyncBaseTO;
+
 /**
  * @Classname BaseDingTalkTO
  * @Description TODO
  * @Date 2020/11/22 12:20
  * @Created by zengzg
  */
-public class BaseDingTalkTO {
+public class BaseDingTalkTO implements ISyncBaseTO {
 
     protected String errcode;
 

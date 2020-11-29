@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../gang-common/common-lib/com-gang-common-lib.iml" filepath="$PROJECT_DIR$/../../gang-common/common-lib/com-gang-common-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-sdk/com-gang-engine-sdk.iml" filepath="$PROJECT_DIR$/engine-sdk/com-gang-engine-sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/engine-datacenter/com-gang-etl-datacenter.iml" filepath="$PROJECT_DIR$/engine-datacenter/com-gang-etl-datacenter.iml" />
       <module fileurl="file://$PROJECT_DIR$/com-gang-etl-engine.iml" filepath="$PROJECT_DIR$/com-gang-etl-engine.iml" />

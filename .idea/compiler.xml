@@ -10,14 +10,16 @@
         <module name="com-gang-etl-support-dingtalk" />
         <module name="com-gang-etl-plugin-job" />
         <module name="com-gang-etl-engine-core" />
-        <module name="com-gang-etl-support-github" />
+        <module name="com-gang-etl-engine-api" />
         <module name="com-gang-etl-datacenter" />
         <module name="com-gang-engine-sdk" />
+        <module name="com-gang-common-lib" />
         <module name="com-gang-etl-server" />
-        <module name="com-gang-etl-engine-api" />
+        <module name="com-gang-etl-support-github" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="com-gang-common-lib" target="1.8" />
       <module name="com-gang-engine-sdk" target="1.8" />
       <module name="com-gang-etl-datacenter" target="1.8" />
       <module name="com-gang-etl-engine" target="1.8" />
@@ -37,6 +39,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com-gang-common-lib" options="-parameters -Xlint:unchecked" />
       <module name="com-gang-engine-sdk" options="-parameters" />
       <module name="com-gang-etl-datacenter" options="-parameters" />
       <module name="com-gang-etl-engine-api" options="-parameters" />

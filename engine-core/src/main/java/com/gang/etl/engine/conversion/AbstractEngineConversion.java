@@ -24,7 +24,8 @@ public abstract class AbstractEngineConversion implements IEngineConversion {
             });
             return backObject;
         } catch (Exception e) {
-            throw new SyncConversionException(syncFieldInfo.getSyncType(), "AbstractEngineConversion exchangeInfo error : " + e.getMessage());
+            throw new SyncConversionException(syncFieldInfo.getSyncTypeCode(),
+                    "AbstractEngineConversion exchangeInfo error : " + e.getMessage());
         }
     }
 }

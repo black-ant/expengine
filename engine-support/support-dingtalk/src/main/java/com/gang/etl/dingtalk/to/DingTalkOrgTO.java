@@ -1,5 +1,8 @@
 package com.gang.etl.dingtalk.to;
 
+import com.gang.etl.dingtalk.constant.DingTalkConstant;
+import com.gang.etl.engine.api.annotation.SyncTO;
+import com.gang.etl.engine.api.bean.ISyncBaseTO;
 import lombok.Data;
 
 /**
@@ -9,7 +12,8 @@ import lombok.Data;
  * @Created by zengzg
  */
 @Data
-public class DingTalkOrgTO extends BaseDingTalkTO {
+@SyncTO(name = "DingTalkOrgTO", type = "TO", app = DingTalkConstant.SYNC_TYPE)
+public class DingTalkOrgTO extends BaseDingTalkTO implements ISyncBaseTO {
 
     private Integer parentid;
 

@@ -90,7 +90,7 @@ public class SyncFieldInfo extends AbstractEntity {
     /**
      * 同步类型
      */
-    private String syncType;
+    private String syncTypeCode;
 
 
 }

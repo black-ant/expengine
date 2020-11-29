@@ -29,6 +29,12 @@ public class SyncSetting extends AbstractEntity {
     @TableId(type = IdType.ASSIGN_ID)
     private String id;
 
+
+    /**
+     *
+     */
+    private String settingCode;
+
     /**
      * 配置体
      */
@@ -44,7 +50,11 @@ public class SyncSetting extends AbstractEntity {
      */
     private String settingType;
 
-    private String settingTypeCode;
+
+    /**
+     *
+     */
+    private String settingAppCode;
 
     /**
      * 配置控制

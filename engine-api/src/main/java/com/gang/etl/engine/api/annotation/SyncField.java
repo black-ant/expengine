@@ -26,4 +26,6 @@ public @interface SyncField {
 
     String alias() default "";
 
+    String length() default "";
+
 }

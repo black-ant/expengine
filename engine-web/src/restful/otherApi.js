@@ -20,10 +20,6 @@ export default {
     console.info("this is in createSetting");
     return common.post("/setting/saveorupdate", data)
   },
-  listFiledInfo() {
-    console.info("this is in listSetting");
-    return common.get("/setting/list", null);
-  },
   listApp() {
     console.info("this is in listSetting");
     return common.get("/sync/type/list", null);
@@ -52,9 +48,26 @@ export default {
     console.info("this is in listSetting");
     return common.get("/setting/getcfgto?code=" + code, null);
   },
+  listFiled() {
+    console.info("this is in listSetting");
+    return common.get("/sync/setting/list", null);
+  },
+  listFiledConnect() {
+    console.info("this is in listSetting");
+    return common.get("/sync/field/list", null);
+  },
+  getFiledConnect(key) {
+    console.info("this is in listSetting");
+    return common.get("/sync/field/get/"+key, null);
+  },
   saveCfgTo(cfg) {
     console.info("this is in saveCfgTo");
     return common.post("/setting/saveorupdate", cfg);
+  },
+  scanBaseTO(type) {
+    console.info("this is in saveCfgTo");
+    var query = type == null ? "" : "?type=" + type;
+    return common.get("/sync/field/selectBaseTO" + query);
   },
   push(cfg) {
 

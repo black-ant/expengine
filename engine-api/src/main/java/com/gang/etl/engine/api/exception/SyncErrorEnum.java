@@ -17,6 +17,8 @@ public enum SyncErrorEnum {
     SYNC_SETTING_BUILD_ERROR("E_SYNC_00007", "Setting Exchange Error", ""),
     SYNC_APP_AUTH_ERROR("E_SYNC_00008", "App Auth error", ""),
 
+    SYNC_SCAN_TO_ERROR("E_SYNC_00009", "TO 扫描错误", ""),
+
     NO_CLASS("E_SYNC_00010", "No Class info", ""),
     NO_METHOD("E_SYNC_00030", "No Method", "");
 

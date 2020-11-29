@@ -1,5 +1,8 @@
 package com.gang.etl.dingtalk.setting;
 
+import com.gang.etl.dingtalk.constant.DingTalkConstant;
+import com.gang.etl.engine.api.annotation.SyncTO;
+import com.gang.etl.engine.api.bean.ISyncBaseTO;
 import com.gang.etl.engine.api.common.IBaseSetting;
 
 import java.util.List;
@@ -10,7 +13,8 @@ import java.util.List;
  * @Date 2020/9/11 22:54
  * @Created by zengzg
  */
-public class DingtalkSetting implements IBaseSetting {
+@SyncTO(name = "DingtalkSetting", type = "SETTING", app = DingTalkConstant.SYNC_TYPE)
+public class DingtalkSetting implements IBaseSetting, ISyncBaseTO {
 
     private String corpid;
     private String appkey;

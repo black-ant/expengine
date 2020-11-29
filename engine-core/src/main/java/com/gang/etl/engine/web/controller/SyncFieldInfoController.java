@@ -1,11 +1,14 @@
 package com.gang.etl.engine.web.controller;
 
 import com.gang.common.lib.to.ResponseModel;
+import com.gang.common.lib.utils.ReflectionUtils;
 import com.gang.etl.datacenter.entity.SyncFieldInfo;
 import com.gang.etl.datacenter.entity.SyncType;
 import com.gang.etl.datacenter.service.impl.SyncFieldInfoServiceImpl;
 import com.gang.etl.datacenter.service.impl.SyncTypeServiceImpl;
 import com.gang.etl.engine.web.logic.FieldLogic;
+import org.apache.commons.lang3.StringUtils;
+import org.checkerframework.checker.units.qual.A;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,12 +30,12 @@ public class SyncFieldInfoController extends AbstratController<SyncFieldInfoServ
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-
     @Autowired
     private SyncTypeServiceImpl syncTypeService;
 
     @Autowired
     private FieldLogic fieldInfo;
+
 
     @GetMapping("getInfo")
     public ResponseModel<String> getFieldInfo(@RequestParam("key") String key) {
@@ -49,6 +52,16 @@ public class SyncFieldInfoController extends AbstratController<SyncFieldInfoServ
     public ResponseModel insert(@RequestBody SyncFieldInfo entity) {
         logger.info("------> this is in inner insert :{}<-------", entity);
         return ResponseModel.commonResponse(baseMapper.save(entity));
+    }
+
+    @GetMapping("selectBaseTO")
+    public ResponseModel<String> selectAll(@RequestParam(name = "type", required = false) String type) {
+        logger.info("------> Select All Field <-------");
+        if (StringUtils.isNotEmpty(type)) {
+            return ResponseModel.commonResponse(fieldInfo.scanPackage());
+        } else {
+            return ResponseModel.commonResponse(fieldInfo.scanPackage());
+        }
     }
 
 

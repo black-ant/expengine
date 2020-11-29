@@ -11,6 +11,10 @@
 
     <artifactId>com-gang-etl-server</artifactId>
 
+    <properties>
+        <engine.curent.version>1.0-SNAPSHOT</engine.curent.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.gang</groupId>
@@ -21,13 +25,14 @@
             <artifactId>com-gang-etl-support-file</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>com.gang</groupId>-->
-        <!--            <artifactId>com-gang-etl-out-common</artifactId>-->
-        <!--        </dependency>-->
         <dependency>
             <groupId>com.gang</groupId>
             <artifactId>com-gang-etl-common-lib</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.gang</groupId>
+            <artifactId>com-gang-etl-support-dingtalk</artifactId>
+            <version>${engine.curent.version}</version>
         </dependency>
         <!--        <dependency>-->
         <!--            <groupId>com.gang</groupId>-->

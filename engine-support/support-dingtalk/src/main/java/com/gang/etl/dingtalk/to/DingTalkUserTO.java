@@ -1,7 +1,10 @@
 package com.gang.etl.dingtalk.to;
 
 
+import com.gang.etl.dingtalk.constant.DingTalkConstant;
 import com.gang.etl.engine.api.annotation.SyncField;
+import com.gang.etl.engine.api.annotation.SyncTO;
+import com.gang.etl.engine.api.bean.ISyncBaseTO;
 import lombok.Data;
 
 import java.util.List;
@@ -13,7 +16,8 @@ import java.util.Map;
  * @Created by zengzg
  */
 @Data
-public class DingTalkUserTO extends BaseDingTalkTO {
+@SyncTO(name = "DingTalkUserTO", type = "TO", app = DingTalkConstant.SYNC_TYPE)
+public class DingTalkUserTO extends BaseDingTalkTO implements ISyncBaseTO {
 
     private static final long serialVersionUID = -1385437685891326341L;
 

@@ -27,7 +27,7 @@ public class DictionaryConversion extends AbstractEngineConversion {
     public void conversion(EngineProduceBean produceBean, EngineConsumerBean consumerBean) {
 
         SyncFieldInfo syncInfo = syncFiledInfoDAO.selectBySyncType(produceBean.getSyncType() + "_" + consumerBean.getSyncType());
-        logger.debug("------> DictionaryConversion conversion :{} <-------", syncInfo.getSyncType());
+        logger.debug("------> DictionaryConversion conversion :{} <-------", syncInfo.getSyncTypeCode());
 
         consumerBean.setData(exchangeInfo(syncInfo, produceBean.getData()));
     }

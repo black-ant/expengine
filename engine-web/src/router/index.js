@@ -11,7 +11,7 @@ import settinglist from '@/pages/setting_list'
 import business_list from '@/pages/business_list'
 import business_save from '@/pages/business_save'
 
-import filedInfo from '@/pages/filed_list'
+import filedList from '@/pages/filed_list'
 import filedConnect from '@/pages/filed_connect'
 
 import applist from '@/pages/app_list'
@@ -66,9 +66,9 @@ export default new Router({
       name: 'business_rate',
       component: business_rate
     }, {
-      path: '/filedInfo',
-      name: 'filedInfo',
-      component: filedInfo
+      path: '/filedList',
+      name: 'filedList',
+      component: filedList
     }, {
       path: '/filedConnect',
       name: 'filedConnect',

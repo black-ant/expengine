@@ -36,6 +36,10 @@ export default {
     console.info("this is in listSetting");
     return common.post("/sync/business/saveorupdate", data);
   },
+  listBusinessItem(key){
+    console.info("this is in listSetting");
+    return common.get("/sync/business/item/listById/"+key, null);
+  },
   getApp(key) {
     console.info("this is in listSetting");
     return common.get("/sync/type/get/" + key, null);
@@ -59,6 +63,10 @@ export default {
   getFiledConnect(key) {
     console.info("this is in listSetting");
     return common.get("/sync/field/get/"+key, null);
+  },
+  saveFiledConnect(data) {
+    console.info("this is in listSetting");
+    return common.post("/sync/field/saveorupdate", data);
   },
   saveCfgTo(cfg) {
     console.info("this is in saveCfgTo");

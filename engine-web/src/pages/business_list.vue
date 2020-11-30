@@ -28,7 +28,7 @@
           <td>{{item.syncConsumer}}</td>
           <td>
             <button class="btn btn-info" v-on:click="goTo(item.id)">编辑</button>
-            <button class="btn btn-info" v-on:click="detail()">详情</button>
+            <button class="btn btn-info" v-on:click="detail(item.id)">详情</button>
             <button type="button" class="btn btn-danger btn-info">删除</button>
           </td>
         </tr>
@@ -56,7 +56,7 @@
         this.$router.push('/business_save?key=' + key);
       },
       detail(key) {
-        console("显示详情");
+        this.$router.push('/business_details?key=' + key);
       }
     },
     mounted: async function () {

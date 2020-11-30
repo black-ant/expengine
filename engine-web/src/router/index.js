@@ -18,6 +18,7 @@ import applist from '@/pages/app_list'
 import appsave from '@/pages/app_save'
 
 import business_rate from '@/pages/business_rate'
+import business_details from '@/pages/business_details'
 
 Vue.use(Router)
 
@@ -65,6 +66,10 @@ export default new Router({
       path: '/business_rate',
       name: 'business_rate',
       component: business_rate
+    }, {
+      path: '/business_details',
+      name: 'business_details',
+      component: business_details
     }, {
       path: '/filedList',
       name: 'filedList',

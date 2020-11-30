@@ -18,13 +18,13 @@
 
       <div class="panel panel-default">
         <div class="panel-heading">配置映射 :</div>
-        <div class="row" v-for="(key,value) in connectObj">
+        <div class="row" v-for="(value,key) in connectObjBody">
           <div class="col-md-5">
-            <input type="text" placeholder="Text input" class="form-control" :name="key" v-bind:placeholder="key">
+            <input type="text" placeholder="Text input" class="form-control" :name="key" :value="key">
           </div>
           <div class="col-md-5">
             <input type="text" placeholder="Text input" class="form-control" :name="value" v-bind:placeholder="value"
-                   v-model="connectObj[key]">
+                   v-model="connectObjBody[key]">
           </div>
           <div class="col-md-1">
             <button type="button" class="btn btn-primary btn-block">锁定</button>
@@ -36,7 +36,7 @@
       </div>
 
       <div class="col-md-12">
-        <button type="button" class="btn btn-primary btn-block">保存</button>
+        <button type="button" class="btn btn-primary btn-block" v-on:click="save()">保存</button>
       </div>
 
     </div>
@@ -53,10 +53,16 @@
       return {
         connectList: {},
         connectObj: {},
+        connectObjBody: {},
         fieldConnectSelect: {},
       }
     },
     methods: {
+      async save() {
+        console.log(this.connectObjBody)
+        this.connectObj['fieldBody']=JSON.stringify(this.connectObjBody);
+        var fieldConnect = await otherApi.saveFiledConnect(this.connectObj);
+      },
       changeConnect(event) {
         this.fieldConnectSelect = event.target.value;
         console.log("选择 :" + this.fieldConnectSelect);
@@ -64,7 +70,8 @@
       async selectConnect() {
         var fieldConnect = await otherApi.getFiledConnect(this.fieldConnectSelect);
         console.log("connectObj is :%o", fieldConnect);
-        this.connectObj = JSON.parse(fieldConnect.data.fieldBody);
+        this.connectObj = fieldConnect.data;
+        this.connectObjBody = JSON.parse(fieldConnect.data.fieldBody);
       },
       detail(key) {
         console.log("显示详情");

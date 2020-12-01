@@ -24,6 +24,14 @@ export default {
     console.info("this is in listSetting");
     return common.get("/sync/type/list", null);
   },
+  listStrategy(){
+    console.info("this is in listSetting");
+    return common.get("/sync/strategy/list", null);
+  },
+  saveBusinessItem(business){
+    console.info("this is in listSetting");
+    return common.post("/sync/business/item/saveorupdate", business);
+  },
   listBusiness() {
     console.info("this is in listSetting");
     return common.get("/sync/business/list", null);
@@ -77,8 +85,10 @@ export default {
     var query = type == null ? "" : "?type=" + type;
     return common.get("/sync/field/selectBaseTO" + query);
   },
-  push(cfg) {
-
+  push() {
+    var query = type == null ? "" : "?type=" + type;
+    return common.get("/sync/field/selectBaseTO" + query);
+    business/type/{typeId}
   }
 
 

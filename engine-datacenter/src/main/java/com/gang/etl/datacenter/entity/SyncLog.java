@@ -1,5 +1,7 @@
 package com.gang.etl.datacenter.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.gang.common.lib.to.AbstractEntity;
 import java.time.LocalDateTime;
@@ -9,7 +11,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author ant-black
@@ -22,6 +24,9 @@ import lombok.experimental.Accessors;
 public class SyncLog extends AbstractEntity {
 
     private static final long serialVersionUID=1L;
+
+    @TableId(type = IdType.ASSIGN_ID)
+    private String id;
 
     /**
      * 所属域

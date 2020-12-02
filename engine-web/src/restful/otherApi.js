@@ -89,6 +89,9 @@ export default {
     var query = type == null ? "" : "?type=" + type;
     return common.get("/sync/field/selectBaseTO" + query);
     business/type/{typeId}
+  },
+  startBusiness(businessId) {
+    return common.get("/excute/business/single/" + businessId);
   }
 
 

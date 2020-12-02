@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -57,9 +58,10 @@ public class SyncRunController {
      * @param business
      * @return
      */
-    @PostMapping("business/single/{business}")
-    public ResponseModel businessHasSetting(@RequestParam(name = "business") String business) {
+    @GetMapping("business/single/{business}")
+    public ResponseModel businessHasSetting(@PathVariable(name = "business") String business) {
         logger.info("------> conversion :{} -- {}  <-------", business);
+        syncBusinessLogic.doSingleBusinessCode(business);
         return ResponseModel.commonResponse("success");
     }
 

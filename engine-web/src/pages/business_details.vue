@@ -6,7 +6,7 @@
           <div class="well">{{business.syncProduce}}</div>
         </div>
         <div class="col-md-2">
-          <button type="button" class="btn btn-primary btn-block">执行</button>
+          <button type="button" class="btn btn-primary btn-block"  v-on:click="runStart()">执行</button>
         </div>
         <div class="col-md-5">
           <div class="well">{{business.syncConsumer}}</div>
@@ -54,7 +54,7 @@
               <td>
                 <div class="checkbox">
                   <input type="checkbox" id="flat-checkbox-2" checked>
-                  <label for="flat-checkbox-2" v-on:click="runStart()">执行</label>
+                  <label for="flat-checkbox-2">执行</label>
                 </div>
               </td>
               <td>{{item.itemName}}</td>
@@ -128,7 +128,7 @@
         this.initConnect()
       },
       runStart(){
-
+        var back = otherApi.startBusiness(this.businessId);
       }
     },
     mounted: async function () {

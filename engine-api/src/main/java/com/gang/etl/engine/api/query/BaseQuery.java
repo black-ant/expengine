@@ -16,6 +16,15 @@ public class BaseQuery {
 
     protected String order;
 
+    protected Byte[] cookie;
+
+    public BaseQuery() {
+    }
+
+    public BaseQuery(String filter) {
+        this.filter = filter;
+    }
+
     public Integer getPage() {
         return page;
     }
@@ -46,5 +55,13 @@ public class BaseQuery {
 
     public void setOrder(String order) {
         this.order = order;
+    }
+
+    public Byte[] getCookie() {
+        return cookie;
+    }
+
+    public void setCookie(Byte[] cookie) {
+        this.cookie = cookie;
     }
 }

@@ -24,6 +24,10 @@ public class EngineBaseBean<T> {
      */
     private String syncType;
 
+    private String originType;
+
+    private String targetType;
+
     /**
      * 业务代码
      */

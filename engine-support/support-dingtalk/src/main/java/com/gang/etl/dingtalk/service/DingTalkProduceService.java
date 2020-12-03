@@ -41,14 +41,22 @@ public class DingTalkProduceService implements IProduceService {
 
         EngineBaseResponse response = new EngineBaseResponse();
 
+
+        if ("ORG".equals(produceBean.getOriginType())) {
+            runOrg(produceBean, response);
+        }
+        produceBean.setResponse(response);
+        return produceBean;
+    }
+
+    public void runOrg(EngineProduceBean produceBean, EngineBaseResponse response) {
         try {
             List list = orgLogic.getOrgList(getSeting(produceBean), produceBean.getQuery());
             response.setBackData(list);
         } catch (Exception e) {
+            e.printStackTrace();
             response.setStatus(Boolean.FALSE);
         }
-        produceBean.setResponse(response);
-        return produceBean;
     }
 
     public DingtalkSetting getSeting(EngineProduceBean produceBean) {

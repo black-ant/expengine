@@ -43,9 +43,19 @@ public class SyncFieldInfo extends AbstractEntity {
 
 
     /**
-     * 字段类型唯一限定Code
+     * 来源 Code
      */
-    private String fieldTypeCode;
+    private String originCode;
+
+    /**
+     * 目标Code
+     */
+    private String targetCode;
+
+    /**
+     *
+     */
+    private String produceQuery;
 
     /**
      * 创建人

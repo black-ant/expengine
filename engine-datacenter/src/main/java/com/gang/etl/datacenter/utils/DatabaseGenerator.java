@@ -32,7 +32,7 @@
 //public class DatabaseGenerator {
 //
 //    private static String[] tableList = {
-//            "sync_business_item"
+//            "sync_bean"
 //    };
 //
 //    private static String parentName = "com.gang.etl.datacenter";

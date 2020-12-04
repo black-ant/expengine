@@ -2,14 +2,17 @@ package com.gang.etl.datacenter.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.gang.common.lib.to.AbstractEntity;
+
 import java.time.LocalDateTime;
+import java.util.Date;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author ant-black
@@ -21,7 +24,7 @@ import lombok.experimental.Accessors;
 @TableName("sync_bean")
 public class SyncBean extends AbstractEntity {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     /**
      * 配置类代码
@@ -58,7 +61,7 @@ public class SyncBean extends AbstractEntity {
      */
     private String beanPolicy;
 
-    private LocalDateTime createDate;
+    private Date createDate;
 
 
 }

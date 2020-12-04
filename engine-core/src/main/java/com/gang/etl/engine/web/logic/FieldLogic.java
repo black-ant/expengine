@@ -5,9 +5,11 @@ import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.gang.common.lib.utils.ReflectionUtils;
+import com.gang.etl.datacenter.entity.SyncBean;
 import com.gang.etl.datacenter.entity.SyncFieldInfo;
 import com.gang.etl.datacenter.entity.SyncSetting;
 import com.gang.etl.datacenter.entity.SyncType;
+import com.gang.etl.datacenter.service.impl.SyncBeanServiceImpl;
 import com.gang.etl.datacenter.service.impl.SyncFieldInfoServiceImpl;
 import com.gang.etl.datacenter.service.impl.SyncSettingServiceImpl;
 import com.gang.etl.datacenter.service.impl.SyncTypeServiceImpl;
@@ -41,16 +43,16 @@ public class FieldLogic {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
-    private SyncTypeServiceImpl syncTypeService;
-
-    @Autowired
     private SyncFieldInfoServiceImpl syncFieldInfoService;
 
     @Autowired
-    private SyncSettingServiceImpl syncSettingService;
+    private SyncBeanServiceImpl syncBeanService;
 
     @Autowired
     private ReflectionUtils reflectionUtils;
+
+    @Autowired
+    private SyncTypeServiceImpl syncTypeService;
 
     /**
      * @param code
@@ -83,35 +85,7 @@ public class FieldLogic {
         return fieldInfo;
     }
 
-    /**
-     * @param code
-     * @return
-     */
-    public SyncSetting getConfig(String code) {
 
-        SyncType syncType = getSyncType(code);
-
-        JSONObject jsonObject = new JSONObject();
-        SyncSetting syncSetting = null;
-
-        if (null != syncType) {
-            jsonObject = JSONObject.parseObject(syncType.getTypeFiledInfo());
-
-            QueryWrapper<SyncSetting> filedQuery = new QueryWrapper();
-            filedQuery.eq("setting_type_code", syncType.getTypeCode());
-
-            logger.info("------> this is search  SyncFieldInfo :{}<-------", filedQuery.toString());
-            syncSetting = syncSettingService.getOne(filedQuery);
-            if (syncSetting != null) {
-                jsonObject = exchangeJSON(jsonObject, JSONObject.parseObject(syncSetting.getSettingBody()));
-            }
-            syncSetting = syncSetting == null ? createSetting(syncType) : syncSetting;
-            syncSetting.setSettingBody(jsonObject.toJSONString());
-
-        }
-
-        return syncSetting;
-    }
 
     /**
      * @return
@@ -122,10 +96,10 @@ public class FieldLogic {
             logger.info("------> this is item :{} <-------", item.getSimpleName());
             try {
                 SyncTO syncTO = (SyncTO) item.getAnnotation(SyncTO.class);
-                SyncSetting syncSetting = getSetting(syncTO, item);
+                SyncBean syncBean = getBean(syncTO, item);
                 UpdateWrapper wrapper = new UpdateWrapper();
-                wrapper.eq("setting_code", syncSetting.getSettingCode());
-                syncSettingService.saveOrUpdate(syncSetting, wrapper);
+                wrapper.eq("bean_code", syncBean.getBeanCode());
+                syncBeanService.saveOrUpdate(syncBean, wrapper);
             } catch (Exception e) {
                 logger.error("E----> error :{} -- content :{}", e.getClass(), e.getMessage());
             }
@@ -134,18 +108,25 @@ public class FieldLogic {
         return "success";
     }
 
-    public SyncSetting getSetting(SyncTO syncTO, Class clazz) {
-        SyncSetting setting = new SyncSetting();
+    /**
+     * 创建 TO 对象
+     *
+     * @param syncTO
+     * @param clazz
+     * @return
+     */
+    public SyncBean getBean(SyncTO syncTO, Class clazz) {
+        SyncBean setting = new SyncBean();
         if (syncTO == null) {
             throw new SyncException(SyncErrorEnum.SYNC_SCAN_TO_ERROR, clazz.getSimpleName());
         }
-        setting.setSettingCode(StringUtils.isNotEmpty(syncTO.name()) ? syncTO.name() : clazz.getSimpleName());
-        setting.setSettingName(StringUtils.isNotEmpty(syncTO.name()) ? syncTO.name() : clazz.getSimpleName());
-        setting.setSettingType(StringUtils.isNotEmpty(syncTO.type()) ? syncTO.type() :
+        setting.setBeanCode(StringUtils.isNotEmpty(syncTO.name()) ? syncTO.name() : clazz.getSimpleName());
+        setting.setBeanName(StringUtils.isNotEmpty(syncTO.name()) ? syncTO.name() : clazz.getSimpleName());
+        setting.setBeanType(StringUtils.isNotEmpty(syncTO.type()) ? syncTO.type() :
                 reflectionUtils.getParentFolder(clazz).contains("TO") ? "TO" : "SETTING");
-        setting.setSettingAppCode(StringUtils.isNotEmpty(syncTO.app()) ? syncTO.app() :
+        setting.setBeanAppCode(StringUtils.isNotEmpty(syncTO.app()) ? syncTO.app() :
                 reflectionUtils.getParentFolder(clazz));
-        setting.setSettingBody(JSONArray.toJSONString(getFiledList(clazz)));
+        setting.setBeanBody(JSONArray.toJSONString(getFiledList(clazz)));
         setting.setCreateDate(new Date());
         return setting;
     }
@@ -166,6 +147,7 @@ public class FieldLogic {
         });
         return array;
     }
+
 
     /**
      * 获取SyncType

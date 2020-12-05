@@ -5,8 +5,10 @@ import HelloWorld from '@/components/HelloWorld'
 import login from '@/pages/login'
 import test from '@/pages/test'
 import index from '@/pages/index'
+
 import setting from '@/pages/setting_save'
 import settinglist from '@/pages/setting_list'
+import setting_save from '@/pages/setting_save'
 
 import business_list from '@/pages/business_list'
 import business_save from '@/pages/business_save'
@@ -54,6 +56,10 @@ export default new Router({
       path: '/settinglist',
       name: 'settinglist',
       component: settinglist
+    }, {
+      path: '/setting_save',
+      name: 'setting_save',
+      component: setting_save
     }, {
       path: '/business_list',
       name: 'business_list',

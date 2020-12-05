@@ -21,13 +21,13 @@
         <div class="panel" v-for="(item,index) in filedList">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion2" :href="'#collapse'+item.settingName"
+              <a data-toggle="collapse" data-parent="#accordion2" :href="'#collapse'+item.beanName"
                  class="collapsed" v-on:click="select(index)">
-                {{item.settingType}} - {{item.settingAppCode}} - {{item.settingName}}
+                {{item.beanType}} - {{item.beanAppCode}} - {{item.beanName}}
               </a>
             </h4>
           </div>
-          <div :id="'collapse'+item.settingName" class="panel-collapse collapse" style="height: 0px;">
+          <div :id="'collapse'+item.beanName" class="panel-collapse collapse" style="height: 0px;">
             <div class="panel-body">
               <div class="table-responsive">
                 <table class="table table-bordered table-striped">
@@ -72,16 +72,19 @@
     methods: {
       select(key) {
         console.log("选择 :" + key);
-        this.params = JSON.parse(this.filedList[key].settingBody);
+        this.params = JSON.parse(this.filedList[key].beanBody);
       },
       detail(key) {
         console.log("显示详情");
+      },
+      async scan() {
+        var settingsBack = await otherApi.scanBaseTO()
       }
     },
     mounted: async function () {
-      var settingsBack = await otherApi.listFiled();
+      var settingsBack = await otherApi.listBean();
       this.filedList = settingsBack.data;
-      this.params = JSON.parse(this.filedList[0].settingBody);
+      this.params = JSON.parse(this.filedList[0].beanBody);
       console.log("setting is :%o", settingsBack)
       console.log("params is :%o", this.params)
     },

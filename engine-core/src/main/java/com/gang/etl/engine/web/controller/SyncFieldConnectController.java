@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/sync/field")
-public class SyncFieldInfoController extends AbstratController<SyncFieldInfoServiceImpl, SyncFieldInfo> {
+public class SyncFieldConnectController extends AbstratController<SyncFieldInfoServiceImpl, SyncFieldInfo> {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -52,16 +52,6 @@ public class SyncFieldInfoController extends AbstratController<SyncFieldInfoServ
     public ResponseModel insert(@RequestBody SyncFieldInfo entity) {
         logger.info("------> this is in inner insert :{}<-------", entity);
         return ResponseModel.commonResponse(baseMapper.save(entity));
-    }
-
-    @GetMapping("selectBaseTO")
-    public ResponseModel<String> selectAll(@RequestParam(name = "type", required = false) String type) {
-        logger.info("------> Select All Field <-------");
-        if (StringUtils.isNotEmpty(type)) {
-            return ResponseModel.commonResponse(fieldInfo.scanPackage());
-        } else {
-            return ResponseModel.commonResponse(fieldInfo.scanPackage());
-        }
     }
 
 

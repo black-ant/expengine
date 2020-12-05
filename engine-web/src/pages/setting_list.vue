@@ -19,7 +19,7 @@
           <td>{{item.settingTypeCode}}</td>
           <td>{{item.settingPolicy}}</td>
           <td>
-            <button v-on:click="">编辑</button>
+            <button v-on:click="edit(item.id)">编辑</button>
           </td>
         </tr>
 
@@ -39,7 +39,13 @@
       return {
         settings: {}
       }
-    }, mounted: async function () {
+    },
+    methods: {
+      edit(key){
+        this.$router.push('/setting_save?key=' + key);
+      }
+    },
+    mounted: async function () {
 
       var settingsBack = await otherApi.listSetting();
       this.settings = settingsBack.data;

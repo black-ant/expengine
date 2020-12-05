@@ -92,7 +92,7 @@ public class FieldLogic {
      */
     public String scanPackage() {
         List<Class> classes = ReflectionUtils.getAllInterfaceAchieveClass(ISyncBaseTO.class, "com.gang.etl");
-        classes.forEach(item -> {
+         classes.forEach(item -> {
             logger.info("------> this is item :{} <-------", item.getSimpleName());
             try {
                 SyncTO syncTO = (SyncTO) item.getAnnotation(SyncTO.class);
@@ -116,19 +116,19 @@ public class FieldLogic {
      * @return
      */
     public SyncBean getBean(SyncTO syncTO, Class clazz) {
-        SyncBean setting = new SyncBean();
+        SyncBean syncBean = new SyncBean();
         if (syncTO == null) {
             throw new SyncException(SyncErrorEnum.SYNC_SCAN_TO_ERROR, clazz.getSimpleName());
         }
-        setting.setBeanCode(StringUtils.isNotEmpty(syncTO.name()) ? syncTO.name() : clazz.getSimpleName());
-        setting.setBeanName(StringUtils.isNotEmpty(syncTO.name()) ? syncTO.name() : clazz.getSimpleName());
-        setting.setBeanType(StringUtils.isNotEmpty(syncTO.type()) ? syncTO.type() :
+        syncBean.setBeanCode(StringUtils.isNotEmpty(syncTO.name()) ? syncTO.name() : clazz.getSimpleName());
+        syncBean.setBeanName(StringUtils.isNotEmpty(syncTO.name()) ? syncTO.name() : clazz.getSimpleName());
+        syncBean.setBeanType(StringUtils.isNotEmpty(syncTO.type()) ? syncTO.type() :
                 reflectionUtils.getParentFolder(clazz).contains("TO") ? "TO" : "SETTING");
-        setting.setBeanAppCode(StringUtils.isNotEmpty(syncTO.app()) ? syncTO.app() :
+        syncBean.setBeanAppCode(StringUtils.isNotEmpty(syncTO.app()) ? syncTO.app() :
                 reflectionUtils.getParentFolder(clazz));
-        setting.setBeanBody(JSONArray.toJSONString(getFiledList(clazz)));
-        setting.setCreateDate(new Date());
-        return setting;
+        syncBean.setBeanBody(JSONArray.toJSONString(getFiledList(clazz)));
+        syncBean.setCreateDate(new Date());
+        return syncBean ;
     }
 
     public List<FieldItemDTO> getFiledList(Class clazz) {

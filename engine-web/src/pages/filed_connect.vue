@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid common">
     <div class="content-row">
       <div class="row">
         <div class="col-md-6">
@@ -9,12 +9,34 @@
           </select>
         </div>
         <div class="col-md-3">
-          <button type="button" class="btn btn-primary btn-block">新建</button>
+          <button type="button" class="btn btn-primary btn-block" v-on:click="selectBaseTO()">新建</button>
         </div>
         <div class="col-md-3">
           <button type="button" class="btn btn-primary btn-block" v-on:click="selectConnect()">选择</button>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <select name="selecter_basic" class="selecter_3" data-selecter-options='{"cover":"true"}'
+                  v-model="originSelect" @change="changeConnect($event)">
+            <option :value="item.id" v-for="item in beanList">{{item.beanCode}}</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <select name="selecter_basic" class="selecter_3" data-selecter-options='{"cover":"true"}'
+                  v-model="targetSelect" @change="changeConnect($event)">
+            <option :value="item.id" v-for="item in beanList">{{item.beanCode}}</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary btn-block" v-on:click="ensureBaswTO()">确定</button>
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary btn-block" v-on:click="selectConnect()">取消</button>
+        </div>
+      </div>
+
 
       <div class="panel panel-default">
         <div class="panel-heading">配置映射 :</div>
@@ -52,6 +74,10 @@
     data() {
       return {
         connectList: {},
+        beanList: {},
+        beanMap: {},
+        originSelect: {},
+        targetSelect: {},
         connectObj: {},
         connectObjBody: {},
         fieldConnectSelect: {},
@@ -59,19 +85,51 @@
     },
     methods: {
       async save() {
-        console.log(this.connectObjBody)
-        this.connectObj['fieldBody']=JSON.stringify(this.connectObjBody);
+        console.log(this.connectObjBody);
+        if(this.connectObj == null){
+        var connectObjItem = {};
+          connectObjItem["fieldBody"] = JSON.stringify(this.connectObjBody);
+          connectObjItem["fieldOriginFormat"] =  this.beanMap[this.originSelect].beanBody;
+          connectObjItem["fieldSourceFormat"] =  this.beanMap[this.targetSelect].beanBody;
+          connectObjItem["originCode"] =  this.beanMap[this.originSelect].beanCode;
+          connectObjItem["targetCode"] =  this.beanMap[this.originSelect].beanCode;
+        }else{
+          this.connectObj['fieldBody'] = JSON.stringify(this.connectObjBody);
+        }
         var fieldConnect = await otherApi.saveFiledConnect(this.connectObj);
+      },
+      // 获取 TO 列表
+      async selectBaseTO() {
+        var beanList = await otherApi.selectBeanTO();
+        this.beanList = beanList.data;
+        var beanMap = {};
+        for (var objKey in this.beanList) {
+          var obj = this.beanList[objKey];
+          beanMap[obj.id] = obj;
+        }
+        this.beanMap = beanMap;
+        console.log(this.beanList)
+      },
+      // 确定新建 TO 关联
+      async ensureBaswTO() {
+        var body = this.beanMap[this.originSelect].beanBody;
+        var json = JSON.parse(body);
+        var newObj = {};
+        for (var item in json) {
+          newObj[json[item]['key']] = null;
+        }
+        this.connectObjBody = newObj;
       },
       changeConnect(event) {
         this.fieldConnectSelect = event.target.value;
         console.log("选择 :" + this.fieldConnectSelect);
       },
+      // 查询所有管理关系
       async selectConnect() {
         var fieldConnect = await otherApi.getFiledConnect(this.fieldConnectSelect);
         console.log("connectObj is :%o", fieldConnect);
         this.connectObj = fieldConnect.data;
-        this.connectObjBody = JSON.parse(fieldConnect.data.fieldBody);
+        this.connectObjBody = JSON.parse(fieldConnect.data.beanBody);
       },
       detail(key) {
         console.log("显示详情");
@@ -87,6 +145,7 @@
 
 <style scoped>
   @import "../assets/css/site.min.css";
+  @import "../assets/css/common.css";
 
   .panel-heading {
     margin-bottom: 10px;

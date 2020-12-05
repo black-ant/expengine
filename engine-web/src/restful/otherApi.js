@@ -6,15 +6,16 @@ export default {
   // 获取配置信息
   getSetting(key) {
     console.info("this is in getSetting");
-    return common.get("/get/" + key, null)
+    return common.get("/sync/setting/get/" + key, null)
   },
+  // 获取配置列表
   listSetting() {
     console.info("this is in listSetting");
-    return common.get("/setting/list", null);
+    return common.get("/sync/setting/list", null);
   },
   createSetting(data) {
     console.info("this is in createSetting");
-    return common.post("/setting/insert", data)
+    return common.post("/sync/setting/saveorupdate", data)
   },
   saveOrUpdate(data) {
     console.info("this is in createSetting");
@@ -60,9 +61,18 @@ export default {
     console.info("this is in listSetting");
     return common.get("/setting/getcfgto?code=" + code, null);
   },
-  listFiled() {
+  listBean() {
     console.info("this is in listSetting");
-    return common.get("/sync/setting/list", null);
+    return common.get("/sync/bean/list", null);
+  },
+  // 获取所有 TO 对象
+  selectBeanTO() {
+    console.info("this is in selectBaseTO");
+    return common.get("/sync/bean/query?type=TO", null);
+  },
+  selectBeanSetting() {
+    console.info("this is in selectBaseTO");
+    return common.get("/sync/bean/query?type=SETTING", null);
   },
   listFiledConnect() {
     console.info("this is in listSetting");
@@ -80,10 +90,11 @@ export default {
     console.info("this is in saveCfgTo");
     return common.post("/setting/saveorupdate", cfg);
   },
+  // 扫描包
   scanBaseTO(type) {
     console.info("this is in saveCfgTo");
     var query = type == null ? "" : "?type=" + type;
-    return common.get("/sync/field/selectBaseTO" + query);
+    return common.get("/sync/bean/selectBaseTO" + query);
   },
   push() {
     var query = type == null ? "" : "?type=" + type;

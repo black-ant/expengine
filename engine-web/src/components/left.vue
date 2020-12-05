@@ -15,7 +15,7 @@
         </router-link>
       </li>
       <li class="list-group-item">
-        <router-link to="/business_list"><i class="glyphicon glyphicon-th-list"></i>业务配置
+        <router-link to="/business_list"><i class="glyphicon glyphicon-th-list"></i>业务类型
         </router-link>
       </li>
       <li class="list-group-item">

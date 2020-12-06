@@ -63,7 +63,7 @@ public class AbstratController<T extends IService, D extends AbstractEntity> {
         return ResponseModel.commonResponse(baseMapper.list());
     }
 
-    @GetMapping("delete")
+    @GetMapping("delete/{key}")
     public ResponseModel delete(@PathVariable("key") String key) {
         baseMapper.removeById(key);
         return ResponseModel.commonResponse(key);

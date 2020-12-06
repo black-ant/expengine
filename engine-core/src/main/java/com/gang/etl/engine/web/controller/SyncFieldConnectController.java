@@ -1,14 +1,11 @@
 package com.gang.etl.engine.web.controller;
 
 import com.gang.common.lib.to.ResponseModel;
-import com.gang.common.lib.utils.ReflectionUtils;
 import com.gang.etl.datacenter.entity.SyncFieldInfo;
 import com.gang.etl.datacenter.entity.SyncType;
 import com.gang.etl.datacenter.service.impl.SyncFieldInfoServiceImpl;
 import com.gang.etl.datacenter.service.impl.SyncTypeServiceImpl;
-import com.gang.etl.engine.web.logic.FieldLogic;
-import org.apache.commons.lang3.StringUtils;
-import org.checkerframework.checker.units.qual.A;
+import com.gang.etl.engine.web.logic.SyncFieldLogic;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +31,7 @@ public class SyncFieldConnectController extends AbstratController<SyncFieldInfoS
     private SyncTypeServiceImpl syncTypeService;
 
     @Autowired
-    private FieldLogic fieldInfo;
+    private SyncFieldLogic fieldInfo;
 
 
     @GetMapping("getInfo")

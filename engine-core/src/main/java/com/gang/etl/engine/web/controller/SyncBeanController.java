@@ -4,9 +4,8 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.gang.common.lib.to.ResponseModel;
 import com.gang.etl.datacenter.entity.SyncBean;
 import com.gang.etl.datacenter.service.impl.SyncBeanServiceImpl;
-import com.gang.etl.engine.web.logic.FieldLogic;
+import com.gang.etl.engine.web.logic.SyncFieldLogic;
 import org.apache.commons.lang3.StringUtils;
-import org.checkerframework.checker.units.qual.A;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +30,7 @@ public class SyncBeanController extends AbstratController<SyncBeanServiceImpl, S
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
-    private FieldLogic fieldInfo;
+    private SyncFieldLogic fieldInfo;
 
     @Autowired
     private SyncBeanServiceImpl beanService;
@@ -42,7 +41,7 @@ public class SyncBeanController extends AbstratController<SyncBeanServiceImpl, S
      * @param type
      * @return
      */
-    @GetMapping("scanw")
+    @GetMapping("scan")
     public ResponseModel<String> scanPackageBean(@RequestParam(name = "type", required = false) String type) {
         logger.info("------> Select All Field <-------");
         if (StringUtils.isNotEmpty(type)) {

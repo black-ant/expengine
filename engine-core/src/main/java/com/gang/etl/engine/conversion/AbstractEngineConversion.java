@@ -14,6 +14,11 @@ import org.springframework.core.convert.ConversionException;
  */
 public abstract class AbstractEngineConversion implements IEngineConversion {
 
+    /**
+     * 无需 Conversion 转换
+     */
+    public static final String NONE_TYPE = "NONE";
+
     public JSONObject exchangeInfo(SyncFieldInfo syncFieldInfo, JSONObject sourceObject) {
         try {
             JSONObject backObject = new JSONObject();

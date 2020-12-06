@@ -6,6 +6,8 @@ import com.gang.etl.datacenter.entity.SyncBusinessItem;
 import com.gang.etl.datacenter.entity.SyncBusinessRate;
 import com.gang.etl.datacenter.service.impl.SyncBusinessItemServiceImpl;
 import com.gang.etl.datacenter.service.impl.SyncBusinessRateServiceImpl;
+import com.gang.etl.engine.web.logic.SyncBusinessItemLogic;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,12 +24,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/sync/business/item")
 public class SyncBusinessItemController extends AbstratController<SyncBusinessItemServiceImpl, SyncBusinessItem> {
 
+    @Autowired
+    private SyncBusinessItemLogic itemLogic;
 
     @GetMapping("listById/{businessId}")
-    public ResponseModel businessType(
-            @PathVariable("businessId") String businessId) {
-        QueryWrapper wrapper = new QueryWrapper();
-        wrapper.eq("sync_business_id", businessId);
-        return ResponseModel.commonResponse(baseMapper.list(wrapper));
+    public ResponseModel businessType(@PathVariable("businessId") String businessId) {
+        return ResponseModel.commonResponse(itemLogic.getItem(businessId));
     }
 }

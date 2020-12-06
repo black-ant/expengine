@@ -4,14 +4,17 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.gang.etl.datacenter.entity.SyncBusiness;
 import com.gang.etl.datacenter.entity.SyncBusinessItem;
 import com.gang.etl.datacenter.entity.SyncFieldInfo;
+import com.gang.etl.datacenter.entity.SyncSetting;
 import com.gang.etl.datacenter.service.impl.SyncBusinessItemServiceImpl;
 import com.gang.etl.datacenter.service.impl.SyncFieldInfoServiceImpl;
+import com.gang.etl.datacenter.service.impl.SyncSettingServiceImpl;
 import com.gang.etl.engine.api.query.BaseQuery;
 import com.gang.etl.engine.api.to.EngineConsumerBean;
 import com.gang.etl.engine.api.to.EngineProduceBean;
 import com.gang.etl.engine.api.to.SyncStatusTO;
 import com.gang.etl.engine.common.BaseSyncLock;
 import com.gang.etl.engine.config.SystemProperties;
+import com.gang.etl.engine.conversion.DictionaryConversion;
 import org.checkerframework.checker.units.qual.A;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,10 +44,16 @@ public class SyncFlowTemplate extends BaseSyncLock {
     private ConsumerTemplate consumerTemplate;
 
     @Autowired
+    private SyncSettingServiceImpl syncSettingService;
+
+    @Autowired
     private SyncFieldInfoServiceImpl syncFieldInfoService;
 
     @Autowired
     private SyncBusinessItemServiceImpl businessItemService;
+
+    @Autowired
+    private DictionaryConversion dictionaryConversion;
 
 
     /**
@@ -88,11 +97,19 @@ public class SyncFlowTemplate extends BaseSyncLock {
         // Build Engine Bean
         EngineProduceBean engineProduceBean = new EngineProduceBean();
         engineProduceBean.setServiceName(syncBusiness.getSyncProduce());
-        engineProduceBean.setConfig(syncBusiness.getSyncProduceSetting());
+
+        // ProduceSetting
+        SyncSetting syncSettingProduce = syncSettingService.getById(syncBusiness.getSyncProduceSetting());
+        engineProduceBean.setSetting(syncSettingProduce.getSettingBody());
+
+        // ConsumerSetting
+        SyncSetting syncSettingConsumer = syncSettingService.getById(syncBusiness.getSyncConsumerSetting());
 
         SyncFieldInfo fieldInfo = syncFieldInfoService.getById(item.getSyncFieldId());
         engineProduceBean.setOriginType(fieldInfo.getOriginCode());
         engineProduceBean.setQuery(new BaseQuery(fieldInfo.getProduceQuery()));
+        engineProduceBean.setSyncType(fieldInfo.getOriginCode());
+
         do {
             try {
                 engineProduceBean.setLock(new String(""));
@@ -105,10 +122,15 @@ public class SyncFlowTemplate extends BaseSyncLock {
                 doLock(engineProduceBean.getLock(), engineProduceBean);
 
                 // Sync Consumer
-                EngineConsumerBean consumerBean = new EngineConsumerBean(engineProduceBean,
-                        syncBusiness.getSyncConsumerSetting());
+                EngineConsumerBean consumerBean = new EngineConsumerBean(engineProduceBean);
+
+                // 配置信息
+                consumerBean.setSetting(syncSettingConsumer.getSettingBody());
+                consumerBean.setSyncType(fieldInfo.getTargetCode());
                 consumerBean.setServiceName(syncBusiness.getSyncConsumer());
-//                consumerTemplate.excute(consumerBean);
+
+                dictionaryConversion.conversion(engineProduceBean, consumerBean);
+                consumerTemplate.excute(consumerBean);
 
             } catch (Exception e) {
                 logger.error("E----> error :{} -- content :{}", e.getClass(), e.getMessage());

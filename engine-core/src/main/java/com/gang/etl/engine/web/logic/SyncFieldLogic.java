@@ -38,7 +38,7 @@ import java.util.List;
  * @Created by zengzg
  */
 @Component
-public class FieldLogic {
+public class SyncFieldLogic {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 

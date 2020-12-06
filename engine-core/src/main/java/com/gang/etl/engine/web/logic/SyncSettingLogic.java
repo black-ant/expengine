@@ -20,7 +20,7 @@ import java.util.Date;
  * @Created by zengzg
  */
 @Component
-public class SettingLogic {
+public class SyncSettingLogic {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 

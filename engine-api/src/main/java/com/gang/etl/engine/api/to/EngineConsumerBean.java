@@ -2,33 +2,28 @@ package com.gang.etl.engine.api.to;
 
 import com.alibaba.fastjson.JSONObject;
 
+import java.util.List;
+
 /**
  * @Classname BaseConsumerBean
  * @Description TODO
  * @Date 2020/6/11 22:28
  * @Created by zengzg
  */
-public class EngineConsumerBean extends EngineBaseBean<JSONObject> {
+public class EngineConsumerBean extends EngineBaseBean {
 
     public EngineConsumerBean() {
         setTypeOperation(OP_CONSUME);
     }
 
-    public EngineConsumerBean(EngineProduceBean baseBean, String config) {
+    public EngineConsumerBean(EngineProduceBean baseBean) {
         setTypeOperation(OP_CONSUME);
-        setData(baseBean.getData());
-        setConfig(config);
         setTypePart(baseBean.getTypePart());
     }
 
     public Object getSimpleValue() {
-        return null != getData() ? getData().get(DEFAULT_DATA) : null;
+        List data = null != getData() ? getData() : null;
+        return data.get(0);
     }
-
-    public void setSimpleValue(Object value) {
-        JSONObject values = null != getData() ? getData() : new JSONObject();
-        values.put(DEFAULT_DATA, value);
-    }
-
 
 }

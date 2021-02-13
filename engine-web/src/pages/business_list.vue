@@ -1,6 +1,8 @@
 <template>
-  <div class="content-row">
-    <div class="row">
+  <div class="content-row common">
+    <div class="alert alert-success alert-dismissable alert" v-show="showSuccessAlter">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+      <strong>保存成功!</strong>
     </div>
     <div class="bs-example">
       <table class="table">
@@ -29,7 +31,7 @@
           <td>
             <button class="btn btn-info" v-on:click="goTo(item.id)">编辑</button>
             <button class="btn btn-info" v-on:click="detail(item.id)">详情</button>
-            <button type="button" class="btn btn-danger btn-info">删除</button>
+            <button type="button" class="btn btn-danger btn-info" v-on:click="deleteOne(item.id)">删除</button>
           </td>
         </tr>
 
@@ -47,7 +49,8 @@
     name: "applist",
     data() {
       return {
-        apps: {}
+        apps: {},
+        showSuccessAlter: false
       }
     },
     methods: {
@@ -57,18 +60,28 @@
       },
       detail(key) {
         this.$router.push('/business_details?key=' + key);
+      },
+      async deleteOne(key){
+        await otherApi.deleteBusiness(key);
+        this.selectAllBusiness();
+        this.showSuccessAlter =true;
+      },
+      async selectAllBusiness(){
+        var settingsBack = await otherApi.listBusiness();
+        this.apps = settingsBack.data;
+        console.log("setting is :%o", settingsBack)
       }
     },
     mounted: async function () {
-
-      var settingsBack = await otherApi.listBusiness();
-      this.apps = settingsBack.data;
-      console.log("setting is :%o", settingsBack)
+      this.selectAllBusiness();
     },
   }
 </script>
 
 <style scoped>
+
+  @import "../assets/css/common.css";
+
   tr {
     font-size: 15px;
   }

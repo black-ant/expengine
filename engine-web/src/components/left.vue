@@ -19,7 +19,7 @@
         </router-link>
       </li>
       <li class="list-group-item">
-        <router-link to="/filedList"><i class="glyphicon glyphicon-th-list"></i>实体类属性
+        <router-link to="/bean_list"><i class="glyphicon glyphicon-th-list"></i>实体类属性
         </router-link>
       </li>
       <li class="list-group-item">

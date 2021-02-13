@@ -1,7 +1,9 @@
 package com.gang.etl.file.setting;
 
 import com.gang.common.lib.annotation.AnnoField;
+import com.gang.etl.engine.api.annotation.SyncTO;
 import com.gang.etl.engine.api.to.EngineBaseSetting;
+import com.gang.etl.file.constant.FileConstant;
 import lombok.Data;
 
 /**
@@ -10,6 +12,7 @@ import lombok.Data;
  * @Date 2020/6/27 21:37
  * @Created by zengzg
  */
+@SyncTO(name = "SyncFileSetting", type = "SETTING", app = FileConstant.SYNC_TYPE)
 public class SyncFileSetting extends EngineBaseSetting {
 
     @AnnoField(name = "根路径", nullable = false)

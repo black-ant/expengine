@@ -33,7 +33,7 @@ public class SyncFiledInfoDAO {
 
     public SyncFieldInfo selectBySyncType(String type) {
         QueryWrapper wrapper = new QueryWrapper();
-        wrapper.eq("sync_type", type);
+        wrapper.eq("sync_type_code", type);
         return syncFieldInfoMapper.getOne(wrapper);
     }
 }

@@ -13,6 +13,10 @@ export default {
     console.info("this is in listSetting");
     return common.get("/sync/setting/list", null);
   },
+  deleteSetting(key) {
+    console.info("this is in listSetting");
+    return common.get("/sync/setting/delete/" + key, null);
+  },
   createSetting(data) {
     console.info("this is in createSetting");
     return common.post("/sync/setting/saveorupdate", data)
@@ -25,13 +29,21 @@ export default {
     console.info("this is in listSetting");
     return common.get("/sync/type/list", null);
   },
-  listStrategy(){
+  listStrategy() {
     console.info("this is in listSetting");
     return common.get("/sync/strategy/list", null);
   },
-  saveBusinessItem(business){
+  saveBusinessItem(business) {
     console.info("this is in listSetting");
     return common.post("/sync/business/item/saveorupdate", business);
+  },
+  deleteBusinessItem(business) {
+    console.info("this is in listSetting");
+    return common.get("/sync/business/item/delete/" + business, business);
+  },
+  deleteBusiness(business) {
+    console.info("this is in listSetting");
+    return common.get("/sync/business/delete/" + business, business);
   },
   listBusiness() {
     console.info("this is in listSetting");
@@ -45,9 +57,9 @@ export default {
     console.info("this is in listSetting");
     return common.post("/sync/business/saveorupdate", data);
   },
-  listBusinessItem(key){
+  listBusinessItem(key) {
     console.info("this is in listSetting");
-    return common.get("/sync/business/item/listById/"+key, null);
+    return common.get("/sync/business/item/listById/" + key, null);
   },
   getApp(key) {
     console.info("this is in listSetting");
@@ -80,7 +92,7 @@ export default {
   },
   getFiledConnect(key) {
     console.info("this is in listSetting");
-    return common.get("/sync/field/get/"+key, null);
+    return common.get("/sync/field/get/" + key, null);
   },
   saveFiledConnect(data) {
     console.info("this is in listSetting");
@@ -94,12 +106,7 @@ export default {
   scanBaseTO(type) {
     console.info("this is in saveCfgTo");
     var query = type == null ? "" : "?type=" + type;
-    return common.get("/sync/bean/selectBaseTO" + query);
-  },
-  push() {
-    var query = type == null ? "" : "?type=" + type;
-    return common.get("/sync/field/selectBaseTO" + query);
-    business/type/{typeId}
+    return common.get("/sync/bean/scan" + query);
   },
   startBusiness(businessId) {
     return common.get("/excute/business/single/" + businessId);

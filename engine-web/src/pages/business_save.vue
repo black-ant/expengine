@@ -1,12 +1,12 @@
 <template>
-  <div class="content-row" id="main_bdoy_id">
+  <div class="content-row common" id="main_bdoy_id">
+    <div class="alert alert-success alert-dismissable alert" v-show="showSuccessAlter">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+      <strong>保存成功!</strong>
+    </div>
     <div class="row content-row-modal">
       <div class="col-md-12">
         <h2 class="content-row-title">Modals</h2>
-        <div class="alert alert-success alert-dismissable" v-if="show">
-          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-          <strong>保存成功!</strong>
-        </div>
         <div class="modal">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -16,7 +16,7 @@
               <div class="modal-body">
                 <p>配置连接信息</p>
                 <div class="row">
-                  <div class="col-xs-8" v-for="(value, key) in typeto"  v-show="key!='id'">
+                  <div class="col-xs-8" v-for="(value, key) in typeto" v-show="key!='id'">
                     <label>{{key}}</label>
                     <input type="text" class="form-control" :name="value" v-bind:placeholder="value"
                            v-model="typeto[key]">
@@ -44,7 +44,7 @@
     data() {
       return {
         typeto: {},
-        show: false
+        showSuccessAlter: false
       }
     },
     mounted: async function () {
@@ -61,7 +61,7 @@
         var typeto = this.typeto;
         console.log("settings is " + JSON.stringify(typeto));
         var response = await otherApi.saveBusiness(typeto);
-        this.show = true;
+        this.showSuccessAlter = true;
       }
     }
   }
@@ -69,6 +69,8 @@
 </script>
 
 <style scoped>
+  @import "../assets/css/common.css";
+
   .content-row-modal .modal-dialog {
     width: 1200px;
     margin: 20px;

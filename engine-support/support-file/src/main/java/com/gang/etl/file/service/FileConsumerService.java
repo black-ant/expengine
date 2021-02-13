@@ -23,8 +23,8 @@ public class FileConsumerService implements IComsumerService {
     @Override
     public EngineConsumerBean execute(EngineConsumerBean consumerBean) {
         logger.info("------> FileConsumerService in {}  <-------", consumerBean);
-        SyncFileSetting fileSetting = JSONObject.parseObject(consumerBean.getConfig(), SyncFileSetting.class);
-        FileUtil.writeString(String.valueOf(consumerBean.getSimpleValue()), fileSetting.getRootPath(), "UTF-8");
+        SyncFileSetting fileSetting = JSONObject.parseObject(consumerBean.getSetting(), SyncFileSetting.class);
+        FileUtil.writeString(JSONObject.toJSONString(consumerBean.getSimpleValue()), fileSetting.getRootPath(), "UTF-8");
         return consumerBean;
     }
 }

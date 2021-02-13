@@ -1,4 +1,46 @@
-.common select{
+.common select {
   width: 100%;
   height: 2.8em;
+}
+
+.common .table_header {
+  text-align: center;
+}
+
+.common .table_after {
+  text-align: center;
+}
+
+.label_self {
+  line-height: 2em;
+  font-size: 1.2em;
+  font-weight: 800;
+  width: 7%;
+  padding: 1px;
+}
+
+.common .f-right {
+  float: right;
+}
+
+.common .f-left {
+  float: left;
+}
+
+.commom .color_top_self {
+  background-color: #e8e8e8;
+  border-color: #ffffff;
+}
+
+.common .alert{
+  position: fixed;
+  height: 5em;
+  line-height: 3em;
+  width: 20%;
+  float: right;
+  right: 0;
+  padding-right: 35px;
+  padding-left: 3em;
+  font-size: 1em;
+  z-index:999;
 }

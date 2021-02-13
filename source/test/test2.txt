@@ -1,1 +1,1 @@
-null
+{"autoAddUser":true,"createDeptGroup":true,"id":155522090,"name":"gangtest122","parentid":1}

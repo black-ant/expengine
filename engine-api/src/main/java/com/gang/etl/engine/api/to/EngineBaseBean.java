@@ -6,6 +6,8 @@ import com.gang.etl.engine.api.query.BaseQuery;
 import com.gang.etl.engine.api.request.SyncBusinessRequest;
 import lombok.Data;
 
+import java.util.List;
+
 /**
  * @Classname EngineBaseBean
  * @Description TODO
@@ -51,12 +53,12 @@ public class EngineBaseBean<T> {
     /**
      * 数据主体
      */
-    private T data;
+    private List<T> data;
 
     /**
      * 配置信息
      */
-    private String config;
+    private String setting;
 
     /**
      * 基础 Setting

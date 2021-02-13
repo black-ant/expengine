@@ -13,7 +13,7 @@ import setting_save from '@/pages/setting_save'
 import business_list from '@/pages/business_list'
 import business_save from '@/pages/business_save'
 
-import filedList from '@/pages/filed_list'
+import bean_list from '@/pages/bean_list'
 import filedConnect from '@/pages/filed_connect'
 
 import applist from '@/pages/app_list'
@@ -77,9 +77,9 @@ export default new Router({
       name: 'business_details',
       component: business_details
     }, {
-      path: '/filedList',
-      name: 'filedList',
-      component: filedList
+      path: '/bean_list',
+      name: 'bean_list',
+      component: bean_list
     }, {
       path: '/filedConnect',
       name: 'filedConnect',

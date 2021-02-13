@@ -1,4 +1,4 @@
-package com.gang.etl.dingtalk.constant;
+package com.gang.etl.file.constant;
 
 /**
  * @Classname DingTalkConstant
@@ -6,7 +6,7 @@ package com.gang.etl.dingtalk.constant;
  * @Date 2020/11/22 15:00
  * @Created by zengzg
  */
-public class DingTalkConstant {
+public class FileConstant {
 
-    public static final String SYNC_TYPE = "DingTalk";
+    public static final String SYNC_TYPE = "File";
 }

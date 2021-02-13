@@ -1,65 +1,115 @@
 <template>
   <div class="container-fluid">
-    <div class="content-row">
+    <div class="content-row common">
       <div class="row">
+        <!-- 执行业务关联 Start  -->
         <div class="col-md-5">
           <div class="well">{{business.syncProduce}}</div>
         </div>
         <div class="col-md-2">
-          <button type="button" class="btn btn-primary btn-block"  v-on:click="runStart()">执行</button>
+          <button type="button" class="btn btn-primary btn-block" v-on:click="runStart()">执行</button>
         </div>
         <div class="col-md-5">
           <div class="well">{{business.syncConsumer}}</div>
         </div>
-      </div>
+        <!-- 执行业务关联 End -->
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <span>执行列表 </span>
+        <!-- 执行配置关联 Start  -->
+        <div class="col-md-1 label_self" style="margin-left: 1em">
+          生产者配置 :
         </div>
-        <div class="col-md-12">
-          <div class="col-md-1">关联关系</div>
+        <div class="col-md-4">
           <select name="selecter_basic" class="selecter_3 col-md-2" data-selecter-options='{"cover":"true"}'
-                  v-model="fieldConnectSelect" @change="changeConnect($event)">
-            <option :value="item.id" v-for="item in connectList">{{item.fieldTypeCode}}</option>
+                  v-model="originSetting" @change="changeConnect($event)">
+            <option :value="item.id" v-for="item in settings">{{item.settingName}}</option>
           </select>
-          <div class="col-md-1">策略关系</div>
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary btn-block" v-on:click="saveSetting()">保存</button>
+        </div>
+        <div class="col-md-1 label_self">
+          消费者配置 :
+        </div>
+        <div class="col-md-4">
           <select name="selecter_basic" class="selecter_3 col-md-2" data-selecter-options='{"cover":"true"}'
-                  v-model="strategySelect" @change="changeStrategy($event)">
-            <option :value="item.id" v-for="item in strategyList">{{item.strategyName}}</option>
+                  v-model="targetSetting" @change="changeConnect($event)">
+            <option :value="item.id" v-for="item in settings">{{item.settingName}}</option>
           </select>
-          <div class="col-md-1">名称</div>
+        </div>
+        <!-- 执行配置关联 End -->
+
+
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" style="height: 4.3em;">
+          <div class="panel-title f-right">
+            属性列表
+          </div>
+          <div class="col-md-2 f-right" >
+            <button type="button" class="btn btn-primary btn-block" >新建属性映射</button>
+          </div>
+        </div>
+        <div class="col-md-12" v-show="showNewField">
+          <!-- 执行关联其他信息 Start  -->
+          <div class="col-md-1 label_self">
+            属性映射 :
+          </div>
           <div class="col-md-2">
+            <select name="selecter_basic" class="selecter_3 col-md-2" data-selecter-options='{"cover":"true"}'
+                    v-model="fieldConnectSelect" @change="changeConnect($event)">
+              <option :value="item.id" v-for="item in connectList">{{item.syncTypeCode}}</option>
+            </select>
+          </div>
+          <div class="col-md-1 label_self">
+            策略配置:
+          </div>
+          <div class="col-md-2">
+            <select name="selecter_basic" class="selecter_3 col-md-2" data-selecter-options='{"cover":"true"}'
+                    v-model="strategySelect" @change="changeStrategy($event)">
+              <option :value="item.id" v-for="item in strategyList">{{item.strategyName}}</option>
+            </select>
+          </div>
+          <div class="col-md-1 label_self">
+            子类名称:
+          </div>
+          <div class="col-md-3">
             <input type="text" class="form-control" :name="itemSeletName" v-bind:placeholder="itemSeletName"
                    v-model="itemSeletName">
           </div>
-
-
-          <div class="col-md-3">
+          <div class="col-md-1">
             <button type="button" class="btn btn-primary btn-block" v-on:click="newConnect()">添加关联</button>
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-block" v-on:click="newConnect()">关闭</button>
           </div>
         </div>
         <div class="row">
           <table class="table">
             <thead>
             <tr>
-              <th></th>
-              <th>属性名</th>
+              <th class="table_header">是否执行</th>
+              <th>属性业务</th>
               <th>属性策略</th>
               <th>属性映射</th>
+              <th class="table_after">操作</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="item in businessList">
-              <td>
-                <div class="checkbox">
-                  <input type="checkbox" id="flat-checkbox-2" checked>
-                  <label for="flat-checkbox-2">执行</label>
-                </div>
+              <td width="10%" class="table_header">
+                <label class="toggle">
+                  <input type="checkbox" checked="">
+                  <span class="handle"></span>
+                </label>
               </td>
-              <td>{{item.itemName}}</td>
-              <td>{{item.itemName}}</td>
-              <td>{{item.itemName}}</td>
+              <td>{{item.syncBusinessName}}</td>
+              <td>{{item.syncStrategyName}}</td>
+              <td>{{item.syncFieldName}}</td>
+              <td class="table_after">
+                <button type="button" class="btn btn-danger btn-block"
+                        v-on:click="deleteBusinessItem(item.syncBusinessNam)">删除
+                </button>
+              </td>
             </tr>
             </tbody>
           </table>
@@ -81,10 +131,14 @@
         businessId: {},
         businessList: {},
         connectList: {},
+        originSetting: {},
+        targetSetting: {},
         strategyList: {},
         fieldConnectSelect: {},
         strategySelect: {},
-        itemSeletName: ""
+        settings: {},
+        itemSeletName: "",
+        showNewField: false,
       }
     },
     methods: {
@@ -97,6 +151,10 @@
         var responseList = await otherApi.listBusinessItem(key);
         console.log(responseList);
         this.businessList = responseList['data'];
+
+        this.originSetting = this.business['syncProduceSetting'];
+        this.targetSetting = this.business['syncConsumerSetting'];
+        this.targetSetting = this.business['syncConsumerSetting'];
       },
       changeConnect(event) {
         this.fieldConnectSelect = event.target.value;
@@ -106,11 +164,12 @@
         this.strategySelect = event.target.value;
         console.log("选择 :" + this.strategySelect);
       },
-      async selectConnect() {
+      async selectFieldConnect() {
         var connectList = await otherApi.listFiledConnect();
         console.log("connectList is :%o", connectList);
         this.connectList = connectList.data;
-
+      },
+      async selectStrategy() {
         var strategyList = await otherApi.listStrategy();
         console.log("connectList is :%o", connectList);
         this.strategyList = strategyList.data;
@@ -127,11 +186,35 @@
 
         this.initConnect()
       },
-      runStart(){
+      deleteBusinessItem(key) {
+        otherApi.deleteBusinessItem(key);
+      },
+      runStart() {
         var back = otherApi.startBusiness(this.businessId);
+      },
+      // 查询所有的配置
+      async selectAllSetting() {
+        var settingsBack = await otherApi.listSetting();
+        this.settings = settingsBack.data;
+        console.log("setting is :%o", settingsBack)
+      },
+      // 更新业务配置
+      async saveSetting() {
+        this.business['syncProduceSetting'] = this.originSetting;
+        this.business['syncConsumerSetting'] = this.targetSetting;
+        otherApi.saveBusiness(this.business);
+      },
+      // 展示属性映射
+      showConnect() {
+        this.showNewField = true;
       }
     },
     mounted: async function () {
+
+      this.selectFieldConnect();
+      this.selectStrategy();
+      this.selectAllSetting();
+
       var key = this.$route.query.key;
       console.log(key);
       if (key != null) {
@@ -139,13 +222,14 @@
         this.initConnect();
       }
 
-      this.selectConnect();
+
     },
   }
 </script>
 
 <style scoped>
   @import "../assets/css/site.min.css";
+  @import "../assets/css/common.css";
 
   .panel-heading {
     margin-bottom: 10px;

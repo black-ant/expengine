@@ -41,8 +41,7 @@ public class DingTalkProduceService implements IProduceService {
 
         EngineBaseResponse response = new EngineBaseResponse();
 
-
-        if ("ORG".equals(produceBean.getOriginType())) {
+        if ("DingTalkOrgTO".equals(produceBean.getOriginType())) {
             runOrg(produceBean, response);
         }
         produceBean.setResponse(response);
@@ -60,9 +59,9 @@ public class DingTalkProduceService implements IProduceService {
     }
 
     public DingtalkSetting getSeting(EngineProduceBean produceBean) {
-        if (StringUtils.isNotEmpty(produceBean.getConfig())) {
+        if (StringUtils.isNotEmpty(produceBean.getSetting())) {
             try {
-                return JSONObject.parseObject(produceBean.getConfig(), DingtalkSetting.class);
+                return JSONObject.parseObject(produceBean.getSetting(), DingtalkSetting.class);
             } catch (Exception e) {
                 throw new SyncException(SyncErrorEnum.SYNC_SETTING_BUILD_ERROR, DingTalkConstant.SYNC_TYPE);
             }

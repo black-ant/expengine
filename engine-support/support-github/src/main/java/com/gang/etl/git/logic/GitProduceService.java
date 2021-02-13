@@ -21,7 +21,7 @@ public class GitProduceService extends BaseProduceService implements IProduceSer
     @Override
     public EngineProduceBean execute(EngineProduceBean consumerBean) {
 
-        String config = consumerBean.getConfig();
+        String config = consumerBean.getSetting();
 
         //        gitOperation.pullGit();
 

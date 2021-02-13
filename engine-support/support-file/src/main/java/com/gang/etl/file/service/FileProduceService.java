@@ -27,15 +27,15 @@ public class FileProduceService implements IProduceService {
     /**
      * read file from path
      *
-     * @param consumerBean
+     * @param produceBean
      * @return
      */
     @Override
-    public EngineProduceBean execute(EngineProduceBean consumerBean) {
-        logger.info("------> this is in file produce :{}<-------", consumerBean.getConfig());
-        SyncFileSetting fileSetting = JSONObject.parseObject(consumerBean.getConfig(), SyncFileSetting.class);
+    public EngineProduceBean execute(EngineProduceBean produceBean) {
+        logger.info("------> this is in file produce :{}<-------", produceBean.getSetting());
+        SyncFileSetting fileSetting = JSONObject.parseObject(produceBean.getSetting(), SyncFileSetting.class);
         logger.info("------> SyncFileSetting :{} <-------", fileSetting);
-        consumerBean.setSimpleValue(fileIOLogic.readFile(fileSetting.getRootPath()));
-        return consumerBean;
+        produceBean.setSimpleValue(fileIOLogic.readFile(fileSetting.getRootPath()));
+        return produceBean;
     }
 }

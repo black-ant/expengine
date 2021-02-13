@@ -91,9 +91,18 @@
       }
       this.beanMap = beanMap;
 
-      var setting = await otherApi.getSetting(key);
-      this.setting = setting.data;
-      this.settingBody = JSON.parse(this.setting['settingBody']);
+      if (key != null) {
+        var setting = await otherApi.getSetting(key);
+        this.setting = setting.data;
+        this.settingBody = JSON.parse(this.setting['settingBody']);
+      }else{
+        var settingNew = {};
+        settingNew['settingType'] = "SETTING";
+        settingNew['settingName'] = "";
+        settingNew['settingCode'] = "";
+        this.setting = settingNew;
+      }
+
     }, methods: {
       save: async function () {
         var settings = this.setting;

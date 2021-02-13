@@ -7,15 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="com-gang-etl-support-file" />
+        <module name="support-ad" />
         <module name="com-gang-etl-support-dingtalk" />
         <module name="com-gang-etl-plugin-job" />
         <module name="com-gang-etl-engine-core" />
-        <module name="com-gang-etl-engine-api" />
+        <module name="plugin-transaction" />
+        <module name="com-gang-etl-support-github" />
+        <module name="plugin-elk" />
         <module name="com-gang-etl-datacenter" />
         <module name="com-gang-engine-sdk" />
         <module name="com-gang-common-lib" />
         <module name="com-gang-etl-server" />
-        <module name="com-gang-etl-support-github" />
+        <module name="com-gang-etl-engine-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +38,9 @@
       <module name="com-gang-etl-support-github" target="1.8" />
       <module name="com-gang-etl-support-wechat" target="1.8" />
       <module name="com-gang-etl-support-workwechat" target="1.8" />
+      <module name="plugin-elk" target="1.8" />
+      <module name="plugin-transaction" target="1.8" />
+      <module name="support-ad" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -52,6 +58,9 @@
       <module name="com-gang-etl-support-github" options="-parameters" />
       <module name="com-gang-etl-support-wechat" options="-parameters" />
       <module name="com-gang-etl-support-workwechat" options="-parameters" />
+      <module name="plugin-elk" options="-parameters" />
+      <module name="plugin-transaction" options="-parameters" />
+      <module name="support-ad" options="-parameters" />
     </option>
   </component>
 </project>

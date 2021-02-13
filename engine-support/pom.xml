@@ -11,6 +11,8 @@
 
     <artifactId>com-gang-etl-support</artifactId>
     <packaging>pom</packaging>
+
+
     <modules>
         <module>support-file</module>
         <!--        <module>support-database</module>-->
@@ -20,11 +22,11 @@
         <!--        <module>support-rest</module>-->
         <module>support-dingtalk</module>
         <module>support-github</module>
+        <module>support-ad</module>
         <!--        <module>support-workwechat</module>-->
         <!--        <module>support-wechat</module>-->
         <!--        <module>support-ldap</module>-->
         <!--        <module>support-mongodb</module>-->
     </modules>
-
 
 </project>

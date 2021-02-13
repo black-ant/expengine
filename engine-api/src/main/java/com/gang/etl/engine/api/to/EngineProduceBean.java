@@ -2,6 +2,9 @@ package com.gang.etl.engine.api.to;
 
 import com.alibaba.fastjson.JSONObject;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * @Classname BaseProduceBean
  * @Description TODO
@@ -14,14 +17,14 @@ public class EngineProduceBean extends EngineBaseBean<JSONObject> {
         setTypeOperation(OP_PRODUCE);
     }
 
-    public Object getSimpleValue() {
-        return null != getData() ? getData().get(DEFAULT_DATA) : null;
-    }
-
     public void setSimpleValue(Object value) {
-        JSONObject values = null != getData() ? getData() : new JSONObject();
-        values.put(DEFAULT_DATA, value);
-        setData(values);
+
+        List backList = null != getData() ? getData() : new LinkedList();
+        backList.add(value);
+
+        EngineBaseResponse response = new EngineBaseResponse();
+        response.setBackData(backList);
+        setResponse(response);
     }
 
 }

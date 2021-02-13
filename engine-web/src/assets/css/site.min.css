@@ -7818,7 +7818,7 @@ blockquote {
   top: -20px;
   left: 0;
   width: 50px;
-  height: 32px;
+  height: 25px;
   background-color: #FFF;
   -webkit-border-radius: 19px;
   -moz-border-radius: 19px;
@@ -7835,7 +7835,7 @@ blockquote {
   left: 1px;
   display: block;
   width: 30px;
-  height: 30px;
+  height: 25px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;

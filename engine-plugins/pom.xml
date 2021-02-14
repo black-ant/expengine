@@ -14,7 +14,7 @@
     <modules>
         <!--        <module>velocity-html</module>-->
         <!--        <module>com-gang-etl-plugin-ldap</module>-->
-        <module>etl-plugin-job</module>
+        <module>plugin-job</module>
         <module>plugin-elk</module>
         <module>plugin-transaction</module>
     </modules>

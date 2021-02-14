@@ -13,7 +13,9 @@
     <file url="file://$PROJECT_DIR$/engine-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-ad" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine-support/support-database" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-dingtalk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine-support/support-excel" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-file" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-github" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/engine-support/support-wechat" charset="UTF-8" />

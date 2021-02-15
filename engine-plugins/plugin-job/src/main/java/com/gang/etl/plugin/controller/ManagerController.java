@@ -1,6 +1,6 @@
 package com.gang.etl.plugin.controller;
 
-import com.gang.etl.plugin.api.SchedulerService;
+import com.gang.etl.plugin.cache.api.SchedulerService;
 import com.gang.etl.plugin.to.SchedulingPlan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

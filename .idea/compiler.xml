@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="plugin-cache" />
         <module name="com-gang-engine-sdk" />
         <module name="com-gang-etl-server" />
         <module name="com-gang-etl-support-github" />
@@ -13,7 +14,6 @@
         <module name="com-gang-etl-engine-core" />
         <module name="com-gang-common-lib" />
         <module name="com-gang-etl-datacenter" />
-        <module name="com-gang-etl-support-dingtalk" />
         <module name="support-ad" />
         <module name="support-excel" />
         <module name="plugin-elk" />
@@ -40,6 +40,7 @@
       <module name="com-gang-etl-support-github" target="1.8" />
       <module name="com-gang-etl-support-wechat" target="1.8" />
       <module name="com-gang-etl-support-workwechat" target="1.8" />
+      <module name="plugin-cache" target="1.8" />
       <module name="plugin-elk" target="1.8" />
       <module name="plugin-job" target="1.8" />
       <module name="plugin-transaction" target="1.8" />
@@ -62,6 +63,7 @@
       <module name="com-gang-etl-support-github" options="-parameters" />
       <module name="com-gang-etl-support-wechat" options="-parameters" />
       <module name="com-gang-etl-support-workwechat" options="-parameters" />
+      <module name="plugin-cache" options="-parameters" />
       <module name="plugin-elk" options="-parameters" />
       <module name="plugin-job" options="-parameters" />
       <module name="plugin-transaction" options="-parameters" />

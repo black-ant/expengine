@@ -1,12 +1,17 @@
 package com.gang.etl.engine.database.to;
 
+import com.gang.etl.engine.api.annotation.SyncTO;
+import com.gang.etl.engine.api.bean.ISyncBaseTO;
+import com.gang.etl.engine.database.type.DatabaseConstant;
+
 /**
  * @Classname DatabaseUserTO
  * @Description TODO
  * @Date 2021/2/14 13:55
  * @Created by zengzg
  */
-public class DatabaseUserTO {
+@SyncTO(name = "DatabaseUserTO", type = "TO", app = DatabaseConstant.SYNC_TYPE)
+public class DatabaseUserTO implements ISyncBaseTO {
 
     private String id;
 

@@ -46,7 +46,7 @@
             属性列表
           </div>
           <div class="col-md-2 f-right" >
-            <button type="button" class="btn btn-primary btn-block" >新建属性映射</button>
+            <button type="button" class="btn btn-primary btn-block" v-on:click="showConnect()">新建属性映射</button>
           </div>
         </div>
         <div class="col-md-12" v-show="showNewField">
@@ -171,7 +171,7 @@
       },
       async selectStrategy() {
         var strategyList = await otherApi.listStrategy();
-        console.log("connectList is :%o", connectList);
+        console.log("strategyList is :%o", strategyList);
         this.strategyList = strategyList.data;
       },
       newConnect() {

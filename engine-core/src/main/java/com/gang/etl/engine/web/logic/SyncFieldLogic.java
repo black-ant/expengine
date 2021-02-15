@@ -86,13 +86,12 @@ public class SyncFieldLogic {
     }
 
 
-
     /**
      * @return
      */
     public String scanPackage() {
         List<Class> classes = ReflectionUtils.getAllInterfaceAchieveClass(ISyncBaseTO.class, "com.gang.etl");
-         classes.forEach(item -> {
+        classes.forEach(item -> {
             logger.info("------> this is item :{} <-------", item.getSimpleName());
             try {
                 SyncTO syncTO = (SyncTO) item.getAnnotation(SyncTO.class);
@@ -128,7 +127,7 @@ public class SyncFieldLogic {
                 reflectionUtils.getParentFolder(clazz));
         syncBean.setBeanBody(JSONArray.toJSONString(getFiledList(clazz)));
         syncBean.setCreateDate(new Date());
-        return syncBean ;
+        return syncBean;
     }
 
     public List<FieldItemDTO> getFiledList(Class clazz) {

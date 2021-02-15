@@ -1,6 +1,7 @@
 package com.gang.etl.engine.database.config;
 
 import com.gang.etl.engine.api.annotation.SyncTO;
+import com.gang.etl.engine.api.bean.ISyncBaseTO;
 import com.gang.etl.engine.database.type.DatabaseConstant;
 
 /**
@@ -10,7 +11,7 @@ import com.gang.etl.engine.database.type.DatabaseConstant;
  * @Created by zengzg
  */
 @SyncTO(name = "DatabaseSetting", type = "SETTING", app = DatabaseConstant.SYNC_TYPE)
-public class DatabaseSetting {
+public class DatabaseSetting implements ISyncBaseTO {
 
     private String url;
     private String username;

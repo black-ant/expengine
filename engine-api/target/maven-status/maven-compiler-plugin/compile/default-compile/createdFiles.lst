@@ -6,6 +6,7 @@ com\gang\etl\engine\api\annotation\SyncUpdate.class
 com\gang\etl\engine\api\query\SearchWrapper.class
 com\gang\etl\engine\api\to\TemplateTO.class
 com\gang\etl\engine\api\common\SyncOperation.class
+com\gang\etl\engine\api\dto\FieldItemDTO.class
 com\gang\etl\engine\api\exception\SyncConversionException.class
 com\gang\etl\engine\api\type\SyncPartTypeEnum.class
 com\gang\etl\engine\api\to\SyncBaseBean.class

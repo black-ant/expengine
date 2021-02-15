@@ -25,6 +25,7 @@ D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engin
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\bean\ISyncBaseTO.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\to\TemplateTO.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\exception\SyncException.java
+D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\dto\FieldItemDTO.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\common\IPluginsService.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\query\SearchWrapper.java
 D:\java\workspace\git\exp\etl-engine\engine-api\src\main\java\com\gang\etl\engine\api\to\EngineConsumerBean.java

@@ -17,6 +17,7 @@
         <module>plugin-job</module>
         <module>plugin-elk</module>
         <module>plugin-transaction</module>
+        <module>plugin-cache</module>
     </modules>
 
 

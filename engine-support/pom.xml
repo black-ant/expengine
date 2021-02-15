@@ -15,12 +15,12 @@
 
     <modules>
         <module>support-file</module>
-                <module>support-database</module>
+        <module>support-database</module>
         <!--        <module>support-rabbitmq</module>-->
         <!--        <module>support-redis</module>-->
         <!--        <module>support-velocity</module>-->
         <!--        <module>support-rest</module>-->
-        <module>support-dingtalk</module>
+        <!--        <module>support-dingtalk</module>-->
         <module>support-github</module>
         <module>support-ad</module>
         <module>support-excel</module>

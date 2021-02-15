@@ -1,6 +1,8 @@
+com\gang\etl\datacenter\service\ISyncBusinessItemService.class
 com\gang\etl\datacenter\service\impl\SyncStrategyServiceImpl.class
 com\gang\etl\datacenter\mapper\SyncSettingMapper.class
 com\gang\etl\datacenter\entity\SyncBusiness.class
+com\gang\etl\datacenter\mapper\SyncBeanMapper.class
 com\gang\etl\datacenter\entity\ExpUser.class
 com\gang\etl\datacenter\mapper\SyncBusinessRateMapper.class
 com\gang\etl\datacenter\service\impl\SyncSettingServiceImpl.class
@@ -8,6 +10,7 @@ com\gang\etl\datacenter\service\ISyncBusinessService.class
 com\gang\etl\datacenter\service\impl\ExpUserServiceImpl.class
 com\gang\etl\datacenter\service\ISyncSettingService.class
 com\gang\etl\datacenter\mapper\SyncLogMapper.class
+com\gang\etl\datacenter\mapper\SyncBusinessItemMapper.class
 com\gang\etl\datacenter\service\ISyncTypeService.class
 com\gang\etl\datacenter\mapper\ExpUserMapper.class
 com\gang\etl\datacenter\dao\ExpUserDAO.class
@@ -20,6 +23,9 @@ com\gang\etl\datacenter\entity\SyncFieldInfo.class
 com\gang\etl\datacenter\mapper\SyncStrategyMapper.class
 com\gang\etl\datacenter\mapper\SyncBusinessMapper.class
 com\gang\etl\datacenter\entity\SyncLog.class
+com\gang\etl\datacenter\service\ISyncBeanService.class
+com\gang\etl\datacenter\service\impl\SyncBeanServiceImpl.class
+com\gang\etl\datacenter\service\impl\SyncBusinessItemServiceImpl.class
 com\gang\etl\datacenter\dao\SyncFiledInfoDAO.class
 com\gang\etl\datacenter\service\ISyncBusinessRateService.class
 com\gang\etl\datacenter\service\ISyncLogService.class
@@ -31,6 +37,8 @@ com\gang\etl\datacenter\service\IExpUserService.class
 com\gang\etl\datacenter\service\impl\SyncFieldInfoServiceImpl.class
 com\gang\etl\datacenter\service\impl\SyncBusinessServiceImpl.class
 com\gang\etl\datacenter\mapper\MyBatisBaseMapper.class
+com\gang\etl\datacenter\entity\SyncBusinessItem.class
+com\gang\etl\datacenter\entity\SyncBean.class
 com\gang\etl\datacenter\entity\SyncSetting.class
 com\gang\etl\datacenter\service\impl\SyncLogServiceImpl.class
 com\gang\etl\datacenter\entity\SyncStrategy.class

@@ -1,17 +1,11 @@
 <template>
   <div class="content-row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="col-md-3">
-          <button type="button" class="btn btn-block">重新生成</button>
+      <div class="row ">
+        <div class="col-md-3 right">
+          <button type="button" class="btn btn-primary btn-block" v-on:click="query()">刷新</button>
         </div>
-        <div class="col-md-3">
-          <button type="button" class="btn btn-default btn-block">Default</button>
-        </div>
-        <div class="col-md-3">
-          <button type="button" class="btn btn-primary btn-block">刷新</button>
-        </div>
-        <div class="col-md-3">
+        <div class="col-md-3 right">
           <button type="button" class="btn btn-success btn-block" v-on:click="scan()">拉取</button>
         </div>
       </div>
@@ -79,14 +73,17 @@
       },
       async scan() {
         var settingsBack = await otherApi.scanBaseTO()
+      },
+      async query() {
+        var settingsBack = await otherApi.listBean();
+        this.filedList = settingsBack.data;
+        this.params = JSON.parse(this.filedList[0].beanBody);
+        console.log("setting is :%o", settingsBack)
+        console.log("params is :%o", this.params)
       }
     },
     mounted: async function () {
-      var settingsBack = await otherApi.listBean();
-      this.filedList = settingsBack.data;
-      this.params = JSON.parse(this.filedList[0].beanBody);
-      console.log("setting is :%o", settingsBack)
-      console.log("params is :%o", this.params)
+      this.query();
     },
   }
 </script>

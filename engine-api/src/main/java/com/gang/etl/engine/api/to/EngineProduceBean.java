@@ -27,4 +27,10 @@ public class EngineProduceBean extends EngineBaseBean<JSONObject> {
         setResponse(response);
     }
 
+    public void pullAllValue(List datas) {
+        EngineBaseResponse response = new EngineBaseResponse();
+        response.setBackData(datas);
+        setResponse(response);
+    }
+
 }

@@ -75,7 +75,7 @@ export default {
   },
   listBean() {
     console.info("this is in listSetting");
-    return common.get("/sync/bean/list", null);
+    return common.get("/sync/bean/orderList", null);
   },
   // 获取所有 TO 对象
   selectBeanTO() {

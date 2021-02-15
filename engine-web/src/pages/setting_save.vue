@@ -7,17 +7,17 @@
           <div class="col-xs-12">
             <label>配置类型</label>
             <input type="text" class="form-control" :name="value" v-bind:placeholder="setting.settingType"
-                   v-bind:value="setting.settingType">
+                   v-model="setting.settingType">
           </div>
           <div class="col-xs-12">
             <label>配置名称</label>
             <input type="text" class="form-control" :name="value" v-bind:placeholder="setting.settingName"
-                   v-bind:value="setting.settingName">
+                   v-model="setting.settingName">
           </div>
           <div class="col-xs-12">
             <label>配置代码</label>
             <input type="text" class="form-control" :name="value" v-bind:placeholder="setting.settingCode"
-                   v-bind:value="setting.settingCode">
+                   v-model="setting.settingCode">
           </div>
 
           <div class="col-xs-12">
@@ -95,7 +95,7 @@
         var setting = await otherApi.getSetting(key);
         this.setting = setting.data;
         this.settingBody = JSON.parse(this.setting['settingBody']);
-      }else{
+      } else {
         var settingNew = {};
         settingNew['settingType'] = "SETTING";
         settingNew['settingName'] = "";

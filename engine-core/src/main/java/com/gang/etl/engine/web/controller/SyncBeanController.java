@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.gang.common.lib.to.ResponseModel;
 import com.gang.etl.datacenter.entity.SyncBean;
 import com.gang.etl.datacenter.service.impl.SyncBeanServiceImpl;
+import com.gang.etl.engine.api.query.SearchWrapper;
 import com.gang.etl.engine.web.logic.SyncFieldLogic;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -34,6 +35,13 @@ public class SyncBeanController extends AbstratController<SyncBeanServiceImpl, S
 
     @Autowired
     private SyncBeanServiceImpl beanService;
+
+    @GetMapping("orderList")
+    public ResponseModel getAll() {
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.orderByDesc("bean_type");
+        return ResponseModel.commonResponse(baseMapper.list(queryWrapper));
+    }
 
     /**
      * 扫描指定的包拉取 Bean  信息

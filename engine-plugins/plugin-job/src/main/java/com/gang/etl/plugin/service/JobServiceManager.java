@@ -1,6 +1,6 @@
 package com.gang.etl.plugin.service;
 
-import com.gang.etl.plugin.api.SchedulerService;
+import com.gang.etl.plugin.cache.api.SchedulerService;
 import com.gang.etl.plugin.logic.CustomerJob;
 import com.gang.etl.plugin.to.JobInformation;
 import com.gang.etl.plugin.to.SchedulingPlan;

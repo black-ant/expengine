@@ -8,6 +8,7 @@ import com.gang.common.lib.to.AbstractEntity;
 import java.time.LocalDateTime;
 import java.util.Date;
 
+import com.gang.etl.engine.api.annotation.SyncField;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -34,6 +35,7 @@ public class SyncBusiness extends AbstractEntity {
     /**
      * 业务名称
      */
+    @SyncField
     private String businessName;
 
     /**

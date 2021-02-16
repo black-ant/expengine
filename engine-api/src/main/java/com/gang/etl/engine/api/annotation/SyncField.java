@@ -28,4 +28,15 @@ public @interface SyncField {
 
     String length() default "";
 
+    /**
+     * 展示等级 :
+     * ALL 所有场景均展示
+     * ADMIN 管理员展示
+     * USER 普通人员展示
+     * NONE 不展示
+     *
+     * @return
+     */
+    String viewRole() default "ALL";
+
 }

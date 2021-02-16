@@ -87,17 +87,19 @@
     methods: {
       async save() {
         console.log(this.connectObjBody);
-        if (this.connectObj == null) {
-          var connectObjItem = {};
+        var connectObjItem = {};
+        if (this.connectObj['id'] == null) {
           connectObjItem["fieldBody"] = JSON.stringify(this.connectObjBody);
           connectObjItem["fieldOriginFormat"] = this.beanMap[this.originSelect].beanBody;
           connectObjItem["fieldSourceFormat"] = this.beanMap[this.targetSelect].beanBody;
           connectObjItem["originCode"] = this.beanMap[this.originSelect].beanCode;
-          connectObjItem["targetCode"] = this.beanMap[this.originSelect].beanCode;
+          connectObjItem["targetCode"] = this.beanMap[this.targetSelect].beanCode;
+          connectObjItem["syncTypeCode"] = connectObjItem["originCode"] + "-" + connectObjItem["targetCode"];
         } else {
           this.connectObj['fieldBody'] = JSON.stringify(this.connectObjBody);
+          connectObjItem = this.connectObj;
         }
-        var fieldConnect = await otherApi.saveFiledConnect(this.connectObj);
+        var fieldConnect = await otherApi.saveFiledConnect(connectObjItem);
       },
       // 获取 TO 列表
       async selectBaseTO() {

@@ -32,20 +32,23 @@ public class DictionaryConversion extends AbstractEngineConversion {
 
         SyncFieldInfo syncInfo =
                 syncFiledInfoDAO.selectBySyncType(produceBean.getSyncType() + "_" + consumerBean.getSyncType());
-        logger.debug("------> DictionaryConversion conversion :{} <-------", syncInfo.getSyncTypeCode());
+        logger.info("------> DictionaryConversion conversion :{} -- {} <-------", syncInfo.getSyncTypeCode(),
+                produceBean.getResponse());
+        if (produceBean != null && produceBean.getResponse() != null) {
+            List exchangeList = produceBean.getResponse().getBackData();
 
-        List exchangeList = produceBean.getResponse().getBackData();
-
-        if (syncInfo == null || NONE_TYPE.equals(syncInfo.getTargetCode())) {
-            consumerBean.setData(exchangeList);
-        } else {
-            List overList = new LinkedList();
-            exchangeList.forEach(item -> {
-                String dataStr = JSONObject.toJSONString(item);
-                overList.add(exchangeInfo(syncInfo, JSONObject.parseObject(dataStr)));
-            });
-            consumerBean.setData(overList);
+            if (syncInfo == null || NONE_TYPE.equals(syncInfo.getTargetCode())) {
+                consumerBean.setData(exchangeList);
+            } else {
+                List overList = new LinkedList();
+                exchangeList.forEach(item -> {
+                    String dataStr = JSONObject.toJSONString(item);
+                    overList.add(exchangeInfo(syncInfo, JSONObject.parseObject(dataStr)));
+                });
+                consumerBean.setData(overList);
+            }
         }
+
 
     }
 }

@@ -51,9 +51,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="com-gang-etl-datacenter" />
     <orderEntry type="library" name="Maven: com.gang:com-gang-common-mybatis-plus:1.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.2.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.2.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.5" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.20" level="project" />
     <orderEntry type="library" name="Maven: org.apache.velocity:velocity-engine-core:2.1" level="project" />
     <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-boot-starter:3.3.1.tmp" level="project" />
@@ -123,10 +120,14 @@
     <orderEntry type="library" name="Maven: org.glassfish.jaxb:txw2:2.3.3" level="project" />
     <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:3.0.11" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
-    <orderEntry type="module" module-name="plugin-cache" />
     <orderEntry type="module" module-name="com-gang-etl-support-database" />
     <orderEntry type="library" name="Maven: com.gang:com-gang-etl-common-lib:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.gang:com-gang-common-parent-sdk:1.0.1" level="project" />
+    <orderEntry type="module" module-name="plugin-audit" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.5" level="project" />
+    <orderEntry type="module" module-name="plugin-cache" />
     <orderEntry type="module" module-name="com-gang-etl-engine-core" />
     <orderEntry type="library" name="Maven: com.gang:com-gang-common-swagger:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-swagger2:2.9.2" level="project" />

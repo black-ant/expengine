@@ -28,6 +28,7 @@ D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engi
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\template\SyncErrorTemplate.java
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\container\BaseContainer.java
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\container\SyncBeanFactory.java
+D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\logic\SyncLogService.java
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\template\ConsumerTemplate.java
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\template\ProduceTemplate.java
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\strategy\DatabaseStrategy.java
@@ -35,6 +36,7 @@ D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engi
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\container\SyncContainer.java
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\conversion\AbstractEngineConversion.java
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\logic\SimpleEngineLogic.java
+D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\exchange\MemoryExchange.java
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\web\controller\SyncTypeController.java
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\web\logic\SyncFieldLogic.java
 D:\java\workspace\git\exp\etl-engine\engine-core\src\main\java\com\gang\etl\engine\web\logic\TemplateLogic.java

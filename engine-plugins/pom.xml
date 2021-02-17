@@ -18,6 +18,7 @@
         <module>plugin-elk</module>
         <module>plugin-transaction</module>
         <module>plugin-cache</module>
+        <module>plugin-audit</module>
     </modules>
 
 

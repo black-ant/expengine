@@ -2,6 +2,7 @@ com\gang\etl\datacenter\service\ISyncBusinessItemService.class
 com\gang\etl\datacenter\service\impl\SyncStrategyServiceImpl.class
 com\gang\etl\datacenter\mapper\SyncSettingMapper.class
 com\gang\etl\datacenter\entity\SyncBusiness.class
+com\gang\etl\datacenter\controller\SyncPropertiesController.class
 com\gang\etl\datacenter\mapper\SyncBeanMapper.class
 com\gang\etl\datacenter\entity\ExpUser.class
 com\gang\etl\datacenter\mapper\SyncBusinessRateMapper.class
@@ -29,14 +30,18 @@ com\gang\etl\datacenter\service\impl\SyncBusinessItemServiceImpl.class
 com\gang\etl\datacenter\dao\SyncFiledInfoDAO.class
 com\gang\etl\datacenter\service\ISyncBusinessRateService.class
 com\gang\etl\datacenter\service\ISyncLogService.class
+com\gang\etl\datacenter\service\impl\SyncPropertiesServiceImpl.class
 com\gang\etl\datacenter\dao\AbstractEngineDAO.class
+com\gang\etl\datacenter\service\ISyncPropertiesService.class
 com\gang\etl\datacenter\service\ISyncFieldInfoService.class
 com\gang\etl\datacenter\mapper\SyncFieldInfoMapper.class
 com\gang\etl\datacenter\mapper\SyncTypeMapper.class
 com\gang\etl\datacenter\service\IExpUserService.class
+com\gang\etl\datacenter\entity\SyncProperties.class
 com\gang\etl\datacenter\service\impl\SyncFieldInfoServiceImpl.class
 com\gang\etl\datacenter\service\impl\SyncBusinessServiceImpl.class
 com\gang\etl\datacenter\mapper\MyBatisBaseMapper.class
+com\gang\etl\datacenter\mapper\SyncPropertiesMapper.class
 com\gang\etl\datacenter\entity\SyncBusinessItem.class
 com\gang\etl\datacenter\entity\SyncBean.class
 com\gang\etl\datacenter\entity\SyncSetting.class

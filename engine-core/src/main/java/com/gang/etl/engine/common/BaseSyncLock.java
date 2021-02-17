@@ -31,12 +31,12 @@ public class BaseSyncLock {
         if (lock != null) {
             Integer lockNum = 0;
             do {
-                logger.info("------> doLock :{} <-------", engineBaseBean.getData());
+//                logger.info("------> doLock :{} <-------", engineBaseBean.getData());
                 synchronized (lock) {
                     try {
-                        logger.info("------> no consumer , do lock wait <-------");
+//                        logger.info("------> no consumer , do lock wait <-------");
                         lock.wait(5000);
-                        Thread.sleep(0);
+                        Thread.currentThread().sleep(0);
                     } catch (InterruptedException e) {
                         logger.error("E----> error :{} -- content :{}", e.getClass(), e.getMessage());
                         throw new CommonException("doLock Error");
@@ -44,7 +44,7 @@ public class BaseSyncLock {
                 }
                 lockNum++;
             } while (engineBaseBean.getData() == null && lockNum < 3);
-
+            logger.info("------> doLock :over no data wait <-------");
         }
     }
 

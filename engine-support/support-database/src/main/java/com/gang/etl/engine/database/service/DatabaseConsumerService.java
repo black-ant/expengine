@@ -19,6 +19,14 @@ public class DatabaseConsumerService implements IComsumerService {
 
     @Override
     public EngineConsumerBean execute(EngineConsumerBean consumerBean) {
+        logger.info("------> Database consumer :{} <-------", consumerBean.getBusinessCode());
+        logger.info("------> Database consumer originType:{} <-------", consumerBean.getOriginType());
+        logger.info("------> Database consumer targetType:{} <-------", consumerBean.getTargetType());
+        if (null != consumerBean.getData()) {
+            consumerBean.getData().forEach(item -> {
+                logger.info("------> Database consumer :{} <-------", item);
+            });
+        }
         return null;
     }
 }

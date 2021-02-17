@@ -15,6 +15,7 @@ import com.gang.etl.engine.api.to.SyncStatusTO;
 import com.gang.etl.engine.common.BaseSyncLock;
 import com.gang.etl.engine.config.SystemProperties;
 import com.gang.etl.engine.conversion.DictionaryConversion;
+import com.gang.etl.engine.exchange.MemoryExchange;
 import org.checkerframework.checker.units.qual.A;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,7 +31,7 @@ import java.util.List;
  * @Created by zengzg
  */
 @Component
-public class SyncFlowTemplate extends BaseSyncLock {
+public class SyncFlowTemplate {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -51,9 +52,6 @@ public class SyncFlowTemplate extends BaseSyncLock {
 
     @Autowired
     private SyncBusinessItemServiceImpl businessItemService;
-
-    @Autowired
-    private DictionaryConversion dictionaryConversion;
 
 
     /**
@@ -105,36 +103,30 @@ public class SyncFlowTemplate extends BaseSyncLock {
         // ConsumerSetting
         SyncSetting syncSettingConsumer = syncSettingService.getById(syncBusiness.getSyncConsumerSetting());
 
+        // Add SyncFieldInfo
         SyncFieldInfo fieldInfo = syncFieldInfoService.getById(item.getSyncFieldId());
         engineProduceBean.setOriginType(fieldInfo.getOriginCode());
+        engineProduceBean.setTargetType(fieldInfo.getTargetCode());
         engineProduceBean.setQuery(new BaseQuery(fieldInfo.getProduceQuery()));
         engineProduceBean.setSyncType(fieldInfo.getOriginCode());
+        engineProduceBean.setFieldInfo(fieldInfo);
 
+        // Add Business
+        engineProduceBean.setBusinessCode(syncBusiness.getBusinessCode());
+        engineProduceBean.setConsumerService(syncBusiness.getSyncConsumer());
+        engineProduceBean.setBusiness(syncBusiness);
+
+        engineProduceBean.setLock(new String(""));
+        consumerTemplate.excute(engineProduceBean, syncBusiness.getBusinessCode());
         do {
             try {
-                engineProduceBean.setLock(new String(""));
 
                 // Sync Produce
-                produceTemplate.excute(engineProduceBean);
-                logger.info("------> this is produce data :{} <-------", engineProduceBean.getData());
-
-                // 线程等待
-                doLock(engineProduceBean.getLock(), engineProduceBean);
-
-                // Sync Consumer
-                EngineConsumerBean consumerBean = new EngineConsumerBean(engineProduceBean);
-
-                // 配置信息
-                consumerBean.setSetting(syncSettingConsumer.getSettingBody());
-                consumerBean.setSyncType(fieldInfo.getTargetCode());
-                consumerBean.setServiceName(syncBusiness.getSyncConsumer());
-
-                dictionaryConversion.conversion(engineProduceBean, consumerBean);
-                consumerTemplate.excute(consumerBean);
+                produceTemplate.excute(engineProduceBean, syncSettingConsumer);
 
             } catch (Exception e) {
+                e.printStackTrace();
                 logger.error("E----> error :{} -- content :{}", e.getClass(), e.getMessage());
-
             }
         } while (engineProduceBean.getSyncContinue());
 

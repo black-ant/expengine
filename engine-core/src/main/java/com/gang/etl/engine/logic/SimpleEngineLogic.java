@@ -31,9 +31,9 @@ public class SimpleEngineLogic extends BaseSyncLogic {
         beforeSync(engineBaseBean);
 
         if (engineBaseBean.getTypePart().equals(engineBaseBean.OP_PRODUCE)) {
-            engineBaseBean = produceTemplate.excute(engineBaseBean);
+//            engineBaseBean = produceTemplate.excute(engineBaseBean);
         } else {
-            engineBaseBean = consumerTemplate.excute(engineBaseBean);
+//            engineBaseBean = consumerTemplate.excute(engineBaseBean);
         }
 
         return engineBaseBean;

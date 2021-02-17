@@ -18,6 +18,10 @@
         </dependency>
         <dependency>
             <groupId>com.gang</groupId>
+            <artifactId>com-gang-etl-plugin-cache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.gang</groupId>
             <artifactId>com-gang-etl-engine-api</artifactId>
         </dependency>
         <dependency>

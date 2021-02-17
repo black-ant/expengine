@@ -71,6 +71,7 @@
     <orderEntry type="library" name="Maven: org.webjars:swagger-ui:3.19.4" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.69" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.12" level="project" />
+    <orderEntry type="module" module-name="plugin-cache" />
     <orderEntry type="module" module-name="com-gang-etl-engine-api" />
     <orderEntry type="library" name="Maven: com.gang:com-gang-common-parent-sdk:1.0.1" level="project" />
     <orderEntry type="module" module-name="com-gang-common-lib" />

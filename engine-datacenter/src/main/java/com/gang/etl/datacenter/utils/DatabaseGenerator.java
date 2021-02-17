@@ -32,7 +32,7 @@
 //public class DatabaseGenerator {
 //
 //    private static String[] tableList = {
-//            "sync_bean"
+//            "sync_properties"
 //    };
 //
 //    private static String parentName = "com.gang.etl.datacenter";
@@ -57,7 +57,8 @@
 //
 //        // 数据源配置
 //        DataSourceConfig dsc = new DataSourceConfig();
-//        dsc.setUrl("jdbc:mysql://localhost:3306/expengine?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowMultiQueries=true");
+//        dsc.setUrl("jdbc:mysql://localhost:3306/expengine?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC" +
+//                "&useSSL=false&allowMultiQueries=true");
 //        // dsc.setSchemaName("public");
 //        dsc.setDriverName("com.mysql.jdbc.Driver");
 //        dsc.setUsername("root");

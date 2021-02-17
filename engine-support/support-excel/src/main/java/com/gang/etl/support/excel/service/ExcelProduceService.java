@@ -33,6 +33,6 @@ public class ExcelProduceService implements IProduceService {
         ExcelSetting setting = JSONObject.parseObject(produceBean.getSetting(), ExcelSetting.class);
         List<ExcelUserTO> excelUserTOS = easyExcelManager.syncRead(setting.getExcelPath());
         produceBean.pullAllValue(excelUserTOS);
-        return null;
+        return produceBean;
     }
 }

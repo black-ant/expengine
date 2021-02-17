@@ -94,7 +94,7 @@
           connectObjItem["fieldSourceFormat"] = this.beanMap[this.targetSelect].beanBody;
           connectObjItem["originCode"] = this.beanMap[this.originSelect].beanCode;
           connectObjItem["targetCode"] = this.beanMap[this.targetSelect].beanCode;
-          connectObjItem["syncTypeCode"] = connectObjItem["originCode"] + "-" + connectObjItem["targetCode"];
+          connectObjItem["syncTypeCode"] = connectObjItem["originCode"] + "_" + connectObjItem["targetCode"];
         } else {
           this.connectObj['fieldBody'] = JSON.stringify(this.connectObjBody);
           connectObjItem = this.connectObj;

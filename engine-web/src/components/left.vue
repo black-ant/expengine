@@ -31,11 +31,9 @@
         </router-link>
       </li>
       <li class="list-group-item"><a href="alerts.html"><i class="glyphicon glyphicon-bell"></i>问题告警</a></li>
-      <!--      <li class="list-group-item"><a href="typography.html"><i class="glyphicon glyphicon-font"></i>Typography</a>-->
-      <!--      </li>-->
-      <!--      <li class="list-group-item"><a href="footers.html"><i class="glyphicon glyphicon-minus"></i>Footers</a></li>-->
+
       <li class="list-group-item">
-        <router-link to="/business_rate"><i class="glyphicon glyphicon-list-alt"></i>系统日志
+        <router-link to="/log_list"><i class="glyphicon glyphicon-list-alt"></i>系统日志
         </router-link>
       </li>
       <!--      <li class="list-group-item"><a href="navs.html"><i class="glyphicon glyphicon-th-list"></i>Navs</a></li>-->

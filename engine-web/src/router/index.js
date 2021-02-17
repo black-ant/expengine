@@ -22,6 +22,8 @@ import appsave from '@/pages/app_save'
 import business_rate from '@/pages/business_rate'
 import business_details from '@/pages/business_details'
 
+import loglist from '@/pages/log_list'
+
 Vue.use(Router)
 
 export default new Router({
@@ -92,6 +94,10 @@ export default new Router({
       path: '/appsave',
       name: 'appsave',
       component: appsave
+    }, {
+      path: '/log_list',
+      name: 'loglist',
+      component: loglist
     }
   ]
 })

@@ -14,11 +14,12 @@
         <module name="com-gang-etl-engine-core" />
         <module name="com-gang-common-lib" />
         <module name="com-gang-etl-datacenter" />
+        <module name="plugin-job" />
         <module name="support-ad" />
         <module name="support-excel" />
+        <module name="plugin-audit" />
         <module name="plugin-elk" />
         <module name="com-gang-etl-engine-api" />
-        <module name="plugin-job" />
         <module name="plugin-transaction" />
         <module name="com-gang-etl-support-database" />
       </profile>
@@ -40,6 +41,7 @@
       <module name="com-gang-etl-support-github" target="1.8" />
       <module name="com-gang-etl-support-wechat" target="1.8" />
       <module name="com-gang-etl-support-workwechat" target="1.8" />
+      <module name="plugin-audit" target="1.8" />
       <module name="plugin-cache" target="1.8" />
       <module name="plugin-elk" target="1.8" />
       <module name="plugin-job" target="1.8" />
@@ -63,6 +65,7 @@
       <module name="com-gang-etl-support-github" options="-parameters" />
       <module name="com-gang-etl-support-wechat" options="-parameters" />
       <module name="com-gang-etl-support-workwechat" options="-parameters" />
+      <module name="plugin-audit" options="-parameters" />
       <module name="plugin-cache" options="-parameters" />
       <module name="plugin-elk" options="-parameters" />
       <module name="plugin-job" options="-parameters" />

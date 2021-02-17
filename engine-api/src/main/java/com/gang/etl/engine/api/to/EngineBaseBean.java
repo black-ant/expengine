@@ -1,9 +1,7 @@
 package com.gang.etl.engine.api.to;
 
-import com.alibaba.fastjson.JSONObject;
 import com.gang.etl.engine.api.common.IEngineService;
 import com.gang.etl.engine.api.query.BaseQuery;
-import com.gang.etl.engine.api.request.SyncBusinessRequest;
 import lombok.Data;
 
 import java.util.List;
@@ -79,6 +77,11 @@ public class EngineBaseBean<T> {
      * 处理类
      */
     private IEngineService engineService;
+    private String produceService;
+    private String consumerService;
+
+    private ISyncBusiness business;
+    private ISyncFieldInfo fieldInfo;
 
     /**
      * 同步锁
@@ -94,6 +97,5 @@ public class EngineBaseBean<T> {
      * 是否继续
      */
     private Boolean syncContinue = Boolean.FALSE;
-
 
 }

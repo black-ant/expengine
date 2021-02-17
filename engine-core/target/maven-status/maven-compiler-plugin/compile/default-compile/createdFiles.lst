@@ -1,5 +1,6 @@
 com\gang\etl\engine\web\controller\UserController.class
 com\gang\etl\engine\logic\BaseSyncLogic.class
+com\gang\etl\engine\exchange\MemoryExchange.class
 com\gang\etl\engine\web\controller\SyncLogController.class
 com\gang\etl\engine\web\controller\AbstratController.class
 com\gang\etl\engine\web\logic\SyncSettingLogic.class
@@ -24,6 +25,7 @@ com\gang\etl\engine\web\controller\SyncTypeController.class
 com\gang\etl\engine\strategy\ISyncStrategy.class
 com\gang\etl\engine\container\SyncContainer.class
 com\gang\etl\engine\web\logic\SyncBusinessItemLogic.class
+com\gang\etl\engine\logic\SyncLogService.class
 com\gang\etl\engine\common\BaseSyncLock.class
 com\gang\etl\engine\config\SystemProperties.class
 com\gang\etl\engine\template\SyncErrorTemplate.class

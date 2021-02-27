@@ -2494,7 +2494,7 @@ th {
 }
 
 .table-hover > tbody > tr:hover {
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
 table col[class*=col-] {
@@ -2510,7 +2510,7 @@ table td[class*=col-], table th[class*=col-] {
 }
 
 .table > tbody > tr.active > td, .table > tbody > tr.active > th, .table > tbody > tr > td.active, .table > tbody > tr > th.active, .table > tfoot > tr.active > td, .table > tfoot > tr.active > th, .table > tfoot > tr > td.active, .table > tfoot > tr > th.active, .table > thead > tr.active > td, .table > thead > tr.active > th, .table > thead > tr > td.active, .table > thead > tr > th.active {
-  background-color: #f5f5f5;
+  background-color: #FFF;
 }
 
 .table-hover > tbody > tr.active:hover > td, .table-hover > tbody > tr.active:hover > th, .table-hover > tbody > tr:hover > .active, .table-hover > tbody > tr > td.active:hover, .table-hover > tbody > tr > th.active:hover {
@@ -9146,7 +9146,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:focus, a.list-group-it
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
+  left: 0%;
   margin-left: -1px;
   width: 2px;
   content: '';
@@ -9158,7 +9158,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:focus, a.list-group-it
   position: relative;
   top: 30px;
   padding: 3px 5px;
-  margin: 0 auto 30px;
+  margin: 0 auto 30px 0;
   text-align: center;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -9178,7 +9178,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:focus, a.list-group-it
 .timeline dl dd .circ {
   position: absolute;
   top: 40px;
-  left: 50%;
+  left: 0%;
   margin-left: -11px;
   border: 4px solid #F5F7FA;
   width: 22px;
@@ -9208,7 +9208,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:focus, a.list-group-it
   -moz-border-radius: 4px;
   border-radius: 4px;
   background-color: #E6E9ED;
-  width: 47%;
+  width: 98%;
 }
 
 .timeline dl dd .events:before {

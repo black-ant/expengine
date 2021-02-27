@@ -1,40 +1,52 @@
 <template>
-  <div class="content-row">
-    <div class="row">
+
+  <div class="col-xs-12 col-sm-9 content">
+    <div class="panel panel-default">
+      <div class="panel-body">
+      </div>
     </div>
-    <div class="bs-example">
-      <table class="table">
-        <thead>
-        <tr>
-          <th>业务名称</th>
-          <th>业务唯一编码</th>
-          <th>业务描述</th>
-          <th>业务类型</th>
-          <th>生产者</th>
-          <th>消费者</th>
-          <th>配置设置
-            <button type="button" class="btn btn-success" v-on:click="goTo('1')">创建</button>
-          </th>
-        </tr>
-        </thead>
-        <tbody>
+    <div class="panel panel-default">
+      <div class="panel-body">
 
-        <tr class="active" v-for="item in apps">
-          <td>{{item.businessName}}</td>
-          <td>{{item.businessCode}}</td>
-          <td>{{item.businessDesc}}</td>
-          <td>{{item.businessCode}}</td>
-          <td>{{item.syncProduce}}</td>
-          <td>{{item.syncConsumer}}</td>
-          <td>
-            <button class="btn btn-info" v-on:click="goTo(item.id)">编辑</button>
-            <button class="btn btn-info" v-on:click="detail()">详情</button>
-            <button type="button" class="btn btn-danger btn-info">删除</button>
-          </td>
-        </tr>
+        <div class="content-row">
+          <div class="row">
+          </div>
+          <div class="bs-example">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>业务名称</th>
+                <th>业务唯一编码</th>
+                <th>业务描述</th>
+                <th>业务类型</th>
+                <th>生产者</th>
+                <th>消费者</th>
+                <th>配置设置
+                  <button type="button" class="btn btn-success" v-on:click="goTo('1')">创建</button>
+                </th>
+              </tr>
+              </thead>
+              <tbody>
 
-        </tbody>
-      </table>
+              <tr class="active" v-for="item in apps">
+                <td>{{item.businessName}}</td>
+                <td>{{item.businessCode}}</td>
+                <td>{{item.businessDesc}}</td>
+                <td>{{item.businessCode}}</td>
+                <td>{{item.syncProduce}}</td>
+                <td>{{item.syncConsumer}}</td>
+                <td>
+                  <button class="btn btn-info" v-on:click="goTo(item.id)">编辑</button>
+                  <button class="btn btn-info" v-on:click="detail()">详情</button>
+                  <button type="button" class="btn btn-danger btn-info">删除</button>
+                </td>
+              </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

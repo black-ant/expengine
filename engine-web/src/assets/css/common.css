@@ -32,7 +32,7 @@
   border-color: #ffffff;
 }
 
-.common .alert{
+.common .alert {
   position: fixed;
   height: 5em;
   line-height: 3em;
@@ -42,5 +42,140 @@
   padding-right: 35px;
   padding-left: 3em;
   font-size: 1em;
-  z-index:999;
+  z-index: 999;
+}
+
+.common .text {
+  line-height: 3em;
+}
+
+.common .form-search i {
+  line-height: 2.3em;
+}
+
+.common .selecter_3 {
+  line-height: 2.3em;
+}
+
+.common .top_title {
+  border: 1px solid rgba(200, 200, 200, 0.75);
+  border-radius: 2px;
+  padding-bottom: 0;
+  padding: 0.5em 0em;
+  color: #0078DF;
+}
+
+.common .panel-self-footer .panel-self-footer-button {
+  padding-right: 0px;
+}
+
+.common .table_backgroud_frame {
+  background-color: rgba(200, 200, 200, 0.75);
+  padding-top: 8px;
+  padding-bottom: 0px;
+}
+
+.common .table_frame {
+  border: 1px solid rgba(200, 200, 200, 0.75);
+  padding: 8px 8px;
+}
+
+.common .panel-body-top {
+  padding: 0.3em 0 0 0;
+}
+
+.common .panel-body-top .breadcrumb-arrow {
+  padding: 0.3em 0 0 0;
+  height: 41px;
+}
+
+.common .panel-body-top .breadcrumb {
+  margin-bottom: 0.2em;
+}
+
+.common .panel-body-top button {
+  margin-top: 0.5em;
+}
+
+.common .panel-body-top .button-top {
+  margin: 1px;
+  padding: 0 1px 0 1px;
+}
+
+.commom .glyphicon-ok {
+  margin-right: 10px;
+}
+
+.common .top_title .button {
+  line-height: 2em;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+
+.common .form-search .btn-primary {
+  height: 2.8em;
+  width: 6em;
+}
+
+.common .search_left {
+  font-weight: 700;
+  background-color: #3BAFDA;
+}
+
+.btn_table_common {
+  width: 4.5em;
+  padding: 3px 0px;
+}
+
+.panel-body .panel-heading {
+
+}
+
+
+tr {
+  font-size: 10px;
+}
+
+tr td {
+  padding-top: 10px;
+}
+
+table tr td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+}
+
+.panel-default-heading {
+
+}
+
+.table_in .panel-body {
+  padding: 0px !important;
+}
+
+.btn_table_common_delete {
+  width: 4.5em;
+  border-color: #DA4453;
+  background-color: #DA4453;
+  color: #FFF;
+  padding: 3px 0px;
+}
+
+.content-row .table .row {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.content-row .table .row .col-md-2 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.content-row .table .row .col-md-3 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }

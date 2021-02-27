@@ -1,35 +1,47 @@
 <template>
-  <div class="content-row" id="main_bdoy_id">
-    <div class="row content-row-modal">
-      <div class="col-md-12">
-        <h2 class="content-row-title">Modals</h2>
-        <div class="alert alert-success alert-dismissable" v-if="show">
-          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-          <strong>保存成功!</strong>
-        </div>
-        <div class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">Contact</h4>
+
+  <div class="col-xs-12 col-sm-9 content">
+    <div class="panel panel-default">
+      <div class="panel-body">
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+        <div class="content-row" id="main_bdoy_id">
+          <div class="row content-row-modal">
+            <div class="col-md-12">
+              <h2 class="content-row-title">Modals</h2>
+              <div class="alert alert-success alert-dismissable" v-if="show">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>保存成功!</strong>
               </div>
-              <div class="modal-body">
-                <p>配置连接信息</p>
-                <div class="row">
-                  <div class="col-xs-8" v-for="(value, key) in typeto"  v-show="key!='id'">
-                    <label>{{key}}</label>
-                    <input type="text" class="form-control" :name="value" v-bind:placeholder="value"
-                           v-model="typeto[key]">
+              <div class="modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Contact</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>配置连接信息</p>
+                      <div class="row">
+                        <div class="col-xs-8" v-for="(value, key) in typeto" v-show="key!='id'">
+                          <label>{{key}}</label>
+                          <input type="text" class="form-control" :name="value" v-bind:placeholder="value"
+                                 v-model="typeto[key]">
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" v-on:click="save()">save</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-success" v-on:click="save()">save</button>
-                </div>
               </div>
+
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

@@ -1,5 +1,13 @@
 <template>
-  <div class="content-row common">
+  <div class="col-xs-12 col-sm-9 content">
+    <div class="panel panel-default">
+      <div class="panel-body">
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+      <div class="content-row common">
     <div class="col-md-12 container-fluid">
       <div class="collapse navbar-collapse" id="bs-content-row-navbar-collapse-8">
 
@@ -33,13 +41,24 @@
           <td>{{item.settingTypeCode}}</td>
           <td>{{item.settingPolicy}}</td>
           <td>
-            <button v-on:click="edit(item.id)">编辑</button>
-            <button v-on:click="deleteOne(item.id)">删除</button>
+            <div class="row">
+              <div class="col-md-2">
+                <button class="btn btn-default btn-block btn_table_common" v-on:click="edit(item.id)">编辑</button>
+              </div>
+              <div class="col-md-3">
+                <button class="btn btn-default btn-block btn_table_common_delete" v-on:click="deleteOne(item.id)">删除
+                </button>
+              </div>
+            </div>
           </td>
         </tr>
 
         </tbody>
       </table>
+    </div>
+  </div>
+
+      </div>
     </div>
   </div>
 </template>
@@ -66,7 +85,7 @@
       newSetting() {
         this.$router.push('/setting_save');
       },
-      async selectAll(){
+      async selectAll() {
         var settingsBack = await otherApi.listSetting();
         this.settings = settingsBack.data;
         console.log("setting is :%o", settingsBack)

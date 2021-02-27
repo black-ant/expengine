@@ -1,47 +1,73 @@
 <template>
-  <div class="content-row">
-    <div class="col-md-12">
-      <div class="row ">
-        <div class="col-md-3 right">
-          <button type="button" class="btn btn-primary btn-block" v-on:click="query()">刷新</button>
-        </div>
-        <div class="col-md-3 right">
-          <button type="button" class="btn btn-success btn-block" v-on:click="scan()">拉取</button>
-        </div>
+
+  <div class="col-xs-12 col-sm-9 content">
+    <div class="panel panel-default">
+      <div class="panel-body">
       </div>
     </div>
-    <div class="col-md-12">
-      <div class="panel-group panel-group-lists collapse in" id="accordion2" style="">
-        <div class="panel" v-for="(item,index) in filedList">
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+        <div class="parent_common">
           <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion2" :href="'#collapse'+item.beanName"
-                 class="collapsed" v-on:click="select(index)">
-                {{item.beanType}} - {{item.beanAppCode}} - {{item.beanName}}
-              </a>
-            </h4>
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span
+                  class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> 工作界面
+                </h3>
+              </div>
+              <div class="col-md-6">
+              </div>
+              <div class="col-md-3">
+                <div class="col-md-6 right">
+                  <button type="button" class="btn btn-primary btn-block" v-on:click="query()">刷新</button>
+                </div>
+                <div class="col-md-6 right">
+                  <button type="button" class="btn btn-success btn-block" v-on:click="scan()">拉取</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div :id="'collapse'+item.beanName" class="panel-collapse collapse" style="height: 0px;">
-            <div class="panel-body">
-              <div class="table-responsive">
-                <table class="table table-bordered table-striped">
-                  <colgroup>
-                    <col class="col-xs-1">
-                    <col class="col-xs-7">
-                  </colgroup>
-                  <thead>
-                  <tr>
-                    <th>属性名</th>
-                    <th>含义</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr class="active" v-for="param in params">
-                    <td>{{param.key}}</td>
-                    <td>{{param.desc}}</td>
-                  </tr>
-                  </tbody>
-                </table>
+          <div class="content-row">
+            <div class="col-md-12">
+              <div class="panel-group panel-group-lists collapse in" id="accordion2" style="">
+                <div class="panel" v-for="(item,index) in filedList">
+                  <div class="glyphicon-class">
+
+                  </div>
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion2" :href="'#collapse'+item.beanName"
+                         class="collapsed" v-on:click="select(index)">
+                        {{item.beanType}} - {{item.beanAppCode}} - {{item.beanName}}
+                      </a>
+                    </h4>
+                  </div>
+                  <div :id="'collapse'+item.beanName" class="panel-collapse collapse table_in" style="height: 0px;">
+                    <div class="panel-body">
+                      <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                          <colgroup>
+                            <col class="col-xs-1">
+                            <col class="col-xs-7">
+                          </colgroup>
+                          <thead>
+                          <tr>
+                            <th>属性名</th>
+                            <th>含义</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr class="active" v-for="param in params">
+                            <td>{{param.key}}</td>
+                            <td>{{param.desc}}</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -89,11 +115,5 @@
 </script>
 
 <style scoped>
-  tr {
-    font-size: 15px;
-  }
-
-  tr td {
-    padding-top: 14px;
-  }
+  @import "../assets/css/common.css";
 </style>

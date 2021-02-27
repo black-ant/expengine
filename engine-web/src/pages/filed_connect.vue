@@ -1,28 +1,47 @@
 <template>
-  <div class="container-fluid common">
+  <div class="col-xs-12 col-sm-9 content">
+    <div class="panel panel-default">
+      <div class="panel-body">
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+
+      <div class="container-fluid common">
     <div class="content-row">
       <div class="row">
         <div class="col-md-6">
-          <select name="selecter_basic" class="selecter_3" data-selecter-options='{"cover":"true"}'
-                  v-model="fieldConnectSelect" @change="changeConnect($event)">
-            <option :value="item.id" v-for="item in connectList">{{item.syncTypeCode}}</option>
-          </select>
+          <div class="input-group form-search">
+            <select name="selecter_basic" class="selecter_3 form-control search-query"
+                    data-selecter-options='{"cover":"true"}'
+                    v-model="fieldConnectSelect" @change="changeConnect($event)">
+              <option :value="item.id" v-for="item in connectList">{{item.syncTypeCode}}</option>
+            </select>
+            <span class="input-group-btn">
+                <button data-type="last" class="btn btn-primary" type="submit"
+                        v-on:click="selectConnect()">选择</button>
+            </span>
+          </div>
         </div>
-        <div class="col-md-3">
-          <button type="button" class="btn btn-primary btn-block" v-on:click="selectBaseTO()">新建</button>
-        </div>
-        <div class="col-md-3">
-          <button type="button" class="btn btn-primary btn-block" v-on:click="selectConnect()">选择</button>
+        <div class="col-md-6 top_title">
+          <div class="col-md-2 button">
+            <span class="glyphicon glyphicon-plus" v-on:click="selectBaseTO()">新建</span>
+          </div>
         </div>
       </div>
 
-      <div class="row" v-show="show_create">
+      <div class="row table_backgroud_frame " v-show="show_create">
+
         <div class="col-md-4">
           <select name="selecter_basic" class="selecter_3" data-selecter-options='{"cover":"true"}'
                   v-model="originSelect" @change="changeConnect($event)">
             <option :value="item.id" v-for="item in beanList">{{item.beanCode}}</option>
           </select>
         </div>
+        <!--        <div class="col-md-2">-->
+        <!--          <span class="glyphicon glyphicon-resize-horizontal"></span>-->
+        <!--        </div>-->
         <div class="col-md-4">
           <select name="selecter_basic" class="selecter_3" data-selecter-options='{"cover":"true"}'
                   v-model="targetSelect" @change="changeConnect($event)">
@@ -38,29 +57,34 @@
       </div>
 
 
-      <div class="panel panel-default">
-        <div class="panel-heading">配置映射 :</div>
+      <div class="panel panel-default table_frame">
         <div class="row" v-for="(value,key) in connectObjBody">
-          <div class="col-md-5">
+          <div class="col-md-4">
             <input type="text" placeholder="Text input" class="form-control" :name="key" :value="key">
           </div>
-          <div class="col-md-5">
+          <div class="col-md-4">
             <input type="text" placeholder="Text input" class="form-control" :name="value" v-bind:placeholder="value"
                    v-model="connectObjBody[key]">
           </div>
           <div class="col-md-1">
-            <button type="button" class="btn btn-primary btn-block">锁定</button>
+            <button type="button" class="btn btn-primary btn-block"><span class="glyphicon-link">锁定</span></button>
           </div>
           <div class="col-md-1">
-            <button type="button" class="btn btn-primary btn-block">删除</button>
+            <button type="button" class="btn btn-primary btn-block"><span class="glyphicon-remove-circle">删除</span>
+            </button>
           </div>
         </div>
       </div>
-
-      <div class="col-md-12">
-        <button type="button" class="btn btn-primary btn-block" v-on:click="save()">保存</button>
+      <div class="panel panel-default panel-self-footer">
+        <div class="col-md-10"></div>
+        <div class="col-md-2 panel-self-footer-button">
+          <button type="button" class="btn btn-primary btn-block" v-on:click="save()">保存</button>
+        </div>
       </div>
 
+    </div>
+  </div>
+      </div>
     </div>
   </div>
 </template>
@@ -68,6 +92,7 @@
 <script>
 
   import otherApi from '../restful/otherApi.js';
+  import selfJS from '../restful/properties.js';
 
   export default {
     name: "filedInfo",
@@ -133,6 +158,11 @@
       async selectConnect() {
         var fieldConnect = await otherApi.getFiledConnect(this.fieldConnectSelect);
         console.log("connectObj is :%o", fieldConnect);
+
+        // 缓存上一次选择的类型
+        if (fieldConnect != null) {
+          localStorage.setItem(selfJS.constant.FIELD_CONNECT_SELECT, this.fieldConnectSelect);
+        }
         this.connectObj = fieldConnect.data;
         this.connectObjBody = JSON.parse(fieldConnect.data.fieldBody);
       },
@@ -147,6 +177,11 @@
       var connectList = await otherApi.listFiledConnect();
       console.log("connectList is :%o", connectList);
       this.connectList = connectList.data;
+      var cacheSelect = localStorage.getItem(selfJS.constant.FIELD_CONNECT_SELECT);
+      if (cacheSelect != null) {
+        this.fieldConnectSelect = cacheSelect;
+        this.selectConnect();
+      }
     },
   }
 </script>

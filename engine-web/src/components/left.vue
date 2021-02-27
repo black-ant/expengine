@@ -26,10 +26,10 @@
         <router-link to="/filedConnect"><i class="glyphicon glyphicon-th-list"></i>关联关系
         </router-link>
       </li>
-      <li class="list-group-item">
-        <router-link to="/business_rate"><i class="glyphicon glyphicon-th-list"></i>业务进度
-        </router-link>
-      </li>
+<!--      <li class="list-group-item">-->
+<!--        <router-link to="/business_rate"><i class="glyphicon glyphicon-th-list"></i>业务进度-->
+<!--        </router-link>-->
+<!--      </li>-->
       <li class="list-group-item"><a href="alerts.html"><i class="glyphicon glyphicon-bell"></i>问题告警</a></li>
 
       <li class="list-group-item">

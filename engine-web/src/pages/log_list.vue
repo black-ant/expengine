@@ -1,5 +1,14 @@
 <template>
-  <div class="content-row common">
+
+  <div class="col-xs-12 col-sm-9 content">
+    <div class="panel panel-default">
+      <div class="panel-body">
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+      <div class="content-row common">
     <div class="alert alert-success alert-dismissable alert" v-show="showSuccessAlter">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
       <strong>保存成功!</strong>
@@ -37,6 +46,10 @@
 
         </tbody>
       </table>
+    </div>
+  </div>
+
+      </div>
     </div>
   </div>
 </template>

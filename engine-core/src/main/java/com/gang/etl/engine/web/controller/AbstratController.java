@@ -2,6 +2,7 @@ package com.gang.etl.engine.web.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.gang.common.lib.to.AbstractEntity;
 import com.gang.common.lib.to.ResponseModel;
 import com.gang.common.lib.utils.ReflectionUtils;
@@ -27,7 +28,7 @@ import java.lang.reflect.Type;
  * @Created by zengzg
  */
 @Data
-public class AbstratController<T extends IService, D extends AbstractEntity> {
+public class AbstratController<T extends ServiceImpl, D extends AbstractEntity> {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 

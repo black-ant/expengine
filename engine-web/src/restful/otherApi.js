@@ -110,6 +110,11 @@ export default {
   },
   startBusiness(businessId) {
     return common.get("/excute/business/single/" + businessId);
+  },
+  // 查询日志
+  listLogsPage(businessId, page, size) {
+    var pageSearch = "?page=" + page + "&size=" + size;
+    return common.get("/sync/log/listByPage/" + businessId + pageSearch);
   }
 
 

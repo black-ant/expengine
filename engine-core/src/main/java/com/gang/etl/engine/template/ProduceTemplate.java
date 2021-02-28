@@ -10,7 +10,9 @@ import com.gang.etl.engine.container.SyncBeanFactory;
 import com.gang.etl.engine.conversion.DictionaryConversion;
 import com.gang.etl.engine.exchange.MemoryExchange;
 import com.gang.etl.engine.logic.SyncLogService;
+import com.gang.etl.engine.strategy.PageStrategy;
 import com.gang.etl.engine.thread.EngineThread;
+import org.checkerframework.checker.units.qual.A;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +45,8 @@ public class ProduceTemplate extends BaseSyncLock {
     private SyncBeanFactory syncBeanFactory;
     @Autowired
     private SyncLogService syncLogService;
+    @Autowired
+    private PageStrategy pageStrategy;
 
 
     /**
@@ -72,17 +76,25 @@ public class ProduceTemplate extends BaseSyncLock {
             consumerBean.setSetting(syncSetting.getSettingBody());
             consumerBean.setSyncType(engineProduceBean.getTargetType());
             consumerBean.setServiceName(engineProduceBean.getConsumerService());
+            consumerBean.setBusiness(engineProduceBean.getBusiness());
 
             dictionaryConversion.conversion(engineProduceBean, consumerBean);
-            try {
-                exchange.produceData(consumerBean, engineProduceBean.getBusinessCode());
-            } catch (InterruptedException e) {
-                logger.error("E----> error :{} -- content :{}", e.getClass(), e.getMessage());
-            }
-            logger.info("------> this is produce data :{} <-------", engineProduceBean.getData());
 
-            //  TODO : log 记录方式 , 直接写或者通过 Audit 方式
-            syncLogService.addLog(engineProduceBean);
+            // TODO : 根据情况切分数据
+            pageStrategy.splitBean(consumerBean).forEach(item -> {
+                logger.info("------> [切分数据] : {} <-------", item.getData());
+                try {
+                    // 将数据入栈
+                    exchange.produceData(item, engineProduceBean.getBusinessCode());
+
+                    //  备份记录 , 用于出现异常后的补救操作
+                    syncLogService.addLog(item);
+                } catch (InterruptedException e) {
+                    logger.error("E----> error :{} -- content :{}", e.getClass(), e.getMessage());
+                }
+                logger.info("------> this is produce data :{} <-------", engineProduceBean.getData());
+            });
+
 
         });
     }

@@ -33,8 +33,11 @@ public class SyncLogService {
         SyncLog log = new SyncLog();
         log.setLogDomain(syncBaseBean.getSyncType());
         log.setLogStatus("0");
-        log.setSyncBusiness(syncBaseBean.getBusinessCode());
+        log.setSyncBusiness(syncBaseBean.getBusiness().getId());
+        log.setSyncInfo(String.valueOf(syncBaseBean.getBusiness()));
         log.setLogRequest("");
+        log.setSyncVersion("0");
+        log.setLogData(JSONObject.toJSONString(syncBaseBean.getData()));
         log.setLogResponse(JSONObject.toJSONString(syncBaseBean.getResponse()));
         log.setCreateDate(new Date());
         logService.save(log);

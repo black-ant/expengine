@@ -1,5 +1,6 @@
 package com.gang.etl.engine.database.service;
 
+import com.alibaba.fastjson.JSONObject;
 import com.gang.etl.engine.api.common.IComsumerService;
 import com.gang.etl.engine.api.to.EngineConsumerBean;
 import org.slf4j.Logger;
@@ -19,7 +20,7 @@ public class DatabaseConsumerService implements IComsumerService {
 
     @Override
     public EngineConsumerBean execute(EngineConsumerBean consumerBean) {
-        logger.info("------> Database consumer :{} <-------", consumerBean.getBusinessCode());
+        logger.info("------> [数据库消费数据] :{} <-------", JSONObject.toJSONString(consumerBean));
         logger.info("------> Database consumer originType:{} <-------", consumerBean.getOriginType());
         logger.info("------> Database consumer targetType:{} <-------", consumerBean.getTargetType());
         if (null != consumerBean.getData()) {

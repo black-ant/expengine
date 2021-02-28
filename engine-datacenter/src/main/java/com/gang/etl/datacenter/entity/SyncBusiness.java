@@ -296,4 +296,28 @@ public class SyncBusiness extends AbstractEntity implements ISyncBusiness {
     public void setBusineStatus(String busineStatus) {
         this.busineStatus = busineStatus;
     }
+
+    @Override
+    public String toString() {
+        return "SyncBusiness{" +
+                "id='" + id + '\'' +
+                ", businessName='" + businessName + '\'' +
+                ", businessCode='" + businessCode + '\'' +
+                ", businessDesc='" + businessDesc + '\'' +
+                ", businessType='" + businessType + '\'' +
+                ", businessTypeSort='" + businessTypeSort + '\'' +
+                ", businessTypeInfo='" + businessTypeInfo + '\'' +
+                ", syncProduce='" + syncProduce + '\'' +
+                ", syncProduceSetting='" + syncProduceSetting + '\'' +
+                ", syncConsumer='" + syncConsumer + '\'' +
+                ", syncConsumerSetting='" + syncConsumerSetting + '\'' +
+                ", syncSchedule='" + syncSchedule + '\'' +
+                ", syncInfo='" + syncInfo + '\'' +
+                ", syncField='" + syncField + '\'' +
+                ", syncStrategy='" + syncStrategy + '\'' +
+                ", createDate=" + createDate +
+                ", createUser='" + createUser + '\'' +
+                ", busineStatus='" + busineStatus + '\'' +
+                '}';
+    }
 }

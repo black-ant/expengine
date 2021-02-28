@@ -52,6 +52,11 @@ public class SyncLog extends AbstractEntity {
     private String logRequest;
 
     /**
+     *
+     */
+    private String logData;
+
+    /**
      * 同步返回
      */
     private String logResponse;

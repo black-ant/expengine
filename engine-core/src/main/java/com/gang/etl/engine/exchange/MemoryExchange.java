@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TransferQueue;
 
 /**
  * @Classname MemoryExchange
@@ -20,7 +21,6 @@ import java.util.concurrent.ConcurrentHashMap;
 public class MemoryExchange implements IExchangeService {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
-
     private static ConcurrentHashMap<String, MemoryCacheManger> syncMap = new ConcurrentHashMap();
 
     /**

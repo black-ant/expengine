@@ -57,12 +57,25 @@
   line-height: 2.3em;
 }
 
+.common .text-title {
+  font-weight: 700;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px rgb(255 255 255);
+  color: #000000;
+  /*border-top: 1px solid rgba(200, 200, 200, 0.75);*/
+}
+
 .common .top_title {
   border: 1px solid rgba(200, 200, 200, 0.75);
   border-radius: 2px;
   padding-bottom: 0;
   padding: 0.5em 0em;
   color: #0078DF;
+}
+
+.navbar-header .navbar-brand {
+  color: #053b8c;
+  font-weight: bold;
 }
 
 .common .panel-self-footer .panel-self-footer-button {
@@ -110,6 +123,18 @@
   line-height: 2em;
   padding-bottom: 0;
   cursor: pointer;
+}
+
+.common .float-left {
+  float: left;
+}
+
+.common .float-right {
+  float: right;
+}
+
+.common .glyphicon {
+  margin-right: 3px;
 }
 
 .common .form-search .btn-primary {

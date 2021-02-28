@@ -4175,6 +4175,8 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
   padding: 15px;
   font-size: 18px;
   line-height: 20px;
+  color: #053b8c;
+  font-weight: bold;
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
@@ -11852,7 +11854,7 @@ body {
 .navbar-custom {
   border: none;
   border-radius: 0;
-  background-color: #303641;
+  background-color: #ffffff;
   width: 100%;
   font-size: 12px;
   margin-bottom: 10px;

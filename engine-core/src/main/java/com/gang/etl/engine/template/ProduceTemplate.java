@@ -2,7 +2,6 @@ package com.gang.etl.engine.template;
 
 import com.gang.etl.datacenter.entity.SyncSetting;
 import com.gang.etl.engine.api.common.IEngineService;
-import com.gang.etl.engine.api.to.EngineBaseBean;
 import com.gang.etl.engine.api.to.EngineConsumerBean;
 import com.gang.etl.engine.api.to.EngineProduceBean;
 import com.gang.etl.engine.common.BaseSyncLock;
@@ -10,9 +9,8 @@ import com.gang.etl.engine.container.SyncBeanFactory;
 import com.gang.etl.engine.conversion.DictionaryConversion;
 import com.gang.etl.engine.exchange.MemoryExchange;
 import com.gang.etl.engine.logic.SyncLogService;
-import com.gang.etl.engine.strategy.PageStrategy;
+import com.gang.etl.engine.strategy.operation.PageStrategy;
 import com.gang.etl.engine.thread.EngineThread;
-import org.checkerframework.checker.units.qual.A;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

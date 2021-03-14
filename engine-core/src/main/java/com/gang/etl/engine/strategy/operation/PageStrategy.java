@@ -1,4 +1,4 @@
-package com.gang.etl.engine.strategy;
+package com.gang.etl.engine.strategy.operation;
 
 import cn.hutool.core.collection.CollectionUtil;
 import com.gang.etl.engine.api.to.EngineConsumerBean;
@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * @Classname PageStrategy
- * @Description TODO
+ * @Description 数据切分策略
  * @Date 2021/2/28 13:05
  * @Created by zengzg
  */

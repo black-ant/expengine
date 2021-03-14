@@ -1,6 +1,7 @@
-package com.gang.etl.engine.strategy;
+package com.gang.etl.engine.strategy.sync;
 
 import com.gang.etl.engine.api.to.EngineBaseBean;
+import com.gang.etl.engine.strategy.ISyncStrategy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Component;
  * @Created by zengzg
  */
 @Component
-public class CacheStrategy implements ISyncStrategy {
+public class RedisStrategy implements ISyncStrategy {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 

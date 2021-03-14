@@ -53,6 +53,9 @@ public class SyncFlowTemplate {
     @Autowired
     private SyncBusinessItemServiceImpl businessItemService;
 
+    @Autowired
+    private SyncErrorTemplate syncErrorTemplate;
+
 
     /**
      * 执行流程
@@ -117,16 +120,15 @@ public class SyncFlowTemplate {
         engineProduceBean.setBusiness(syncBusiness);
 
         engineProduceBean.setLock(new String(""));
-        consumerTemplate.excute(engineProduceBean, syncBusiness.getBusinessCode());
+        consumerTemplate.excute(null, syncBusiness.getBusinessCode());
         do {
             try {
-
                 // Sync Produce
                 produceTemplate.excute(engineProduceBean, syncSettingConsumer);
-
             } catch (Exception e) {
-                e.printStackTrace();
                 logger.error("E----> error :{} -- content :{}", e.getClass(), e.getMessage());
+                syncErrorTemplate.excute(engineProduceBean);
+
             }
         } while (engineProduceBean.getSyncContinue());
 

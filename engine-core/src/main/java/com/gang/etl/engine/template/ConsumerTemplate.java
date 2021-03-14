@@ -38,34 +38,45 @@ public class ConsumerTemplate extends BaseSyncLock {
     private Integer tryNum = 5;
 
     /**
+     * @param engineBaseBean
+     */
+    public void excuteRest(EngineBaseBean engineBaseBean) {
+        excute(engineBaseBean, null);
+    }
+
+    /**
      * @param rountingKey
      * @return
      */
-    public void excute(EngineProduceBean engineBaseBean, String rountingKey) {
+    public void excute(EngineBaseBean engineBaseBean, String rountingKey) {
 
         logger.info("------> ConsumerTemplate excute run  :{} <-------", rountingKey);
         // Step 1 : do strategy
 
         // Step : do beforew
         // Step : do Thead
-        executor.submit(() -> {
-            int i = 0;
-            do {
-                try {
-                    EngineConsumerBean consumerBean = exchange.consumerData(rountingKey);
-                    logger.info("------> ConsumerTemplate pop customerBean  :{} -- {} <-------", consumerBean,
-                            rountingKey);
-                    if (consumerBean != null) {
-                        engineThread.createThread(consumerBean);
-                    } else {
+//        executor.submit(() -> {
+        int i = 0;
+        do {
+            try {
+                EngineBaseBean consumerBean = engineBaseBean != null ? engineBaseBean : exchange.consumerData(rountingKey);
+                logger.info("------> ConsumerTemplate pop customerBean  :{} -- {} <-------", consumerBean,
+                        rountingKey);
+                if (consumerBean != null) {
+                    engineThread.createThread(consumerBean);
+                } else {
+                    if (engineBaseBean != null) {
                         doLock(engineBaseBean.getLock(), engineBaseBean);
                     }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    logger.error("E----> error :{} -- content :{}", e.getClass(), e.getMessage());
+
                 }
-                i++;
-            } while (i < tryNum);
-        });
+            } catch (Exception e) {
+                logger.error("E----> error :{} -- content :{}", e.getClass(), e.getMessage());
+            }
+            i++;
+        } while (i < tryNum);
+
+
+//        });
     }
 }

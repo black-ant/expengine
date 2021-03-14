@@ -1,10 +1,11 @@
-package com.gang.etl.engine.strategy;
+package com.gang.etl.engine.strategy.sync;
 
 import com.alibaba.fastjson.JSONObject;
 import com.gang.etl.datacenter.entity.SyncLog;
 import com.gang.etl.datacenter.service.ISyncLogService;
 import com.gang.etl.engine.api.to.EngineBaseBean;
 import com.gang.etl.engine.common.BaseSyncLock;
+import com.gang.etl.engine.strategy.ISyncStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -12,7 +13,7 @@ import java.util.List;
 
 /**
  * @Classname BlockStrategy
- * @Description TODO
+ * @Description 基于数据库同步和消费
  * @Date 2020/10/8 16:33
  * @Created by zengzg
  */

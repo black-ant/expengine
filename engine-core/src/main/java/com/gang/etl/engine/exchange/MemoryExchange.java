@@ -3,13 +3,13 @@ package com.gang.etl.engine.exchange;
 import com.gang.etl.engine.api.annotation.SyncAudit;
 import com.gang.etl.engine.api.service.IExchangeService;
 import com.gang.etl.engine.api.to.EngineConsumerBean;
-import com.gang.etl.plugin.cache.api.impl.MemoryCacheManger;
+import com.gang.etl.plugin.cache.service.MemoryCacheManger;
+import com.gang.etl.plugin.cache.type.CacheType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.TransferQueue;
 
 /**
  * @Classname MemoryExchange
@@ -36,7 +36,7 @@ public class MemoryExchange implements IExchangeService {
             memoryCacheManger = new MemoryCacheManger();
             syncMap.put(rountingKey, memoryCacheManger);
         }
-        memoryCacheManger.push(consumerBean);
+        memoryCacheManger.put(CacheType.DATA, consumerBean);
     }
 
     /**
@@ -49,7 +49,7 @@ public class MemoryExchange implements IExchangeService {
     @SyncAudit
     public synchronized EngineConsumerBean consumerData(String rountingKey) throws InterruptedException {
         MemoryCacheManger memoryCacheManger = syncMap.get(rountingKey);
-        return memoryCacheManger == null ? null : memoryCacheManger.pop();
+        return memoryCacheManger == null ? null : memoryCacheManger.get(CacheType.DATA);
     }
 
 }

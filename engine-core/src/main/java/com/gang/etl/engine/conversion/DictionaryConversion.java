@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Classname DictionaryConversion
@@ -48,7 +49,20 @@ public class DictionaryConversion extends AbstractEngineConversion {
                 consumerBean.setData(overList);
             }
         }
+    }
 
-
+    /**
+     * 手动转换
+     *
+     * @param exchangeList
+     * @param syncInfo
+     */
+    public List<JSONObject> conversionField(List<Map<String, Object>> exchangeList, SyncFieldInfo syncInfo) {
+        List<JSONObject> overList = new LinkedList();
+        exchangeList.forEach(item -> {
+            String dataStr = JSONObject.toJSONString(item);
+            overList.add(exchangeInfo(syncInfo, JSONObject.parseObject(dataStr)));
+        });
+        return overList;
     }
 }

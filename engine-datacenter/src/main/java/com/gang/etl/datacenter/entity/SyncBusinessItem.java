@@ -33,10 +33,13 @@ public class SyncBusinessItem extends AbstractEntity {
      */
     private String itemName;
 
+    private String itemCode;
+
     /**
      * 同步属性映射
      */
     private String syncFieldId;
+
     @TableField(exist = false)
     private String syncFieldName;
 
@@ -44,6 +47,7 @@ public class SyncBusinessItem extends AbstractEntity {
      * 业务名
      */
     private String syncBusinessId;
+
     @TableField(exist = false)
     private String syncBusinessName;
 
@@ -51,6 +55,7 @@ public class SyncBusinessItem extends AbstractEntity {
      * 策略id
      */
     private String syncStrategyId;
+
     @TableField(exist = false)
     private String syncStrategyName;
 

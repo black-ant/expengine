@@ -5,21 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74973949-195b-4d06-9dbe-0011878d5cc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/PageStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/annotation/EngineConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/config/EngineLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/config/EngineProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/dto/SyncLogTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/response/SyncCustomerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/type/EnginePropertiesType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/utils/SyncContextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/IErrorStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/error/DefaultConsumerErrorStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/error/DefaultProduceErrorStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/sync/RabbitMQStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/RestFlowTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncRequestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/annotation/EngineAuditAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/annotation/EngineTOAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/api/IAuditService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/manager/AuditManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/to/SyncAuditTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/config/CacheManagerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/service/CacheManagerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/service/CacheTransactionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/service/MemoryCacheManger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/service/RedisCacheManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/type/CacheType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/request/SyncCustomRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/request/SyncCustomRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/com-gang-etl-engine-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/com-gang-etl-engine-core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/DictionaryConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/DictionaryConversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/exchange/MemoryExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/exchange/MemoryExchange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/SyncLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/SyncLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/CacheStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/sync/RedisStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/DatabaseStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/sync/DatabaseStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/ISyncStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/ISyncStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/MemoryQueueStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/sync/MemoryQueueStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/PageStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/operation/PageStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ProduceTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ProduceTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/AbstratController.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/AbstratController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncBusiness.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncBusiness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-support/support-database/src/main/java/com/gang/etl/engine/database/service/DatabaseConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-database/src/main/java/com/gang/etl/engine/database/service/DatabaseConsumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-web/src/assets/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/engine-web/src/assets/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-web/src/assets/css/site.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/engine-web/src/assets/css/site.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-web/src/pages/business_rate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/engine-web/src/pages/business_rate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-web/src/restful/otherApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/engine-web/src/restful/otherApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncErrorTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncErrorTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncFlowTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncFlowTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncBusinessItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncBusinessItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncBusinessItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncBusinessItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-plugins/plugin-audit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-plugins/plugin-audit/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-plugins/plugin-cache/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-plugins/plugin-cache/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/api/ICacheManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/api/ICacheManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/api/impl/MemoryCacheManger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-sdk/com-gang-engine-sdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-sdk/com-gang-engine-sdk.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-server/com-gang-etl-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/engine-server/com-gang-etl-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-support/support-excel/src/main/java/com/gang/etl/support/excel/service/ExcelUserListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine-support/support-excel/src/main/java/com/gang/etl/support/excel/service/ExcelUserListener.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/engine-core/target/" />
@@ -61,58 +94,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/engine-web/src/pages/business_rate.vue">
+        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/RestFlowTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="88" column="71" selection-start-line="88" selection-start-column="71" selection-end-line="88" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ProduceTemplate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/SyncLogService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="449">
+              <caret line="135" column="51" selection-start-line="135" selection-start-column="51" selection-end-line="135" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1609#1610#0" expanded="true" />
+                <element signature="e#1635#1636#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/ISyncBusiness.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncBusiness.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="300" column="18" selection-start-line="300" selection-start-column="18" selection-end-line="300" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/util/function/Consumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -120,17 +110,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="143">
+              <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+              <folding>
+                <element signature="e#1382#1383#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/util/concurrent/Executors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="269">
+              <caret line="510" selection-start-line="510" selection-end-line="510" />
             </state>
           </provider>
         </entry>
@@ -138,17 +131,67 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/DictionaryConversion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+            <state relative-caret-position="581">
+              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine-web/src/restful/otherApi.js">
+        <entry file="file://$PROJECT_DIR$/engine-support/support-database/src/main/java/com/gang/etl/engine/database/service/DatabaseConsumerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="114" column="2" selection-start-line="114" selection-start-column="2" selection-end-line="114" selection-end-column="2" />
+            <state relative-caret-position="540">
+              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/AbstractEngineConversion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncErrorTemplate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#993#994#0" expanded="true" />
+                <element signature="e#1066#1067#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncFlowTemplate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="126" column="33" lean-forward="true" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ProduceTemplate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="37" selection-start-line="37" selection-end-line="38" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -160,6 +203,7 @@
       <list>
         <option value="Vue Single File Component" />
         <option value="Kotlin File" />
+        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -167,13 +211,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TO 扫描错误</find>
-      <find>TO 扫描错误TO 扫描错误</find>
-      <find>EngineBaseBean</find>
-      <find>SYNC_SCAN_TO_ERROR</find>
-      <find>showNewField</find>
-      <find>beanCode</find>
-      <find>connectObj</find>
       <find>EngineThread</find>
       <find>MemoryExchange</find>
       <find>SyncFlowTemplate</find>
@@ -184,7 +221,6 @@
       <find>doLock</find>
       <find>syncBusiness</find>
       <find>executor</find>
-      <find>ConsumerTemplate</find>
       <find>SyncFieldInfo</find>
       <find>com.gang.etl.datacenter.entity.SyncBusiness</find>
       <find>2512</find>
@@ -197,12 +233,21 @@
       <find>page</find>
       <find>service</find>
       <find>businessName</find>
+      <find>@interface</find>
+      <find>IRedisServiceType</find>
+      <find>CommonCache</find>
+      <find>DatabaseStrategy</find>
+      <find>Manager</find>
+      <find>doReig</find>
+      <find>ConsumerTemplate</find>
+      <find>syncInfo</find>
     </findStrings>
     <replaceStrings>
       <replace>SyncField</replace>
       <replace>DingTalkRestAPI</replace>
       <replace>BaseErrorEnum</replace>
       <replace>void</replace>
+      <replace>CacheType</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\java\workspace\git\exp\etl-engine</dir>
@@ -216,57 +261,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/service/IExchangeService.java" />
-        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/annotation/SyncAudit.java" />
-        <option value="$PROJECT_DIR$/engine-plugins/plugin-audit/pom.xml" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/DictionaryConversion.java" />
-        <option value="$PROJECT_DIR$/engine-server/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/engine-core/pom.xml" />
-        <option value="$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/LogAudit.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/SimpleEngineLogic.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerTemplate.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/common/BaseSyncLock.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/resources/application-database.properties" />
-        <option value="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/utils/DatabaseGenerator.java" />
-        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineBaseBean.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncFlowTemplate.java" />
-        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/ISyncFieldInfo.java" />
-        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/ISyncBusiness.java" />
-        <option value="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncFieldInfo.java" />
-        <option value="$PROJECT_DIR$/engine-web/src/assets/js/common.js" />
-        <option value="$PROJECT_DIR$/engine-web/index.html" />
-        <option value="$PROJECT_DIR$/engine-web/src/assets/js/common.self.js" />
-        <option value="$PROJECT_DIR$/engine-web/src/restful/properties.js" />
-        <option value="$PROJECT_DIR$/engine-web/src/components/left.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/router/index.js" />
-        <option value="$PROJECT_DIR$/engine-web/src/App.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/app_list.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/app_save.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/bean_list.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/business_save.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/filed_connect.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/log_list.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/setting_list.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/setting_save.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/template_list.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/template_save.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/business_list.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/pages/business_details.vue" />
-        <option value="$PROJECT_DIR$/engine-web/src/assets/css/common.css" />
-        <option value="$PROJECT_DIR$/engine-web/src/assets/css/site.min.css" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/AbstratController.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncLogController.java" />
-        <option value="$PROJECT_DIR$/engine-web/src/restful/otherApi.js" />
-        <option value="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncLog.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/PageStrategy.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/exchange/MemoryExchange.java" />
-        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java" />
         <option value="$PROJECT_DIR$/engine-support/support-database/src/main/java/com/gang/etl/engine/database/service/DatabaseConsumerService.java" />
         <option value="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncBusiness.java" />
         <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/SyncLogService.java" />
         <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ProduceTemplate.java" />
         <option value="$PROJECT_DIR$/engine-web/src/pages/business_rate.vue" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-audit/pom.xml" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/annotation/EngineAuditAnnotation.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/api/IAuditService.java" />
+        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/utils/EngineProperties.java" />
+        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/annotation/EngineConfig.java" />
+        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/config/EngineLogger.java" />
+        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/config/EngineProperties.java" />
+        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/type/EnginePropertiesType.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/annotation/EngineTOAnnotation.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/api/impl/MemoryCacheManger.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/api/impl/RedisCacheManager.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/service/CacheTransactionResolver.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/service/CacheTransactionManager.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-cache/pom.xml" />
+        <option value="$PROJECT_DIR$/engine-support/support-excel/src/main/java/com/gang/etl/support/excel/service/ExcelUserListener.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/service/MemoryCacheManger.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/service/RedisCacheManager.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/api/ICacheManager.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/type/CacheType.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/exchange/MemoryExchange.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/ISyncStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/sync/DatabaseStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/sync/MemoryQueueStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/sync/RabbitMQStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/CacheStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/sync/RedisStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/operation/PageStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/utils/SpringContextUtils.java" />
+        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/utils/SyncContextUtils.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/error/ConsumerErrorStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/error/ProduceErrorStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/IErrorStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/error/DefaultConsumerErrorStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/error/DefaultProduceErrorStrategy.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncErrorTemplate.java" />
+        <option value="$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/manager/AuditManager.java" />
+        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/dto/SyncLogTO.java" />
+        <option value="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncBusinessItem.java" />
+        <option value="$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncBusinessItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncFlowTemplate.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java" />
+        <option value="$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/request/SyncCustomRequest.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/DictionaryConversion.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerTemplate.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncRequestController.java" />
+        <option value="$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/RestFlowTemplate.java" />
       </list>
     </option>
   </component>
@@ -321,7 +366,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -362,33 +406,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conversion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-server" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="thread" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
@@ -438,70 +474,59 @@
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-web" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
+              <item name="support-file" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-web" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
+              <item name="support-file" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-web" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
+              <item name="support-file" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-web" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
+              <item name="support-file" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-web" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
+              <item name="support-file" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-web" type="462c0819:PsiDirectoryNode" />
+              <item name="engine-support" type="462c0819:PsiDirectoryNode" />
+              <item name="support-file" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="restful" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-gang-etl-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etl-engine" type="462c0819:PsiDirectoryNode" />
-              <item name="engine-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="setting" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -525,8 +550,22 @@
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.gang.etl.plugin.cache.api" />
       <recent name="com.gang.etl.engine.api.to" />
       <recent name="com.gang.common.lib.to" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\workspace\git\exp\etl-engine\engine-support\support-workwechat\src\main\java\com\gang\etl\workwechat\type" />
+      <recent name="D:\java\workspace\git\exp\etl-engine\engine-support\support-workwechat\src\main\java\com\gang\etl\workwechat\logic" />
+      <recent name="D:\java\workspace\git\exp\etl-engine\engine-support\support-workwechat\src\main\java\com\gang\etl\workwechat\config" />
+      <recent name="D:\java\workspace\git\exp\etl-engine\engine-support\support-workwechat\src\main\java\com\gang\etl\workwechat\to" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gang.etl.engine.api.utils" />
+      <recent name="com.gang.etl.support.excel.type" />
+      <recent name="com.gang.etl.support.excel.utils" />
+      <recent name="com.gang.etl.engine.database.type" />
+      <recent name="com.gang.etl.plugin.api" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java\workspace\git\exp\etl-engine\engine-support\support-excel\src\main\resources" />
@@ -534,19 +573,6 @@
       <recent name="D:\java\workspace\git\exp\etl-engine\engine-plugins\plugin-job\src\main\java\com\gang\etl\plugin" />
       <recent name="D:\java\workspace\git\exp\etl-engine\engine-plugins\plugin-job\src\main\resources" />
       <recent name="D:\java\workspace\git\exp\etl-engine\engine-support\support-dingtalk\src\main\java\com\gang\etl\dingtalk\service" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.gang.etl.support.excel.type" />
-      <recent name="com.gang.etl.support.excel.utils" />
-      <recent name="com.gang.etl.engine.database.type" />
-      <recent name="com.gang.etl.plugin.api" />
-      <recent name="com.gang.etl.file.constant" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\workspace\git\exp\etl-engine\engine-support\support-workwechat\src\main\java\com\gang\etl\workwechat\type" />
-      <recent name="D:\java\workspace\git\exp\etl-engine\engine-support\support-workwechat\src\main\java\com\gang\etl\workwechat\logic" />
-      <recent name="D:\java\workspace\git\exp\etl-engine\engine-support\support-workwechat\src\main\java\com\gang\etl\workwechat\config" />
-      <recent name="D:\java\workspace\git\exp\etl-engine\engine-support\support-workwechat\src\main\java\com\gang\etl\workwechat\to" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -688,7 +714,12 @@
       <workItem from="1613699174239" duration="1345000" />
       <workItem from="1614342855072" duration="5732000" />
       <workItem from="1614411927166" duration="16656000" />
-      <workItem from="1614481515308" duration="19257000" />
+      <workItem from="1614481515308" duration="20486000" />
+      <workItem from="1615015280588" duration="5566000" />
+      <workItem from="1615088319408" duration="3369000" />
+      <workItem from="1615210282059" duration="3761000" />
+      <workItem from="1615253717298" duration="1251000" />
+      <workItem from="1615709117909" duration="16532000" />
     </task>
     <servers />
   </component>
@@ -710,7 +741,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="331874000" />
+    <option name="totallyTimeSpent" value="363582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3633" y="0" width="1734" height="1407" extended-state="0" />
@@ -723,10 +754,10 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.4984985" visible="true" weight="0.23715651" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.4984985" visible="true" weight="0.30107528" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.66487455" weight="0.285028" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.66069293" weight="0.068855084" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
@@ -735,12 +766,12 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="JRebel Executor" order="10" sideWeight="0.9026284" weight="0.29383507" />
-      <window_info anchor="bottom" id="JRebel Console" order="11" sideWeight="0.11648746" side_tool="true" visible="true" weight="0.33306646" />
+      <window_info anchor="bottom" id="JRebel Executor" order="10" sideWeight="0.9014337" weight="0.29383507" />
+      <window_info anchor="bottom" id="JRebel Console" order="11" sideWeight="0.11827957" side_tool="true" visible="true" weight="0.33306646" />
       <window_info anchor="bottom" id="Message" order="12" />
       <window_info anchor="bottom" id="Find" order="13" sideWeight="0.49701315" weight="0.3298639" />
       <window_info anchor="bottom" id="Run" order="14" sideWeight="0.8829152" weight="0.38030425" />
-      <window_info anchor="bottom" id="Debug" order="15" sideWeight="0.88351256" visible="true" weight="0.33306646" />
+      <window_info active="true" anchor="bottom" id="Debug" order="15" sideWeight="0.8817204" visible="true" weight="0.33306646" />
       <window_info anchor="bottom" id="Cvs" order="16" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="17" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="18" />
@@ -754,7 +785,7 @@
       <window_info anchor="right" id="Bean Validation" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.24970132" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" visible="true" weight="0.24970132" />
       <window_info anchor="right" id="Search in GitHub" order="10" />
     </layout>
   </component>
@@ -808,19 +839,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ProduceTemplate.java</url>
-          <line>65</line>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ProduceTemplate.java</url>
-          <line>90</line>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ProduceTemplate.java</url>
-          <line>80</line>
+          <line>78</line>
           <properties />
           <option name="timeStamp" value="104" />
         </line-breakpoint>
@@ -842,11 +873,40 @@
           <properties />
           <option name="timeStamp" value="107" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerTemplate.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>engineBaseBean.getServiceName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>logService.save(log);</expression-string>
         <language-id>JAVA</language-id>
@@ -887,374 +947,461 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>MemoryCacheManger.build();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/engine-web/src/components/left.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="28" selection-start-line="28" selection-start-column="4" selection-end-line="31" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="73" selection-start-line="73" selection-end-line="76" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/login.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/app_save.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/bean_list.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/filed_connect.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/log_list.vue">
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/sync/RedisStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/setting_list.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/business_details.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/assets/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="76" selection-start-line="76" selection-end-line="77" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/setting_save.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/template_list.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/template_save.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/app_list.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/assets/css/site.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3767">
-          <caret line="4178" column="20" selection-start-line="4178" selection-start-column="20" selection-end-line="4178" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/business_list.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="71" column="17" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncFieldConnectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncBusinessItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" selection-start-line="29" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/com/baomidou/mybatis-plus-extension/3.3.1.tmp/mybatis-plus-extension-3.3.1.tmp-sources.jar!/com/baomidou/mybatisplus/extension/service/impl/ServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="190" column="61" selection-start-line="190" selection-start-column="61" selection-end-line="190" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/AbstratController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/com/baomidou/mybatis-plus-extension/3.3.1.tmp/mybatis-plus-extension-3.3.1.tmp-sources.jar!/com/baomidou/mybatisplus/extension/service/IService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="292" column="28" selection-start-line="292" selection-start-column="23" selection-end-line="292" selection-end-column="28" />
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding>
-            <element signature="e#2010#2011#0" expanded="true" />
-            <element signature="e#2082#2083#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/restful/common.js">
+    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/utils/EngineObjectUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
+        <state relative-caret-position="200">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/restful/logicApi.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/restful/properties.js">
+    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/utils/SyncContextUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="460">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/business_save.vue">
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/ISyncStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="65" selection-start-line="65" selection-end-line="67" selection-end-column="39" />
+        <state relative-caret-position="120">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/IErrorStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/error/DefaultConsumerErrorStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/error/DefaultProduceErrorStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/manager/AuditManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/annotation/EngineTOAnnotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-plugins/plugin-audit/src/main/java/com/gang/etl/audit/to/SyncAuditTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/logic/SyncFieldLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="40" selection-start-line="40" selection-end-line="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/logic/TemplateLogic.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncLogController.java">
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/logic/SyncSettingLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="220">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/CacheStrategy.java">
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/logic/UserService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/logic/AbsractVelocity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="100">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncLogServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncRunController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="23" column="70" lean-forward="true" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+        <state relative-caret-position="240">
+          <caret line="32" selection-start-line="32" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncMainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncBeanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SynsBusinessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncFieldConnectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/SyncBusinessLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="25" selection-start-line="25" selection-end-line="26" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/request/SyncBusinessRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/dto/FieldItemDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="56" column="26" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="26" />
+        <state relative-caret-position="933">
+          <caret line="137" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="137" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/org/springframework/spring-core/5.2.6.RELEASE/spring-core-5.2.6.RELEASE.jar!/org/springframework/cglib/beans/BeanCopier.class">
+    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/dto/SyncLogTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1429">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/strategy/PageStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="93">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1458#1459#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1522#1523#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1814#1815#0" expanded="true" />
+            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#1896#1897#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1973#1974#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
+            <element signature="e#2056#2057#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncFlowTemplate.java">
+    <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncBusinessServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+        <state relative-caret-position="320">
+          <caret line="23" selection-start-line="23" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-plugins/plugin-cache/src/main/java/com/gang/etl/plugin/cache/api/impl/MemoryCacheManger.java">
+    <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncBusinessItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/impl/SyncBusinessItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/service/ISyncBusinessService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="67" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineProduceBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding>
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/exchange/MemoryExchange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+        <state relative-caret-position="873">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/common/BaseSyncLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/common/IEngineService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="220">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineBaseBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/response/SyncCustomerResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../resource/repo/com/baomidou/mybatis-plus-extension/3.3.1.tmp/mybatis-plus-extension-3.3.1.tmp-sources.jar!/com/baomidou/mybatisplus/extension/service/IService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="195" column="14" selection-start-line="195" selection-start-column="14" selection-end-line="195" selection-end-column="14" />
+          <folding>
+            <element signature="e#5473#5474#0" expanded="true" />
+            <element signature="e#5526#5527#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../gang-common/common-lib/src/main/java/com/gang/common/lib/to/ResponseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/engine-support/support-database/src/main/java/com/gang/etl/engine/database/service/DatabaseProduceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="220">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/request/SyncCustomRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/web/controller/SyncRequestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/engine-support/support-database/src/main/java/com/gang/etl/engine/database/service/DatabaseConsumerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="540">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/EngineBaseBean.java">
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/AbstractEngineConversion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-api/src/main/java/com/gang/etl/engine/api/to/ISyncBusiness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-datacenter/src/main/java/com/gang/etl/datacenter/entity/SyncBusiness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="300" column="18" selection-start-line="300" selection-start-column="18" selection-end-line="300" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="540">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/conversion/DictionaryConversion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        <state relative-caret-position="581">
+          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ProduceTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="353">
+          <caret line="37" selection-start-line="37" selection-end-line="38" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/logic/SyncLogService.java">
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncErrorTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="700">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/restful/otherApi.js">
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/SyncFlowTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="114" column="2" selection-start-line="114" selection-start-column="2" selection-end-line="114" selection-end-column="2" />
+        <state relative-caret-position="713">
+          <caret line="126" column="33" lean-forward="true" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine-web/src/pages/business_rate.vue">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/util/concurrent/Executors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="88" column="71" selection-start-line="88" selection-start-column="71" selection-end-line="88" selection-end-column="71" />
+        <state relative-caret-position="269">
+          <caret line="510" selection-start-line="510" selection-end-line="510" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/thread/EngineThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/ConsumerTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding>
+            <element signature="e#1382#1383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine-core/src/main/java/com/gang/etl/engine/template/RestFlowTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="135" column="51" selection-start-line="135" selection-start-column="51" selection-end-line="135" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1319,7 +1466,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>support-excel</last-edited>
+          <last-edited>plugin-audit</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

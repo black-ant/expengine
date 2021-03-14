@@ -4,7 +4,7 @@ import com.gang.etl.engine.api.to.EngineBaseBean;
 
 /**
  * @Classname ISyncStrategy
- * @Description TODO
+ * @Description 同步策略 , 同步的 BaseBean 生成方式
  * @Date 2020/10/8 16:33
  * @Created by zengzg
  */

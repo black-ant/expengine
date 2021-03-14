@@ -1,14 +1,15 @@
-package com.gang.etl.engine.strategy;
+package com.gang.etl.engine.strategy.sync;
 
 import com.gang.etl.engine.api.to.EngineBaseBean;
 import com.gang.etl.engine.common.BaseSyncLock;
+import com.gang.etl.engine.strategy.ISyncStrategy;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * @Classname MemoryQueueStrategy
- * @Description TODO
+ * @Description 基于 MemoryQueue 同步和消费
  * @Date 2020/10/8 16:59
  * @Created by zengzg
  */
